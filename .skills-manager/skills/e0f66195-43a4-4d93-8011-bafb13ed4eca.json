@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "skill_id": "e0f66195-43a4-4d93-8011-bafb13ed4eca",
+  "path": "sn-dimension-research",
+  "path_key": "sn-dimension-research",
+  "enabled": true,
+  "tags": [
+    "Agent",
+    "OpenSenseNova/SenseNova-Skills",
+    "report",
+    "research",
+    "workflow"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/OpenSenseNova/SenseNova-Skills",
+    "subpath": "skills\\sn-dimension-research",
+    "branch": null
+  }
+}

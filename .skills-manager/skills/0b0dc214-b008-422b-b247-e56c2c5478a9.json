@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "skill_id": "0b0dc214-b008-422b-b247-e56c2c5478a9",
+  "path": "alphaear-logic-visualizer",
+  "path_key": "alphaear-logic-visualizer",
+  "enabled": true,
+  "tags": [
+    "RKiding/Awesome-finance-skills",
+    "diagrams",
+    "drawio"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/RKiding/Awesome-finance-skills",
+    "subpath": "skills\\alphaear-logic-visualizer",
+    "branch": null
+  }
+}

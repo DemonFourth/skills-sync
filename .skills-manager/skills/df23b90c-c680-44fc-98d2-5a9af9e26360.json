@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "df23b90c-c680-44fc-98d2-5a9af9e26360",
+  "path": "sn-ppt-creative",
+  "path_key": "sn-ppt-creative",
+  "enabled": true,
+  "tags": [
+    "OpenSenseNova/SenseNova-Skills",
+    "PPT"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/OpenSenseNova/SenseNova-Skills",
+    "subpath": "skills\\sn-ppt-creative",
+    "branch": null
+  }
+}

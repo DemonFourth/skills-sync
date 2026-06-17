@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "a8448de8-b644-4afa-9590-384d04df50ab",
+  "path": "sn-search-social-en",
+  "path_key": "sn-search-social-en",
+  "enabled": true,
+  "tags": [
+    "OpenSenseNova/SenseNova-Skills",
+    "搜索"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/OpenSenseNova/SenseNova-Skills",
+    "subpath": "skills\\sn-search-social-en",
+    "branch": null
+  }
+}

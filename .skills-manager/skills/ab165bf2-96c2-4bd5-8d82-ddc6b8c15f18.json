@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "skill_id": "ab165bf2-96c2-4bd5-8d82-ddc6b8c15f18",
+  "path": "last30days-cn",
+  "path_key": "last30days-cn",
+  "enabled": true,
+  "tags": [
+    "Agent",
+    "信息收集",
+    "搜索"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/Jesseovo/last30days-skill-cn",
+    "subpath": null,
+    "branch": null
+  }
+}

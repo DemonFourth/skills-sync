@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "b733b5f6-1137-4ef8-95a9-39b862dd9b63",
+  "path": "sn-image-imitate",
+  "path_key": "sn-image-imitate",
+  "enabled": true,
+  "tags": [
+    "OpenSenseNova/SenseNova-Skills",
+    "image"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/OpenSenseNova/SenseNova-Skills",
+    "subpath": "skills\\sn-image-imitate",
+    "branch": null
+  }
+}

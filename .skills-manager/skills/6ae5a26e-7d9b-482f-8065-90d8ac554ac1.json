@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "skill_id": "6ae5a26e-7d9b-482f-8065-90d8ac554ac1",
+  "path": "alphaear-search",
+  "path_key": "alphaear-search",
+  "enabled": true,
+  "tags": [
+    "RAG",
+    "RKiding/Awesome-finance-skills",
+    "搜索"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/RKiding/Awesome-finance-skills",
+    "subpath": "skills\\alphaear-search",
+    "branch": null
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "skill_id": "5b4b36d1-d0f0-4a37-a9df-4203f30f81f9",
+  "path": "sn-research-synthesis",
+  "path_key": "sn-research-synthesis",
+  "enabled": true,
+  "tags": [
+    "Agent",
+    "OpenSenseNova/SenseNova-Skills",
+    "report",
+    "research",
+    "workflow"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/OpenSenseNova/SenseNova-Skills",
+    "subpath": "skills\\sn-research-synthesis",
+    "branch": null
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "skill_id": "76b21744-4e03-4a9b-a63c-26ce280f2bbd",
+  "path": "alphaear-news",
+  "path_key": "alphaear-news",
+  "enabled": true,
+  "tags": [
+    "RKiding/Awesome-finance-skills",
+    "信息收集",
+    "金融"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/RKiding/Awesome-finance-skills",
+    "subpath": "skills\\alphaear-news",
+    "branch": null
+  }
+}

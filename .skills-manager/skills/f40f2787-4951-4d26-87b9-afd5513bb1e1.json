@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "skill_id": "f40f2787-4951-4d26-87b9-afd5513bb1e1",
+  "path": "web-video-presentation",
+  "path_key": "web-video-presentation",
+  "enabled": true,
+  "tags": [
+    "ConardLi/garden-skills",
+    "video",
+    "多媒体",
+    "文档"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/ConardLi/garden-skills",
+    "subpath": "skills\\web-video-presentation",
+    "branch": null
+  }
+}

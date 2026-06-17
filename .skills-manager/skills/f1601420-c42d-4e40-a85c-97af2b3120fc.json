@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "skill_id": "f1601420-c42d-4e40-a85c-97af2b3120fc",
+  "path": "sn-md-to-html-report",
+  "path_key": "sn-md-to-html-report",
+  "enabled": true,
+  "tags": [
+    "Agent",
+    "Markdown",
+    "OpenSenseNova/SenseNova-Skills",
+    "research",
+    "文档",
+    "转换"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/OpenSenseNova/SenseNova-Skills",
+    "subpath": "skills\\sn-md-to-html-report",
+    "branch": null
+  }
+}

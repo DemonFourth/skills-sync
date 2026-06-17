@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "skill_id": "f9613ca0-def0-4b08-962c-ad0c5a065b02",
+  "path": "sn-da-large-file-analysis",
+  "path_key": "sn-da-large-file-analysis",
+  "enabled": true,
+  "tags": [
+    "Excel",
+    "OpenSenseNova/SenseNova-Skills",
+    "数据分析",
+    "文档"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/OpenSenseNova/SenseNova-Skills",
+    "subpath": "skills\\sn-da-large-file-analysis",
+    "branch": null
+  }
+}

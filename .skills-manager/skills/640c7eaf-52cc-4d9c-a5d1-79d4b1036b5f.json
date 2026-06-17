@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "skill_id": "640c7eaf-52cc-4d9c-a5d1-79d4b1036b5f",
+  "path": "alphaear-reporter",
+  "path_key": "alphaear-reporter",
+  "enabled": true,
+  "tags": [
+    "Agent",
+    "RKiding/Awesome-finance-skills",
+    "report",
+    "workflow"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/RKiding/Awesome-finance-skills",
+    "subpath": "skills\\alphaear-reporter",
+    "branch": null
+  }
+}

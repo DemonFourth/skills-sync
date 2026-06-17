@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "eb1d48dd-20f1-4f4e-b7ce-28061177710c",
+  "path": "sn-search-code",
+  "path_key": "sn-search-code",
+  "enabled": true,
+  "tags": [
+    "OpenSenseNova/SenseNova-Skills",
+    "搜索"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/OpenSenseNova/SenseNova-Skills",
+    "subpath": "skills\\sn-search-code",
+    "branch": null
+  }
+}

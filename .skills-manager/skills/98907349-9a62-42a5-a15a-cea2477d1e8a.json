@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "98907349-9a62-42a5-a15a-cea2477d1e8a",
+  "path": "sn-search-image",
+  "path_key": "sn-search-image",
+  "enabled": true,
+  "tags": [
+    "OpenSenseNova/SenseNova-Skills",
+    "搜索"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/OpenSenseNova/SenseNova-Skills",
+    "subpath": "skills\\sn-search-image",
+    "branch": null
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "skill_id": "b5164c84-5e2d-4d23-a8b1-1d4c92a30e78",
+  "path": "sn-report-format-discovery",
+  "path_key": "sn-report-format-discovery",
+  "enabled": true,
+  "tags": [
+    "Agent",
+    "OpenSenseNova/SenseNova-Skills",
+    "report",
+    "research",
+    "workflow"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/OpenSenseNova/SenseNova-Skills",
+    "subpath": "skills\\sn-report-format-discovery",
+    "branch": null
+  }
+}

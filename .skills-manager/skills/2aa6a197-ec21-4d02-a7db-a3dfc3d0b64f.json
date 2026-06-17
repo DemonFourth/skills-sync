@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "2aa6a197-ec21-4d02-a7db-a3dfc3d0b64f",
+  "path": "sn-search-academic",
+  "path_key": "sn-search-academic",
+  "enabled": true,
+  "tags": [
+    "OpenSenseNova/SenseNova-Skills",
+    "搜索"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/OpenSenseNova/SenseNova-Skills",
+    "subpath": "skills\\sn-search-academic",
+    "branch": null
+  }
+}

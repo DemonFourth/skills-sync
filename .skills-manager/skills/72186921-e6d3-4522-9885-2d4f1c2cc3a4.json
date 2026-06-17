@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "skill_id": "72186921-e6d3-4522-9885-2d4f1c2cc3a4",
+  "path": "alphaear-signal-tracker",
+  "path_key": "alphaear-signal-tracker",
+  "enabled": true,
+  "tags": [
+    "Agent",
+    "RKiding/Awesome-finance-skills",
+    "金融"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/RKiding/Awesome-finance-skills",
+    "subpath": "skills\\alphaear-signal-tracker",
+    "branch": null
+  }
+}

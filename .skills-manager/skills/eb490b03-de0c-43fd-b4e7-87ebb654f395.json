@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "skill_id": "eb490b03-de0c-43fd-b4e7-87ebb654f395",
+  "path": "alphaear-predictor",
+  "path_key": "alphaear-predictor",
+  "enabled": true,
+  "tags": [
+    "RKiding/Awesome-finance-skills",
+    "金融",
+    "预测"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/RKiding/Awesome-finance-skills",
+    "subpath": "skills\\alphaear-predictor",
+    "branch": null
+  }
+}

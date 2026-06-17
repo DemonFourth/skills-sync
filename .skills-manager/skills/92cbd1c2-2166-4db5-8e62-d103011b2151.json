@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "skill_id": "92cbd1c2-2166-4db5-8e62-d103011b2151",
+  "path": "web-design-engineer",
+  "path_key": "web-design-engineer",
+  "enabled": true,
+  "tags": [
+    "ConardLi/garden-skills",
+    "Design",
+    "UI",
+    "frontend/前端"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/ConardLi/garden-skills",
+    "subpath": "skills\\web-design-engineer",
+    "branch": null
+  }
+}

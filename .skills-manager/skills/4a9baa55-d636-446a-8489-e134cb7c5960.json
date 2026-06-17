@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "4a9baa55-d636-446a-8489-e134cb7c5960",
+  "path": "alphaear-sentiment",
+  "path_key": "alphaear-sentiment",
+  "enabled": true,
+  "tags": [
+    "RKiding/Awesome-finance-skills",
+    "分析"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/RKiding/Awesome-finance-skills",
+    "subpath": "skills\\alphaear-sentiment",
+    "branch": null
+  }
+}

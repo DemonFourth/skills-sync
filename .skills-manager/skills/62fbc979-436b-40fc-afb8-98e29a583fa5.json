@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "skill_id": "62fbc979-436b-40fc-afb8-98e29a583fa5",
+  "path": "skill-creator-2",
+  "path_key": "skill-creator-2",
+  "enabled": true,
+  "tags": [
+    "RKiding/Awesome-finance-skills"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/RKiding/Awesome-finance-skills",
+    "subpath": "skills\\skill-creator",
+    "branch": null
+  }
+}

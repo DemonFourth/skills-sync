@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "skill_id": "2a16b0bb-2e04-49da-a06e-af245727aed0",
+  "path": "sn-update",
+  "path_key": "sn-update",
+  "enabled": true,
+  "tags": [
+    "OpenSenseNova/SenseNova-Skills"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/OpenSenseNova/SenseNova-Skills",
+    "subpath": "skills\\sn-update",
+    "branch": null
+  }
+}

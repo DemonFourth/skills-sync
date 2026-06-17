@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "100db248-6167-4109-a06e-91af406d17e3",
+  "path": "sn-image-doctor",
+  "path_key": "sn-image-doctor",
+  "enabled": true,
+  "tags": [
+    "OpenSenseNova/SenseNova-Skills",
+    "image"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/OpenSenseNova/SenseNova-Skills",
+    "subpath": "skills\\sn-image-doctor",
+    "branch": null
+  }
+}

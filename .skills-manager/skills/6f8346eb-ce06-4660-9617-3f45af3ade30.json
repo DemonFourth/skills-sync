@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "skill_id": "6f8346eb-ce06-4660-9617-3f45af3ade30",
+  "path": "sn-da-non-spreadsheet-analysis",
+  "path_key": "sn-da-non-spreadsheet-analysis",
+  "enabled": true,
+  "tags": [
+    "OpenSenseNova/SenseNova-Skills",
+    "数据分析",
+    "文档"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/OpenSenseNova/SenseNova-Skills",
+    "subpath": "skills\\sn-da-non-spreadsheet-analysis",
+    "branch": null
+  }
+}

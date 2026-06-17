@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "skill_id": "d62f8b13-8e31-42fa-97c9-b02a3deaf00e",
+  "path": "sn-research-planning",
+  "path_key": "sn-research-planning",
+  "enabled": true,
+  "tags": [
+    "Agent",
+    "OpenSenseNova/SenseNova-Skills",
+    "report",
+    "research",
+    "workflow"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/OpenSenseNova/SenseNova-Skills",
+    "subpath": "skills\\sn-research-planning",
+    "branch": null
+  }
+}

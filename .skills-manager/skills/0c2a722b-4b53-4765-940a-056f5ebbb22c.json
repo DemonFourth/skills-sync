@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "skill_id": "0c2a722b-4b53-4765-940a-056f5ebbb22c",
+  "path": "sn-da-image-caption",
+  "path_key": "sn-da-image-caption",
+  "enabled": true,
+  "tags": [
+    "OpenSenseNova/SenseNova-Skills",
+    "image",
+    "数据分析",
+    "文档"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/OpenSenseNova/SenseNova-Skills",
+    "subpath": "skills\\sn-da-image-caption",
+    "branch": null
+  }
+}

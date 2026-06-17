@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "skill_id": "41438a10-83a9-444b-b6a2-15c371e8f811",
+  "path": "alphaear-deepear-lite",
+  "path_key": "alphaear-deepear-lite",
+  "enabled": true,
+  "tags": [
+    "RKiding/Awesome-finance-skills",
+    "数据",
+    "金融"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/RKiding/Awesome-finance-skills",
+    "subpath": "skills\\alphaear-deepear-lite",
+    "branch": null
+  }
+}

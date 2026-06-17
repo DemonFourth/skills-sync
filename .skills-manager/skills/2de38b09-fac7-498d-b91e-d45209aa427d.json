@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "skill_id": "2de38b09-fac7-498d-b91e-d45209aa427d",
+  "path": "kb-retriever",
+  "path_key": "kb-retriever",
+  "enabled": true,
+  "tags": [
+    "ConardLi/garden-skills",
+    "RAG",
+    "搜索",
+    "数据"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/ConardLi/garden-skills",
+    "subpath": "skills\\kb-retriever",
+    "branch": null
+  }
+}

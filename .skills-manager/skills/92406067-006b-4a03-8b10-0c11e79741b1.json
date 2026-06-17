@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "92406067-006b-4a03-8b10-0c11e79741b1",
+  "path": "sn-infographic",
+  "path_key": "sn-infographic",
+  "enabled": true,
+  "tags": [
+    "OpenSenseNova/SenseNova-Skills",
+    "image"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/OpenSenseNova/SenseNova-Skills",
+    "subpath": "skills\\sn-infographic",
+    "branch": null
+  }
+}

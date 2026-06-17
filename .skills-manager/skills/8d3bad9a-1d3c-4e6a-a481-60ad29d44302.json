@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "skill_id": "8d3bad9a-1d3c-4e6a-a481-60ad29d44302",
+  "path": "sn-deep-research",
+  "path_key": "sn-deep-research",
+  "enabled": true,
+  "tags": [
+    "Agent",
+    "OpenSenseNova/SenseNova-Skills",
+    "report",
+    "research",
+    "workflow"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/OpenSenseNova/SenseNova-Skills",
+    "subpath": "skills\\sn-deep-research",
+    "branch": null
+  }
+}

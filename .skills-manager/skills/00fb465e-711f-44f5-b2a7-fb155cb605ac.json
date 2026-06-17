@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "00fb465e-711f-44f5-b2a7-fb155cb605ac",
+  "path": "sn-image-resume",
+  "path_key": "sn-image-resume",
+  "enabled": true,
+  "tags": [
+    "OpenSenseNova/SenseNova-Skills",
+    "image"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/OpenSenseNova/SenseNova-Skills",
+    "subpath": "skills\\sn-image-resume",
+    "branch": null
+  }
+}

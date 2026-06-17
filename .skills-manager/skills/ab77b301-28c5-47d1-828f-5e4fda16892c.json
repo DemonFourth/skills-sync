@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "skill_id": "ab77b301-28c5-47d1-828f-5e4fda16892c",
+  "path": "alphaear-stock",
+  "path_key": "alphaear-stock",
+  "enabled": true,
+  "tags": [
+    "Agent",
+    "RKiding/Awesome-finance-skills",
+    "数据",
+    "股票"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/RKiding/Awesome-finance-skills",
+    "subpath": "skills\\alphaear-stock",
+    "branch": null
+  }
+}

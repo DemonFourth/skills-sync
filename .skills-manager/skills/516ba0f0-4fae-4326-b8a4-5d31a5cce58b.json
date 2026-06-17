@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "skill_id": "516ba0f0-4fae-4326-b8a4-5d31a5cce58b",
+  "path": "beautiful-article",
+  "path_key": "beautiful-article",
+  "enabled": true,
+  "tags": [
+    "ConardLi/garden-skills",
+    "Design",
+    "HTML",
+    "workflow"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/ConardLi/garden-skills",
+    "subpath": "skills\\beautiful-article",
+    "branch": null
+  }
+}

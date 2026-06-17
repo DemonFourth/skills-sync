@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "09f8f47d-4759-436e-8184-80360b1adb77",
+  "path": "sn-image-base",
+  "path_key": "sn-image-base",
+  "enabled": true,
+  "tags": [
+    "OpenSenseNova/SenseNova-Skills",
+    "image"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/OpenSenseNova/SenseNova-Skills",
+    "subpath": "skills\\sn-image-base",
+    "branch": null
+  }
+}

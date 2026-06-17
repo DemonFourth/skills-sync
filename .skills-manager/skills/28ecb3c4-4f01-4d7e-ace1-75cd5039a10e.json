@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "28ecb3c4-4f01-4d7e-ace1-75cd5039a10e",
+  "path": "sn-ppt-doctor",
+  "path_key": "sn-ppt-doctor",
+  "enabled": true,
+  "tags": [
+    "OpenSenseNova/SenseNova-Skills",
+    "PPT"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/OpenSenseNova/SenseNova-Skills",
+    "subpath": "skills\\sn-ppt-doctor",
+    "branch": null
+  }
+}

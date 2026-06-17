@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "skill_id": "46f3389b-8f4e-44d3-be44-3cc9e0859ca4",
+  "path": "gpt-image-2",
+  "path_key": "gpt-image-2",
+  "enabled": true,
+  "tags": [
+    "ConardLi/garden-skills",
+    "Design",
+    "image"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/ConardLi/garden-skills",
+    "subpath": "skills\\gpt-image-2",
+    "branch": null
+  }
+}

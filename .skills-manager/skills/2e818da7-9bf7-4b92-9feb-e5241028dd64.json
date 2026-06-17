@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "skill_id": "2e818da7-9bf7-4b92-9feb-e5241028dd64",
+  "path": "sn-da-excel-workflow",
+  "path_key": "sn-da-excel-workflow",
+  "enabled": true,
+  "tags": [
+    "Excel",
+    "OpenSenseNova/SenseNova-Skills",
+    "数据分析",
+    "文档"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/OpenSenseNova/SenseNova-Skills",
+    "subpath": "skills\\sn-da-excel-workflow",
+    "branch": null
+  }
+}
