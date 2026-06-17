@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "skill_id": "ed61edae-0acf-4c15-a9e2-594afe2f6438",
+  "path": "lean-ctx",
+  "path_key": "lean-ctx",
+  "enabled": true,
+  "tags": [
+    "VibeCoding",
+    "coding-agent",
+    "token节省",
+    "上下文优化"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/yvgude/lean-ctx",
+    "subpath": "skills\\lean-ctx",
+    "branch": null
+  }
+}

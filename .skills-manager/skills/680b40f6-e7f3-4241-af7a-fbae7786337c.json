@@ -5,8 +5,7 @@
   "path_key": "brainstorming",
   "enabled": true,
   "tags": [
-    "Coding",
-    "VibeCoding",
+    "coding-agent",
     "obra/superpowers"
   ],
   "source": {

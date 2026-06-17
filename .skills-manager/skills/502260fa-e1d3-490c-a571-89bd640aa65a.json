@@ -5,8 +5,7 @@
   "path_key": "subagent-driven-development",
   "enabled": true,
   "tags": [
-    "Coding",
-    "VibeCoding",
+    "coding-agent",
     "obra/superpowers"
   ],
   "source": {

@@ -6,7 +6,7 @@
   "enabled": true,
   "tags": [
     "Agent",
-    "VibeCoding"
+    "coding-agent"
   ],
   "source": {
     "type": "git",

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "812d3b33-bcd7-4b41-a486-5f8a41ca7b2a",
+  "path": "web-access",
+  "path_key": "web-access",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/eze-is/web-access",
+    "subpath": null,
+    "branch": null
+  }
+}
