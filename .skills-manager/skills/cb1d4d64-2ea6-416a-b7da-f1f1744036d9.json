@@ -5,9 +5,10 @@
   "path_key": "high-end-visual-design",
   "enabled": true,
   "tags": [
-    "Design",
-    "Development",
-    "Leonxlnx/taste-skill"
+    "coding-agent/编码代理",
+    "design/设计",
+    "development/开发",
+    "source:Leonxlnx/taste-skill"
   ],
   "source": {
     "type": "git",

@@ -5,10 +5,10 @@
   "path_key": "brandkit",
   "enabled": true,
   "tags": [
-    "Design",
-    "Leonxlnx/taste-skill",
-    "UI",
-    "image"
+    "design/设计",
+    "image/图像",
+    "source:Leonxlnx/taste-skill",
+    "ui/界面"
   ],
   "source": {
     "type": "git",

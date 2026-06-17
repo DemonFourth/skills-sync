@@ -5,9 +5,16 @@
   "path_key": "fullstack-dev",
   "enabled": true,
   "tags": [
-    "Development",
-    "MiniMax",
-    "MiniMax-AI/skills"
+    "api/接口",
+    "backend/后端",
+    "coding-agent/编码代理",
+    "data/数据",
+    "development/开发",
+    "frontend/前端",
+    "minimax/MiniMax",
+    "npm-runtime/npm运行时",
+    "python-runtime/Python运行时",
+    "source:MiniMax-AI/skills"
   ],
   "source": {
     "type": "git",

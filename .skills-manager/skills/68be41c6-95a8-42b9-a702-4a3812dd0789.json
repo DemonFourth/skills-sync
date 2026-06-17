@@ -5,9 +5,12 @@
   "path_key": "minimax-xlsx",
   "enabled": true,
   "tags": [
-    "MiniMax",
-    "MiniMax-AI/skills",
-    "文档"
+    "data/数据",
+    "docs/文档",
+    "minimax/MiniMax",
+    "needs-api-key/需API密钥",
+    "python-runtime/Python运行时",
+    "source:MiniMax-AI/skills"
   ],
   "source": {
     "type": "git",

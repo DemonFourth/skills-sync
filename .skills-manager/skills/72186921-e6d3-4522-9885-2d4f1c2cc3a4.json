@@ -5,9 +5,9 @@
   "path_key": "alphaear-signal-tracker",
   "enabled": true,
   "tags": [
-    "Agent",
-    "RKiding/Awesome-finance-skills",
-    "金融"
+    "finance/金融",
+    "python-runtime/Python运行时",
+    "source:RKiding/finance-skills"
   ],
   "source": {
     "type": "git",

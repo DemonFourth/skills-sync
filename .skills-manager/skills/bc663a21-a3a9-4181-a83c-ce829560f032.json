@@ -5,8 +5,10 @@
   "path_key": "writing-plans",
   "enabled": true,
   "tags": [
-    "coding-agent",
-    "obra/superpowers"
+    "coding-agent/编码代理",
+    "needs-api-key/需API密钥",
+    "source:obra/superpowers",
+    "writing/写作"
   ],
   "source": {
     "type": "git",

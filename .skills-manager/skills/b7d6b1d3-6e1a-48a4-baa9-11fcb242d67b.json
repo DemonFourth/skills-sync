@@ -5,8 +5,10 @@
   "path_key": "pptx",
   "enabled": true,
   "tags": [
-    "anthropics/skills",
-    "文档"
+    "docs/文档",
+    "python-runtime/Python运行时",
+    "source:anthropics/skills",
+    "writing/写作"
   ],
   "source": {
     "type": "git",

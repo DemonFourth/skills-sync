@@ -5,9 +5,11 @@
   "path_key": "sn-da-non-spreadsheet-analysis",
   "enabled": true,
   "tags": [
-    "OpenSenseNova/SenseNova-Skills",
-    "数据分析",
-    "文档"
+    "data-analysis/数据分析",
+    "docs/文档",
+    "python-runtime/Python运行时",
+    "source:OpenSenseNova/skills",
+    "writing/写作"
   ],
   "source": {
     "type": "git",

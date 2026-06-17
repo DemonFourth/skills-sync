@@ -5,9 +5,12 @@
   "path_key": "vision-analysis",
   "enabled": true,
   "tags": [
-    "MiniMax",
-    "MiniMax-AI/skills",
-    "图像"
+    "api/接口",
+    "image/图像",
+    "minimax/MiniMax",
+    "needs-api-key/需API密钥",
+    "npm-runtime/npm运行时",
+    "source:MiniMax-AI/skills"
   ],
   "source": {
     "type": "git",

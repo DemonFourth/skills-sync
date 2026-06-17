@@ -5,9 +5,9 @@
   "path_key": "alphaear-predictor",
   "enabled": true,
   "tags": [
-    "RKiding/Awesome-finance-skills",
-    "金融",
-    "预测"
+    "finance/金融",
+    "python-runtime/Python运行时",
+    "source:RKiding/finance-skills"
   ],
   "source": {
     "type": "git",

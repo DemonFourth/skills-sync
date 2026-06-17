@@ -5,8 +5,10 @@
   "path_key": "full-output-enforcement",
   "enabled": true,
   "tags": [
-    "Design",
-    "Leonxlnx/taste-skill"
+    "coding-agent/编码代理",
+    "design/设计",
+    "llm/大模型",
+    "source:Leonxlnx/taste-skill"
   ],
   "source": {
     "type": "git",

@@ -5,9 +5,10 @@
   "path_key": "alphaear-search",
   "enabled": true,
   "tags": [
-    "RAG",
-    "RKiding/Awesome-finance-skills",
-    "搜索"
+    "python-runtime/Python运行时",
+    "rag/检索增强",
+    "search/搜索",
+    "source:RKiding/finance-skills"
   ],
   "source": {
     "type": "git",

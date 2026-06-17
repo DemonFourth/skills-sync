@@ -5,8 +5,10 @@
   "path_key": "sn-image-imitate",
   "enabled": true,
   "tags": [
-    "OpenSenseNova/SenseNova-Skills",
-    "image"
+    "image/图像",
+    "needs-api-key/需API密钥",
+    "python-runtime/Python运行时",
+    "source:OpenSenseNova/skills"
   ],
   "source": {
     "type": "git",

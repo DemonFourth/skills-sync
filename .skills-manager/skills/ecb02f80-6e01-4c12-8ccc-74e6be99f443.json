@@ -5,8 +5,9 @@
   "path_key": "canvas-design",
   "enabled": true,
   "tags": [
-    "Design",
-    "anthropics/skills"
+    "design/设计",
+    "needs-api-key/需API密钥",
+    "source:anthropics/skills"
   ],
   "source": {
     "type": "git",

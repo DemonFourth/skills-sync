@@ -5,9 +5,10 @@
   "path_key": "stitch-design-taste",
   "enabled": true,
   "tags": [
-    "Design",
-    "Development",
-    "Leonxlnx/taste-skill"
+    "design/设计",
+    "development/开发",
+    "python-runtime/Python运行时",
+    "source:Leonxlnx/taste-skill"
   ],
   "source": {
     "type": "git",

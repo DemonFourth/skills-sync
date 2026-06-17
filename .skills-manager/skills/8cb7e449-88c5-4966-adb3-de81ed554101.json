@@ -5,7 +5,8 @@
   "path_key": "obsidian-bases",
   "enabled": true,
   "tags": [
-    "Obsidian"
+    "data/数据",
+    "obsidian/黑曜石"
   ],
   "source": {
     "type": "git",

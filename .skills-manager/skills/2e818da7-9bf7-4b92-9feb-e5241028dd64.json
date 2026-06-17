@@ -5,10 +5,13 @@
   "path_key": "sn-da-excel-workflow",
   "enabled": true,
   "tags": [
-    "Excel",
-    "OpenSenseNova/SenseNova-Skills",
-    "数据分析",
-    "文档"
+    "automation/自动化",
+    "data-analysis/数据分析",
+    "data/数据",
+    "docs/文档",
+    "excel/电子表格",
+    "python-runtime/Python运行时",
+    "source:OpenSenseNova/skills"
   ],
   "source": {
     "type": "git",

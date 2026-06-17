@@ -5,8 +5,8 @@
   "path_key": "karpathy-guidelines",
   "enabled": true,
   "tags": [
-    "Agent",
-    "coding-agent"
+    "coding-agent/编码代理",
+    "llm/大模型"
   ],
   "source": {
     "type": "git",

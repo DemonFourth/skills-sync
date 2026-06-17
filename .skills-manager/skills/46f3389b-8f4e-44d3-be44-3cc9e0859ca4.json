@@ -5,9 +5,12 @@
   "path_key": "gpt-image-2",
   "enabled": true,
   "tags": [
-    "ConardLi/garden-skills",
-    "Design",
-    "image"
+    "design/设计",
+    "image/图像",
+    "llm/大模型",
+    "needs-api-key/需API密钥",
+    "npm-runtime/npm运行时",
+    "source:ConardLi/garden-skills"
   ],
   "source": {
     "type": "git",

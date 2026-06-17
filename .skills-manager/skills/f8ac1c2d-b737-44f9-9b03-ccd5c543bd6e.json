@@ -5,9 +5,11 @@
   "path_key": "minimalist-ui",
   "enabled": true,
   "tags": [
-    "Design",
-    "Development",
-    "Leonxlnx/taste-skill"
+    "coding-agent/编码代理",
+    "design/设计",
+    "development/开发",
+    "python-runtime/Python运行时",
+    "source:Leonxlnx/taste-skill"
   ],
   "source": {
     "type": "git",

@@ -5,8 +5,11 @@
   "path_key": "defuddle",
   "enabled": true,
   "tags": [
-    "Markdown",
-    "Obsidian"
+    "coding-agent/编码代理",
+    "frontend/前端",
+    "markdown/标记语言",
+    "npm-runtime/npm运行时",
+    "obsidian/黑曜石"
   ],
   "source": {
     "type": "git",

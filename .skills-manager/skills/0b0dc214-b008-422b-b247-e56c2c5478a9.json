@@ -5,9 +5,9 @@
   "path_key": "alphaear-logic-visualizer",
   "enabled": true,
   "tags": [
-    "RKiding/Awesome-finance-skills",
-    "diagrams",
-    "drawio"
+    "diagram/图表",
+    "python-runtime/Python运行时",
+    "source:RKiding/finance-skills"
   ],
   "source": {
     "type": "git",

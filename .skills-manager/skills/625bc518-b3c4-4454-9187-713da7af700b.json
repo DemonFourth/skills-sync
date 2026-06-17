@@ -5,8 +5,10 @@
   "path_key": "finishing-a-development-branch",
   "enabled": true,
   "tags": [
-    "coding-agent",
-    "obra/superpowers"
+    "coding-agent/编码代理",
+    "git/版本控制",
+    "npm-runtime/npm运行时",
+    "source:obra/superpowers"
   ],
   "source": {
     "type": "git",

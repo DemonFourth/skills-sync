@@ -5,8 +5,9 @@
   "path_key": "sn-search-social-cn",
   "enabled": true,
   "tags": [
-    "OpenSenseNova/SenseNova-Skills",
-    "搜索"
+    "python-runtime/Python运行时",
+    "search/搜索",
+    "source:OpenSenseNova/skills"
   ],
   "source": {
     "type": "git",

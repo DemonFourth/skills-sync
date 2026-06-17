@@ -5,8 +5,10 @@
   "path_key": "xlsx",
   "enabled": true,
   "tags": [
-    "anthropics/skills",
-    "文档"
+    "data/数据",
+    "docs/文档",
+    "python-runtime/Python运行时",
+    "source:anthropics/skills"
   ],
   "source": {
     "type": "git",

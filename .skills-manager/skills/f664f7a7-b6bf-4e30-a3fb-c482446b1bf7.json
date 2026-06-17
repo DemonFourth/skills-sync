@@ -5,9 +5,10 @@
   "path_key": "slack-gif-creator",
   "enabled": true,
   "tags": [
-    "Design",
-    "GIF",
-    "anthropics/skills"
+    "design/设计",
+    "gif/动图",
+    "python-runtime/Python运行时",
+    "source:anthropics/skills"
   ],
   "source": {
     "type": "git",

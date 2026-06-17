@@ -5,7 +5,7 @@
   "path_key": "obsidian-markdown",
   "enabled": true,
   "tags": [
-    "Obsidian"
+    "obsidian/黑曜石"
   ],
   "source": {
     "type": "git",

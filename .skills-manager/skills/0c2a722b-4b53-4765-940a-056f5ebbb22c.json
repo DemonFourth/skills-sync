@@ -5,10 +5,12 @@
   "path_key": "sn-da-image-caption",
   "enabled": true,
   "tags": [
-    "OpenSenseNova/SenseNova-Skills",
-    "image",
-    "数据分析",
-    "文档"
+    "data-analysis/数据分析",
+    "docs/文档",
+    "image/图像",
+    "needs-api-key/需API密钥",
+    "python-runtime/Python运行时",
+    "source:OpenSenseNova/skills"
   ],
   "source": {
     "type": "git",

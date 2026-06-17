@@ -5,8 +5,12 @@
   "path_key": "web-artifacts-builder",
   "enabled": true,
   "tags": [
-    "Development",
-    "anthropics/skills"
+    "coding-agent/编码代理",
+    "development/开发",
+    "frontend/前端",
+    "needs-api-key/需API密钥",
+    "npm-runtime/npm运行时",
+    "source:anthropics/skills"
   ],
   "source": {
     "type": "git",

@@ -5,10 +5,14 @@
   "path_key": "ios-application-dev",
   "enabled": true,
   "tags": [
-    "Development",
-    "MiniMax",
-    "MiniMax-AI/skills",
-    "iOS"
+    "coding-agent/编码代理",
+    "development/开发",
+    "ios/iOS",
+    "minimax/MiniMax",
+    "mobile/移动端",
+    "needs-api-key/需API密钥",
+    "python-runtime/Python运行时",
+    "source:MiniMax-AI/skills"
   ],
   "source": {
     "type": "git",

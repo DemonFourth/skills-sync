@@ -5,9 +5,11 @@
   "path_key": "gif-sticker-maker",
   "enabled": true,
   "tags": [
-    "GIF",
-    "MiniMax",
-    "MiniMax-AI/skills"
+    "gif/动图",
+    "minimax/MiniMax",
+    "needs-api-key/需API密钥",
+    "python-runtime/Python运行时",
+    "source:MiniMax-AI/skills"
   ],
   "source": {
     "type": "git",

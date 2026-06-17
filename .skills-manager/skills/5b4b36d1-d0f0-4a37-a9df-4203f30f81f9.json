@@ -5,11 +5,10 @@
   "path_key": "sn-research-synthesis",
   "enabled": true,
   "tags": [
-    "Agent",
-    "OpenSenseNova/SenseNova-Skills",
-    "report",
-    "research",
-    "workflow"
+    "report/报告",
+    "research/研究",
+    "source:OpenSenseNova/skills",
+    "workflow/工作流"
   ],
   "source": {
     "type": "git",

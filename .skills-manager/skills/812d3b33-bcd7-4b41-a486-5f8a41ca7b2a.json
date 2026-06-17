@@ -5,10 +5,13 @@
   "path_key": "web-access",
   "enabled": true,
   "tags": [
-    "Agent",
-    "Browser",
-    "CDP",
-    "搜索"
+    "api/接口",
+    "automation/自动化",
+    "browser/浏览器",
+    "cdp/调试协议",
+    "needs-api-key/需API密钥",
+    "npm-runtime/npm运行时",
+    "search/搜索"
   ],
   "source": {
     "type": "git",

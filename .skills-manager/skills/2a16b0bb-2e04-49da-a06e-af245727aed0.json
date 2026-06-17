@@ -5,7 +5,7 @@
   "path_key": "sn-update",
   "enabled": true,
   "tags": [
-    "OpenSenseNova/SenseNova-Skills"
+    "source:OpenSenseNova/skills"
   ],
   "source": {
     "type": "git",

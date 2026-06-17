@@ -5,7 +5,8 @@
   "path_key": "json-canvas",
   "enabled": true,
   "tags": [
-    "Obsidian"
+    "npm-runtime/npm运行时",
+    "obsidian/黑曜石"
   ],
   "source": {
     "type": "git",

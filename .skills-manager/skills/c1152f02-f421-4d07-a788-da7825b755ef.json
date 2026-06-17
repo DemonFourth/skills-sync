@@ -5,8 +5,13 @@
   "path_key": "mcp-builder",
   "enabled": true,
   "tags": [
-    "Development",
-    "anthropics/skills"
+    "api/接口",
+    "backend/后端",
+    "coding-agent/编码代理",
+    "development/开发",
+    "npm-runtime/npm运行时",
+    "python-runtime/Python运行时",
+    "source:anthropics/skills"
   ],
   "source": {
     "type": "git",

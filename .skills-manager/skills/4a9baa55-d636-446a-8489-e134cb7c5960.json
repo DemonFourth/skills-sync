@@ -5,8 +5,10 @@
   "path_key": "alphaear-sentiment",
   "enabled": true,
   "tags": [
-    "RKiding/Awesome-finance-skills",
-    "分析"
+    "data-analysis/数据分析",
+    "llm/大模型",
+    "python-runtime/Python运行时",
+    "source:RKiding/finance-skills"
   ],
   "source": {
     "type": "git",

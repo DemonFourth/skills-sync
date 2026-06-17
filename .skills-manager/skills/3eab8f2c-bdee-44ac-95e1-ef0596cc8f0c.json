@@ -5,8 +5,8 @@
   "path_key": "theme-factory",
   "enabled": true,
   "tags": [
-    "Design",
-    "anthropics/skills"
+    "design/设计",
+    "source:anthropics/skills"
   ],
   "source": {
     "type": "git",

@@ -5,9 +5,12 @@
   "path_key": "flutter-dev",
   "enabled": true,
   "tags": [
-    "Development",
-    "MiniMax",
-    "MiniMax-AI/skills"
+    "coding-agent/编码代理",
+    "development/开发",
+    "minimax/MiniMax",
+    "mobile/移动端",
+    "needs-api-key/需API密钥",
+    "source:MiniMax-AI/skills"
   ],
   "source": {
     "type": "git",

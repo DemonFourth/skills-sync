@@ -5,10 +5,11 @@
   "path_key": "imagegen-frontend-web",
   "enabled": true,
   "tags": [
-    "Design",
-    "Leonxlnx/taste-skill",
-    "UI",
-    "image"
+    "design/设计",
+    "frontend/前端",
+    "image/图像",
+    "source:Leonxlnx/taste-skill",
+    "ui/界面"
   ],
   "source": {
     "type": "git",

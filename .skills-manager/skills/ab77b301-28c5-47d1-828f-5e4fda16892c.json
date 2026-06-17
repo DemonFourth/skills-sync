@@ -5,10 +5,10 @@
   "path_key": "alphaear-stock",
   "enabled": true,
   "tags": [
-    "Agent",
-    "RKiding/Awesome-finance-skills",
-    "数据",
-    "股票"
+    "data/数据",
+    "python-runtime/Python运行时",
+    "source:RKiding/finance-skills",
+    "stock/股票"
   ],
   "source": {
     "type": "git",

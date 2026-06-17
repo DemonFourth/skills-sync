@@ -5,10 +5,12 @@
   "path_key": "sn-da-large-file-analysis",
   "enabled": true,
   "tags": [
-    "Excel",
-    "OpenSenseNova/SenseNova-Skills",
-    "数据分析",
-    "文档"
+    "data-analysis/数据分析",
+    "data/数据",
+    "docs/文档",
+    "excel/电子表格",
+    "python-runtime/Python运行时",
+    "source:OpenSenseNova/skills"
   ],
   "source": {
     "type": "git",

@@ -5,12 +5,12 @@
   "path_key": "sn-md-to-html-report",
   "enabled": true,
   "tags": [
-    "Agent",
-    "Markdown",
-    "OpenSenseNova/SenseNova-Skills",
-    "research",
-    "文档",
-    "转换"
+    "docs/文档",
+    "frontend/前端",
+    "markdown/标记语言",
+    "python-runtime/Python运行时",
+    "research/研究",
+    "source:OpenSenseNova/skills"
   ],
   "source": {
     "type": "git",

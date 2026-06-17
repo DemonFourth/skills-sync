@@ -5,10 +5,12 @@
   "path_key": "security-and-hardening",
   "enabled": true,
   "tags": [
-    "Agent",
-    "VibeCoding",
-    "addyosmani/agent-skills",
-    "开发规范"
+    "coding-agent/编码代理",
+    "dev-standards/开发规范",
+    "needs-api-key/需API密钥",
+    "npm-runtime/npm运行时",
+    "security/安全",
+    "source:addyosmani/agent-skills"
   ],
   "source": {
     "type": "git",

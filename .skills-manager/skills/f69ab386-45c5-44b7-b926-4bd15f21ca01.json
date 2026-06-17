@@ -5,7 +5,8 @@
   "path_key": "obsidian-cli",
   "enabled": true,
   "tags": [
-    "Obsidian"
+    "automation/自动化",
+    "obsidian/黑曜石"
   ],
   "source": {
     "type": "git",

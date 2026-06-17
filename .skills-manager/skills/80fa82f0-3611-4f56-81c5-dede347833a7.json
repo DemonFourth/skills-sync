@@ -5,10 +5,12 @@
   "path_key": "android-native-dev",
   "enabled": true,
   "tags": [
-    "Development",
-    "MiniMax",
-    "MiniMax-AI/skills",
-    "android"
+    "android/安卓",
+    "coding-agent/编码代理",
+    "development/开发",
+    "minimax/MiniMax",
+    "mobile/移动端",
+    "source:MiniMax-AI/skills"
   ],
   "source": {
     "type": "git",

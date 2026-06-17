@@ -5,10 +5,11 @@
   "path_key": "beautiful-article",
   "enabled": true,
   "tags": [
-    "ConardLi/garden-skills",
-    "Design",
-    "HTML",
-    "workflow"
+    "design/设计",
+    "frontend/前端",
+    "npm-runtime/npm运行时",
+    "source:ConardLi/garden-skills",
+    "workflow/工作流"
   ],
   "source": {
     "type": "git",

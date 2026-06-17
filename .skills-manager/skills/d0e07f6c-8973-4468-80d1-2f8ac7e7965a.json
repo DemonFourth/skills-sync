@@ -5,7 +5,9 @@
   "path_key": "find-skills",
   "enabled": true,
   "tags": [
-    "Skill"
+    "needs-api-key/需API密钥",
+    "npm-runtime/npm运行时",
+    "skill/技能"
   ],
   "source": {
     "type": "skillssh",

@@ -5,9 +5,14 @@
   "path_key": "frontend-dev",
   "enabled": true,
   "tags": [
-    "Development",
-    "MiniMax",
-    "MiniMax-AI/skills"
+    "coding-agent/编码代理",
+    "development/开发",
+    "frontend/前端",
+    "minimax/MiniMax",
+    "needs-api-key/需API密钥",
+    "python-runtime/Python运行时",
+    "source:MiniMax-AI/skills",
+    "writing/写作"
   ],
   "source": {
     "type": "git",

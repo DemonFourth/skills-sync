@@ -5,8 +5,10 @@
   "path_key": "test-driven-development",
   "enabled": true,
   "tags": [
-    "coding-agent",
-    "obra/superpowers"
+    "coding-agent/编码代理",
+    "npm-runtime/npm运行时",
+    "source:obra/superpowers",
+    "testing/测试"
   ],
   "source": {
     "type": "git",

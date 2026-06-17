@@ -5,9 +5,10 @@
   "path_key": "pptx-generator",
   "enabled": true,
   "tags": [
-    "MiniMax",
-    "MiniMax-AI/skills",
-    "文档"
+    "docs/文档",
+    "minimax/MiniMax",
+    "python-runtime/Python运行时",
+    "source:MiniMax-AI/skills"
   ],
   "source": {
     "type": "git",

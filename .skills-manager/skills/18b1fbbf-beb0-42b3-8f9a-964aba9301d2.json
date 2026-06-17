@@ -5,9 +5,12 @@
   "path_key": "design-taste-frontend-v1",
   "enabled": true,
   "tags": [
-    "Design",
-    "Development",
-    "Leonxlnx/taste-skill"
+    "coding-agent/编码代理",
+    "design/设计",
+    "development/开发",
+    "frontend/前端",
+    "npm-runtime/npm运行时",
+    "source:Leonxlnx/taste-skill"
   ],
   "source": {
     "type": "git",

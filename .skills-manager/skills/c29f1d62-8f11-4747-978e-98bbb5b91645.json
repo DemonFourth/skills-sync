@@ -5,10 +5,12 @@
   "path_key": "incremental-implementation",
   "enabled": true,
   "tags": [
-    "Agent",
-    "VibeCoding",
-    "addyosmani/agent-skills",
-    "开发规范"
+    "automation/自动化",
+    "coding-agent/编码代理",
+    "dev-standards/开发规范",
+    "needs-api-key/需API密钥",
+    "refactoring/重构",
+    "source:addyosmani/agent-skills"
   ],
   "source": {
     "type": "git",

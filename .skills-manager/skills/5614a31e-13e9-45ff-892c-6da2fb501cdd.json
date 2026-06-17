@@ -5,7 +5,10 @@
   "path_key": "a-stock-data",
   "enabled": true,
   "tags": [
-    "股票"
+    "data/数据",
+    "needs-api-key/需API密钥",
+    "python-runtime/Python运行时",
+    "stock/股票"
   ],
   "source": {
     "type": "git",

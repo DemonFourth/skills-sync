@@ -5,9 +5,9 @@
   "path_key": "last30days-cn",
   "enabled": true,
   "tags": [
-    "Agent",
-    "信息收集",
-    "搜索"
+    "needs-api-key/需API密钥",
+    "python-runtime/Python运行时",
+    "search/搜索"
   ],
   "source": {
     "type": "git",

@@ -5,9 +5,13 @@
   "path_key": "mmx-cli",
   "enabled": true,
   "tags": [
-    "MiniMax",
-    "MiniMax-AI/skills",
-    "多媒体"
+    "audio/音频",
+    "minimax/MiniMax",
+    "multimedia/多媒体",
+    "needs-api-key/需API密钥",
+    "npm-runtime/npm运行时",
+    "python-runtime/Python运行时",
+    "source:MiniMax-AI/skills"
   ],
   "source": {
     "type": "git",

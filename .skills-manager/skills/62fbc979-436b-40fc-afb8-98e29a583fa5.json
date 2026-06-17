@@ -5,7 +5,9 @@
   "path_key": "skill-creator-2",
   "enabled": true,
   "tags": [
-    "RKiding/Awesome-finance-skills"
+    "llm/大模型",
+    "python-runtime/Python运行时",
+    "source:RKiding/finance-skills"
   ],
   "source": {
     "type": "git",

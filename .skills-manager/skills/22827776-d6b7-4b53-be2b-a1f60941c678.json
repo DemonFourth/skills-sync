@@ -5,8 +5,12 @@
   "path_key": "sn-ppt-entry",
   "enabled": true,
   "tags": [
-    "OpenSenseNova/SenseNova-Skills",
-    "PPT"
+    "automation/自动化",
+    "needs-api-key/需API密钥",
+    "npm-runtime/npm运行时",
+    "ppt/幻灯片",
+    "python-runtime/Python运行时",
+    "source:OpenSenseNova/skills"
   ],
   "source": {
     "type": "git",

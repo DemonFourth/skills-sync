@@ -5,8 +5,11 @@
   "path_key": "docx",
   "enabled": true,
   "tags": [
-    "anthropics/skills",
-    "文档"
+    "docs/文档",
+    "npm-runtime/npm运行时",
+    "python-runtime/Python运行时",
+    "source:anthropics/skills",
+    "writing/写作"
   ],
   "source": {
     "type": "git",

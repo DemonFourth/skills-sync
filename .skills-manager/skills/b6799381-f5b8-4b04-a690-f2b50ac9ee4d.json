@@ -5,8 +5,11 @@
   "path_key": "brand-guidelines",
   "enabled": true,
   "tags": [
-    "Design",
-    "anthropics/skills"
+    "design/设计",
+    "llm/大模型",
+    "needs-api-key/需API密钥",
+    "python-runtime/Python运行时",
+    "source:anthropics/skills"
   ],
   "source": {
     "type": "git",

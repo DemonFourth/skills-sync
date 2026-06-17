@@ -5,10 +5,11 @@
   "path_key": "doubt-driven-development",
   "enabled": true,
   "tags": [
-    "Agent",
-    "VibeCoding",
-    "addyosmani/agent-skills",
-    "开发规范"
+    "coding-agent/编码代理",
+    "dev-standards/开发规范",
+    "needs-api-key/需API密钥",
+    "source:addyosmani/agent-skills",
+    "testing/测试"
   ],
   "source": {
     "type": "git",

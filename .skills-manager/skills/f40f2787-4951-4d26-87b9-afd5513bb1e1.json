@@ -5,10 +5,11 @@
   "path_key": "web-video-presentation",
   "enabled": true,
   "tags": [
-    "ConardLi/garden-skills",
-    "video",
-    "多媒体",
-    "文档"
+    "docs/文档",
+    "multimedia/多媒体",
+    "needs-api-key/需API密钥",
+    "source:ConardLi/garden-skills",
+    "workflow/工作流"
   ],
   "source": {
     "type": "git",

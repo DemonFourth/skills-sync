@@ -5,8 +5,10 @@
   "path_key": "dispatching-parallel-agents",
   "enabled": true,
   "tags": [
-    "coding-agent",
-    "obra/superpowers"
+    "automation/自动化",
+    "coding-agent/编码代理",
+    "llm/大模型",
+    "source:obra/superpowers"
   ],
   "source": {
     "type": "git",

@@ -5,8 +5,8 @@
   "path_key": "receiving-code-review",
   "enabled": true,
   "tags": [
-    "coding-agent",
-    "obra/superpowers"
+    "coding-agent/编码代理",
+    "source:obra/superpowers"
   ],
   "source": {
     "type": "git",

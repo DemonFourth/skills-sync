@@ -5,8 +5,14 @@
   "path_key": "claude-api",
   "enabled": true,
   "tags": [
-    "Development",
-    "anthropics/skills"
+    "api/接口",
+    "coding-agent/编码代理",
+    "development/开发",
+    "llm/大模型",
+    "needs-api-key/需API密钥",
+    "npm-runtime/npm运行时",
+    "python-runtime/Python运行时",
+    "source:anthropics/skills"
   ],
   "source": {
     "type": "git",

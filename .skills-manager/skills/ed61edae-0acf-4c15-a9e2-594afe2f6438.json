@@ -5,10 +5,11 @@
   "path_key": "lean-ctx",
   "enabled": true,
   "tags": [
-    "VibeCoding",
-    "coding-agent",
-    "token节省",
-    "上下文优化"
+    "api/接口",
+    "coding-agent/编码代理",
+    "context/上下文",
+    "needs-api-key/需API密钥",
+    "npm-runtime/npm运行时"
   ],
   "source": {
     "type": "git",

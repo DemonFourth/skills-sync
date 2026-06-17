@@ -5,9 +5,10 @@
   "path_key": "alphaear-deepear-lite",
   "enabled": true,
   "tags": [
-    "RKiding/Awesome-finance-skills",
-    "数据",
-    "金融"
+    "data/数据",
+    "finance/金融",
+    "python-runtime/Python运行时",
+    "source:RKiding/finance-skills"
   ],
   "source": {
     "type": "git",

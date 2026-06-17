@@ -5,10 +5,11 @@
   "path_key": "obscura",
   "enabled": true,
   "tags": [
-    "Agent",
-    "Browser",
-    "CDP",
-    "Cli"
+    "api/接口",
+    "automation/自动化",
+    "browser/浏览器",
+    "cdp/调试协议",
+    "cli/命令行"
   ],
   "source": {
     "type": "git",

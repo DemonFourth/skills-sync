@@ -5,8 +5,12 @@
   "path_key": "skill-creator",
   "enabled": true,
   "tags": [
-    "Skill",
-    "anthropics/skills"
+    "needs-api-key/需API密钥",
+    "npm-runtime/npm运行时",
+    "python-runtime/Python运行时",
+    "skill/技能",
+    "source:anthropics/skills",
+    "testing/测试"
   ],
   "source": {
     "type": "git",

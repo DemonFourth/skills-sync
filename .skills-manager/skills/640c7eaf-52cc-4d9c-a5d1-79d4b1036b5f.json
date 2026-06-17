@@ -5,10 +5,11 @@
   "path_key": "alphaear-reporter",
   "enabled": true,
   "tags": [
-    "Agent",
-    "RKiding/Awesome-finance-skills",
-    "report",
-    "workflow"
+    "python-runtime/Python运行时",
+    "report/报告",
+    "source:RKiding/finance-skills",
+    "workflow/工作流",
+    "writing/写作"
   ],
   "source": {
     "type": "git",
