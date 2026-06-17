@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "skill_id": "48a32f24-c41f-43d1-976f-ac98968d7dc6",
+  "path": "github-project-triage",
+  "path_key": "github-project-triage",
+  "enabled": true,
+  "tags": [
+    "automation/自动化",
+    "coding-agent/编码代理",
+    "git/版本控制",
+    "source:steipete/agent-scripts"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/steipete/agent-scripts",
+    "subpath": "skills/github-project-triage",
+    "branch": null
+  }
+}

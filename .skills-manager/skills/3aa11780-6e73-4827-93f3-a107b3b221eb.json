@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "skill_id": "3aa11780-6e73-4827-93f3-a107b3b221eb",
+  "path": "agent-transcript",
+  "path_key": "agent-transcript",
+  "enabled": true,
+  "tags": [
+    "coding-agent/编码代理",
+    "development/开发",
+    "source:steipete/agent-scripts"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/steipete/agent-scripts",
+    "subpath": "skills/agent-transcript",
+    "branch": null
+  }
+}

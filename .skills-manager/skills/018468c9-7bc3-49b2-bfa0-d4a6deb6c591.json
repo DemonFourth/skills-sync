@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "skill_id": "018468c9-7bc3-49b2-bfa0-d4a6deb6c591",
+  "path": "wrangler",
+  "path_key": "wrangler",
+  "enabled": true,
+  "tags": [
+    "automation/自动化",
+    "devops/运维",
+    "npm-runtime/npm运行时",
+    "source:steipete/agent-scripts"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/steipete/agent-scripts",
+    "subpath": "skills/wrangler",
+    "branch": null
+  }
+}

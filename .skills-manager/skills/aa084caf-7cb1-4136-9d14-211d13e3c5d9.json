@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "skill_id": "aa084caf-7cb1-4136-9d14-211d13e3c5d9",
+  "path": "one-password",
+  "path_key": "one-password",
+  "enabled": true,
+  "tags": [
+    "automation/自动化",
+    "security/安全",
+    "source:steipete/agent-scripts"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/steipete/agent-scripts",
+    "subpath": "skills/one-password",
+    "branch": null
+  }
+}

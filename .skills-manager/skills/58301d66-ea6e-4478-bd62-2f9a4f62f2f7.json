@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "skill_id": "58301d66-ea6e-4478-bd62-2f9a4f62f2f7",
+  "path": "clickclack",
+  "path_key": "clickclack",
+  "enabled": true,
+  "tags": [
+    "automation/自动化",
+    "browser/浏览器",
+    "coding-agent/编码代理",
+    "source:steipete/agent-scripts"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/steipete/agent-scripts",
+    "subpath": "skills/clickclack",
+    "branch": null
+  }
+}

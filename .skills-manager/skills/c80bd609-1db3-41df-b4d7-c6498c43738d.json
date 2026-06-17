@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "skill_id": "c80bd609-1db3-41df-b4d7-c6498c43738d",
+  "path": "npm",
+  "path_key": "npm",
+  "enabled": true,
+  "tags": [
+    "automation/自动化",
+    "devops/运维",
+    "npm-runtime/npm运行时",
+    "source:steipete/agent-scripts"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/steipete/agent-scripts",
+    "subpath": "skills/npm",
+    "branch": null
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "skill_id": "f969289a-6208-45ea-90ed-67054c697bd1",
+  "path": "browser-use",
+  "path_key": "browser-use",
+  "enabled": true,
+  "tags": [
+    "automation/自动化",
+    "browser/浏览器",
+    "coding-agent/编码代理",
+    "needs-api-key/需API密钥",
+    "source:steipete/agent-scripts"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/steipete/agent-scripts",
+    "subpath": "skills/browser-use",
+    "branch": null
+  }
+}

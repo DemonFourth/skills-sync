@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "skill_id": "99f5e695-7aaf-4c5a-b656-438dc41d2b54",
+  "path": "skill-cleaner",
+  "path_key": "skill-cleaner",
+  "enabled": true,
+  "tags": [
+    "automation/自动化",
+    "coding-agent/编码代理",
+    "source:steipete/agent-scripts"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/steipete/agent-scripts",
+    "subpath": "skills/skill-cleaner",
+    "branch": null
+  }
+}

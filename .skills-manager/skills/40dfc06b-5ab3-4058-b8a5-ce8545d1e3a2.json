@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "skill_id": "40dfc06b-5ab3-4058-b8a5-ce8545d1e3a2",
+  "path": "ssh-doctor",
+  "path_key": "ssh-doctor",
+  "enabled": true,
+  "tags": [
+    "automation/自动化",
+    "devops/运维",
+    "source:steipete/agent-scripts"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/steipete/agent-scripts",
+    "subpath": "skills/ssh-doctor",
+    "branch": null
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "399fff71-c0a2-416b-a2dc-bf56bd475293",
+  "path": "speaking",
+  "path_key": "speaking",
+  "enabled": true,
+  "tags": [
+    "source:steipete/agent-scripts",
+    "writing/写作"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/steipete/agent-scripts",
+    "subpath": "skills/speaking",
+    "branch": null
+  }
+}

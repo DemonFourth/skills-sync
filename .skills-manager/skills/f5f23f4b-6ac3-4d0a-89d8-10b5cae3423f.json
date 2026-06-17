@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "skill_id": "f5f23f4b-6ac3-4d0a-89d8-10b5cae3423f",
+  "path": "video-transcript-downloader",
+  "path_key": "video-transcript-downloader",
+  "enabled": true,
+  "tags": [
+    "automation/自动化",
+    "multimedia/多媒体",
+    "needs-api-key/需API密钥",
+    "source:steipete/agent-scripts"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/steipete/agent-scripts",
+    "subpath": "skills/video-transcript-downloader",
+    "branch": null
+  }
+}

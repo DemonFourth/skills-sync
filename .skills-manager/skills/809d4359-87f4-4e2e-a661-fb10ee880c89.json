@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "skill_id": "809d4359-87f4-4e2e-a661-fb10ee880c89",
+  "path": "reminders",
+  "path_key": "reminders",
+  "enabled": true,
+  "tags": [
+    "source:steipete/agent-scripts"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/steipete/agent-scripts",
+    "subpath": "skills/reminders",
+    "branch": null
+  }
+}

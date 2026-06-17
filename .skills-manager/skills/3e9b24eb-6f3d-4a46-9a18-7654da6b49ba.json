@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "skill_id": "3e9b24eb-6f3d-4a46-9a18-7654da6b49ba",
+  "path": "release-tweets",
+  "path_key": "release-tweets",
+  "enabled": true,
+  "tags": [
+    "automation/自动化",
+    "source:steipete/agent-scripts",
+    "writing/写作"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/steipete/agent-scripts",
+    "subpath": "skills/release-tweets",
+    "branch": null
+  }
+}

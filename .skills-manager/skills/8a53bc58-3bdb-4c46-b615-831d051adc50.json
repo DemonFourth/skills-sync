@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "skill_id": "8a53bc58-3bdb-4c46-b615-831d051adc50",
+  "path": "openai-image-gen",
+  "path_key": "openai-image-gen",
+  "enabled": true,
+  "tags": [
+    "image/图像",
+    "needs-api-key/需API密钥",
+    "source:steipete/agent-scripts"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/steipete/agent-scripts",
+    "subpath": "skills/openai-image-gen",
+    "branch": null
+  }
+}

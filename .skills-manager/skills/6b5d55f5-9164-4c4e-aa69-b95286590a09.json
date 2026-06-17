@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "skill_id": "6b5d55f5-9164-4c4e-aa69-b95286590a09",
+  "path": "instruments-profiling",
+  "path_key": "instruments-profiling",
+  "enabled": true,
+  "tags": [
+    "coding-agent/编码代理",
+    "development/开发",
+    "mobile/移动端",
+    "source:steipete/agent-scripts"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/steipete/agent-scripts",
+    "subpath": "skills/instruments-profiling",
+    "branch": null
+  }
+}

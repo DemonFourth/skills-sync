@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "skill_id": "6ff32a45-a23a-4517-b9c0-e63245955c35",
+  "path": "github-cache-hygiene",
+  "path_key": "github-cache-hygiene",
+  "enabled": true,
+  "tags": [
+    "automation/自动化",
+    "coding-agent/编码代理",
+    "devops/运维",
+    "git/版本控制",
+    "source:steipete/agent-scripts"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/steipete/agent-scripts",
+    "subpath": "skills/github-cache-hygiene",
+    "branch": null
+  }
+}

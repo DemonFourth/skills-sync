@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "skill_id": "ef8a6b30-a6c6-410c-884f-c3126da9b257",
+  "path": "openclaw-relay",
+  "path_key": "openclaw-relay",
+  "enabled": true,
+  "tags": [
+    "source:steipete/agent-scripts"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/steipete/agent-scripts",
+    "subpath": "skills/openclaw-relay",
+    "branch": null
+  }
+}

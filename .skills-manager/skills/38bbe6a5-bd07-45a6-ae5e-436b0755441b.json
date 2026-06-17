@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "38bbe6a5-bd07-45a6-ae5e-436b0755441b",
+  "path": "sonos",
+  "path_key": "sonos",
+  "enabled": true,
+  "tags": [
+    "audio/音频",
+    "source:steipete/agent-scripts"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/steipete/agent-scripts",
+    "subpath": "skills/sonos",
+    "branch": null
+  }
+}

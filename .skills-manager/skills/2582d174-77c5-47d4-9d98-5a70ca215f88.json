@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "skill_id": "2582d174-77c5-47d4-9d98-5a70ca215f88",
+  "path": "swiftui-liquid-glass",
+  "path_key": "swiftui-liquid-glass",
+  "enabled": true,
+  "tags": [
+    "coding-agent/编码代理",
+    "design/设计",
+    "frontend/前端",
+    "source:steipete/agent-scripts",
+    "ui/界面"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/steipete/agent-scripts",
+    "subpath": "skills/swiftui-liquid-glass",
+    "branch": null
+  }
+}

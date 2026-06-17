@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "95bdbc33-a825-4ee1-a5c3-5a0e67a02333",
+  "path": "vm-lab",
+  "path_key": "vm-lab",
+  "enabled": true,
+  "tags": [
+    "devops/运维",
+    "source:steipete/agent-scripts"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/steipete/agent-scripts",
+    "subpath": "skills/vm-lab",
+    "branch": null
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "skill_id": "b6c1fbbc-464b-4315-9a51-a059db2a8758",
+  "path": "twilio-sms",
+  "path_key": "twilio-sms",
+  "enabled": true,
+  "tags": [
+    "automation/自动化",
+    "needs-api-key/需API密钥",
+    "source:steipete/agent-scripts"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/steipete/agent-scripts",
+    "subpath": "skills/twilio-sms",
+    "branch": null
+  }
+}

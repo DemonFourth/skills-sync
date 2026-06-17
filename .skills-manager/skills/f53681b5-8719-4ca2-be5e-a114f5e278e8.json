@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "skill_id": "f53681b5-8719-4ca2-be5e-a114f5e278e8",
+  "path": "native-app-performance",
+  "path_key": "native-app-performance",
+  "enabled": true,
+  "tags": [
+    "coding-agent/编码代理",
+    "development/开发",
+    "mobile/移动端",
+    "source:steipete/agent-scripts"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/steipete/agent-scripts",
+    "subpath": "skills/native-app-performance",
+    "branch": null
+  }
+}

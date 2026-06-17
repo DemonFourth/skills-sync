@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "skill_id": "9c20387a-f7e6-4728-ae94-f6cc1c4d6102",
+  "path": "swiftui-view-refactor",
+  "path_key": "swiftui-view-refactor",
+  "enabled": true,
+  "tags": [
+    "coding-agent/编码代理",
+    "development/开发",
+    "mobile/移动端",
+    "refactoring/重构",
+    "source:steipete/agent-scripts"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/steipete/agent-scripts",
+    "subpath": "skills/swiftui-view-refactor",
+    "branch": null
+  }
+}

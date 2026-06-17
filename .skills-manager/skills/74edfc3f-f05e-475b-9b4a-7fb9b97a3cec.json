@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "skill_id": "74edfc3f-f05e-475b-9b4a-7fb9b97a3cec",
+  "path": "github-deep-review",
+  "path_key": "github-deep-review",
+  "enabled": true,
+  "tags": [
+    "coding-agent/编码代理",
+    "git/版本控制",
+    "source:steipete/agent-scripts"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/steipete/agent-scripts",
+    "subpath": "skills/github-deep-review",
+    "branch": null
+  }
+}

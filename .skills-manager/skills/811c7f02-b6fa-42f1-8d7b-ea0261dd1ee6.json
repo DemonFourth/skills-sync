@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "skill_id": "811c7f02-b6fa-42f1-8d7b-ea0261dd1ee6",
+  "path": "markdown-converter",
+  "path_key": "markdown-converter",
+  "enabled": true,
+  "tags": [
+    "coding-agent/编码代理",
+    "docs/文档",
+    "markdown/标记语言",
+    "source:steipete/agent-scripts"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/steipete/agent-scripts",
+    "subpath": "skills/markdown-converter",
+    "branch": null
+  }
+}

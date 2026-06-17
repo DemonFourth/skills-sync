@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "skill_id": "a74108ea-110d-40ed-963a-e542df005d14",
+  "path": "codex-debugging",
+  "path_key": "codex-debugging",
+  "enabled": true,
+  "tags": [
+    "coding-agent/编码代理",
+    "development/开发",
+    "source:steipete/agent-scripts"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/steipete/agent-scripts",
+    "subpath": "skills/codex-debugging",
+    "branch": null
+  }
+}

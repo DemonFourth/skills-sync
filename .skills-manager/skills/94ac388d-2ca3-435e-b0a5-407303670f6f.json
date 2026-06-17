@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "skill_id": "94ac388d-2ca3-435e-b0a5-407303670f6f",
+  "path": "obsidian",
+  "path_key": "obsidian",
+  "enabled": true,
+  "tags": [
+    "docs/文档",
+    "obsidian/黑曜石",
+    "source:steipete/agent-scripts"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/steipete/agent-scripts",
+    "subpath": "skills/obsidian",
+    "branch": null
+  }
+}

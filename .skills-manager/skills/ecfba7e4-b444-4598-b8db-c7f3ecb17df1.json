@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "skill_id": "ecfba7e4-b444-4598-b8db-c7f3ecb17df1",
+  "path": "discord-clawd",
+  "path_key": "discord-clawd",
+  "enabled": true,
+  "tags": [
+    "automation/自动化",
+    "needs-api-key/需API密钥",
+    "source:steipete/agent-scripts"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/steipete/agent-scripts",
+    "subpath": "skills/discord-clawd",
+    "branch": null
+  }
+}

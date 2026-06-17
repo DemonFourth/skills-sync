@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "skill_id": "33f06897-d1fc-4d7b-bd17-a0184c6a2603",
+  "path": "swift-concurrency-expert",
+  "path_key": "swift-concurrency-expert",
+  "enabled": true,
+  "tags": [
+    "coding-agent/编码代理",
+    "development/开发",
+    "docs/文档",
+    "mobile/移动端",
+    "source:steipete/agent-scripts"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/steipete/agent-scripts",
+    "subpath": "skills/swift-concurrency-expert",
+    "branch": null
+  }
+}

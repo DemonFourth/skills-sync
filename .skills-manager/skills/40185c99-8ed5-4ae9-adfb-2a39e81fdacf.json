@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "skill_id": "40185c99-8ed5-4ae9-adfb-2a39e81fdacf",
+  "path": "notcrawl",
+  "path_key": "notcrawl",
+  "enabled": true,
+  "tags": [
+    "automation/自动化",
+    "needs-api-key/需API密钥",
+    "source:steipete/agent-scripts"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/steipete/agent-scripts",
+    "subpath": "skills/notcrawl",
+    "branch": null
+  }
+}

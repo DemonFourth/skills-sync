@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "skill_id": "8e62461a-1ed8-4d38-b3d0-ffc67e127f60",
+  "path": "whatsapp",
+  "path_key": "whatsapp",
+  "enabled": true,
+  "tags": [
+    "automation/自动化",
+    "needs-api-key/需API密钥",
+    "source:steipete/agent-scripts"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/steipete/agent-scripts",
+    "subpath": "skills/whatsapp",
+    "branch": null
+  }
+}

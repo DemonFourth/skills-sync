@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "skill_id": "9b2cdffe-3300-45b6-8f8f-79f193dd7ce0",
+  "path": "maintainer-orchestrator",
+  "path_key": "maintainer-orchestrator",
+  "enabled": true,
+  "tags": [
+    "automation/自动化",
+    "coding-agent/编码代理",
+    "development/开发",
+    "source:steipete/agent-scripts"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/steipete/agent-scripts",
+    "subpath": "skills/maintainer-orchestrator",
+    "branch": null
+  }
+}

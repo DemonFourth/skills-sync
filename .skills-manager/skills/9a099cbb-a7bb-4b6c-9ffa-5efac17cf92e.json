@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "skill_id": "9a099cbb-a7bb-4b6c-9ffa-5efac17cf92e",
+  "path": "hopper-debugger",
+  "path_key": "hopper-debugger",
+  "enabled": true,
+  "tags": [
+    "coding-agent/编码代理",
+    "development/开发",
+    "source:steipete/agent-scripts"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/steipete/agent-scripts",
+    "subpath": "skills/hopper-debugger",
+    "branch": null
+  }
+}

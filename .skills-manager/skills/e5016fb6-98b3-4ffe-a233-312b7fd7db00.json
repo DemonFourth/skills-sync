@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "skill_id": "e5016fb6-98b3-4ffe-a233-312b7fd7db00",
+  "path": "create-cli",
+  "path_key": "create-cli",
+  "enabled": true,
+  "tags": [
+    "cli/命令行",
+    "coding-agent/编码代理",
+    "development/开发",
+    "source:steipete/agent-scripts"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/steipete/agent-scripts",
+    "subpath": "skills/create-cli",
+    "branch": null
+  }
+}

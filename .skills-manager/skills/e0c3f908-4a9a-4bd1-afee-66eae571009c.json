@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "e0c3f908-4a9a-4bd1-afee-66eae571009c",
+  "path": "release-mac-app",
+  "path_key": "release-mac-app",
+  "enabled": true,
+  "tags": [
+    "devops/运维",
+    "source:steipete/agent-scripts"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/steipete/agent-scripts",
+    "subpath": "skills/release-mac-app",
+    "branch": null
+  }
+}

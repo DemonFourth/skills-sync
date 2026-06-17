@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "skill_id": "3db48064-654c-4858-ae1c-ec5288cd6490",
+  "path": "oracle",
+  "path_key": "oracle",
+  "enabled": true,
+  "tags": [
+    "source:steipete/agent-scripts"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/steipete/agent-scripts",
+    "subpath": "skills/oracle",
+    "branch": null
+  }
+}

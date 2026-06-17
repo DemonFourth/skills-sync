@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "skill_id": "5544ef1f-df03-40e2-89c9-4b6c7a121422",
+  "path": "xurl",
+  "path_key": "xurl",
+  "enabled": true,
+  "tags": [
+    "automation/自动化",
+    "coding-agent/编码代理",
+    "source:steipete/agent-scripts"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/steipete/agent-scripts",
+    "subpath": "skills/xurl",
+    "branch": null
+  }
+}

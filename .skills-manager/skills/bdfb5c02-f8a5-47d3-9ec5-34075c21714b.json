@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "bdfb5c02-f8a5-47d3-9ec5-34075c21714b",
+  "path": "beeper",
+  "path_key": "beeper",
+  "enabled": true,
+  "tags": [
+    "needs-api-key/需API密钥",
+    "source:steipete/agent-scripts"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/steipete/agent-scripts",
+    "subpath": "skills/beeper",
+    "branch": null
+  }
+}

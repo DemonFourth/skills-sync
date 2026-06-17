@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "skill_id": "3ffae7b4-5f49-4106-8ce8-7dd7b1d40e82",
+  "path": "swiftui-performance-audit",
+  "path_key": "swiftui-performance-audit",
+  "enabled": true,
+  "tags": [
+    "coding-agent/编码代理",
+    "development/开发",
+    "mobile/移动端",
+    "source:steipete/agent-scripts"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/steipete/agent-scripts",
+    "subpath": "skills/swiftui-performance-audit",
+    "branch": null
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "skill_id": "a2cfc425-bbc2-4984-8f63-5e66f20338b7",
+  "path": "cloudflare-registrar",
+  "path_key": "cloudflare-registrar",
+  "enabled": true,
+  "tags": [
+    "automation/自动化",
+    "devops/运维",
+    "source:steipete/agent-scripts"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/steipete/agent-scripts",
+    "subpath": "skills/cloudflare-registrar",
+    "branch": null
+  }
+}

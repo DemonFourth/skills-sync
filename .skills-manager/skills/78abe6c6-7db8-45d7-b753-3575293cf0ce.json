@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "skill_id": "78abe6c6-7db8-45d7-b753-3575293cf0ce",
+  "path": "peekaboo",
+  "path_key": "peekaboo",
+  "enabled": true,
+  "tags": [
+    "automation/自动化",
+    "needs-api-key/需API密钥",
+    "source:steipete/agent-scripts"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/steipete/agent-scripts",
+    "subpath": "skills/peekaboo",
+    "branch": null
+  }
+}
