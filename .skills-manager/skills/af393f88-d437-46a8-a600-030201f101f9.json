@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "skill_id": "af393f88-d437-46a8-a600-030201f101f9",
+  "path": "ci-cd-and-automation",
+  "path_key": "ci-cd-and-automation",
+  "enabled": true,
+  "tags": [
+    "Agent",
+    "VibeCoding",
+    "addyosmani/agent-skills",
+    "开发规范"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/addyosmani/agent-skills",
+    "subpath": "skills\\ci-cd-and-automation",
+    "branch": null
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "skill_id": "e51af201-6664-446a-80fa-edf81e73f0ec",
+  "path": "doubt-driven-development",
+  "path_key": "doubt-driven-development",
+  "enabled": true,
+  "tags": [
+    "Agent",
+    "VibeCoding",
+    "addyosmani/agent-skills",
+    "开发规范"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/addyosmani/agent-skills",
+    "subpath": "skills\\doubt-driven-development",
+    "branch": null
+  }
+}

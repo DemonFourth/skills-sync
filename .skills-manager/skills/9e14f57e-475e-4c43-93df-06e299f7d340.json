@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "skill_id": "9e14f57e-475e-4c43-93df-06e299f7d340",
+  "path": "shader-dev",
+  "path_key": "shader-dev",
+  "enabled": true,
+  "tags": [
+    "MiniMax",
+    "MiniMax-AI/skills",
+    "视觉"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/MiniMax-AI/skills/",
+    "subpath": "skills\\shader-dev",
+    "branch": null
+  }
+}

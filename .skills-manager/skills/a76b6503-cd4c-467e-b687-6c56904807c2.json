@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "skill_id": "a76b6503-cd4c-467e-b687-6c56904807c2",
+  "path": "browser-testing-with-devtools",
+  "path_key": "browser-testing-with-devtools",
+  "enabled": true,
+  "tags": [
+    "Agent",
+    "VibeCoding",
+    "addyosmani/agent-skills",
+    "开发规范"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/addyosmani/agent-skills",
+    "subpath": "skills\\browser-testing-with-devtools",
+    "branch": null
+  }
+}

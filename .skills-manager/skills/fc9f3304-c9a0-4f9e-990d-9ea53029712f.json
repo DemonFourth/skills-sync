@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "skill_id": "fc9f3304-c9a0-4f9e-990d-9ea53029712f",
+  "path": "dispatching-parallel-agents",
+  "path_key": "dispatching-parallel-agents",
+  "enabled": true,
+  "tags": [
+    "Coding",
+    "VibeCoding",
+    "obra/superpowers"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/obra/superpowers",
+    "subpath": "skills\\dispatching-parallel-agents",
+    "branch": null
+  }
+}

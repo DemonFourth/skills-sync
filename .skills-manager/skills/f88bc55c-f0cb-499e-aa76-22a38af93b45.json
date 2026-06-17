@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "skill_id": "f88bc55c-f0cb-499e-aa76-22a38af93b45",
+  "path": "interview-me",
+  "path_key": "interview-me",
+  "enabled": true,
+  "tags": [
+    "Agent",
+    "VibeCoding",
+    "addyosmani/agent-skills",
+    "开发规范"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/addyosmani/agent-skills",
+    "subpath": "skills\\interview-me",
+    "branch": null
+  }
+}

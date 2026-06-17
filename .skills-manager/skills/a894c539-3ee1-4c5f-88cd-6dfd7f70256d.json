@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "skill_id": "a894c539-3ee1-4c5f-88cd-6dfd7f70256d",
+  "path": "documentation-and-adrs",
+  "path_key": "documentation-and-adrs",
+  "enabled": true,
+  "tags": [
+    "Agent",
+    "VibeCoding",
+    "addyosmani/agent-skills",
+    "开发规范"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/addyosmani/agent-skills",
+    "subpath": "skills\\documentation-and-adrs",
+    "branch": null
+  }
+}

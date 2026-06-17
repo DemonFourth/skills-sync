@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "skill_id": "87f214de-a150-47e7-ba14-6b089ac646ea",
+  "path": "requesting-code-review",
+  "path_key": "requesting-code-review",
+  "enabled": true,
+  "tags": [
+    "Coding",
+    "VibeCoding",
+    "obra/superpowers"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/obra/superpowers",
+    "subpath": "skills\\requesting-code-review",
+    "branch": null
+  }
+}

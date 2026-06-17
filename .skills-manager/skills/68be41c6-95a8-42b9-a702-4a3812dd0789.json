@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "skill_id": "68be41c6-95a8-42b9-a702-4a3812dd0789",
+  "path": "minimax-xlsx",
+  "path_key": "minimax-xlsx",
+  "enabled": true,
+  "tags": [
+    "MiniMax",
+    "MiniMax-AI/skills",
+    "文档"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/MiniMax-AI/skills/",
+    "subpath": "skills\\minimax-xlsx",
+    "branch": null
+  }
+}

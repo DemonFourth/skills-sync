@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "skill_id": "dfecaf9b-ed98-4649-b458-c5701af69549",
+  "path": "vision-analysis",
+  "path_key": "vision-analysis",
+  "enabled": true,
+  "tags": [
+    "MiniMax",
+    "MiniMax-AI/skills",
+    "图像"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/MiniMax-AI/skills/",
+    "subpath": "skills\\vision-analysis",
+    "branch": null
+  }
+}

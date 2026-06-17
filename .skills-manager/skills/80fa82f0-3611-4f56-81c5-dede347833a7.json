@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "skill_id": "80fa82f0-3611-4f56-81c5-dede347833a7",
+  "path": "android-native-dev",
+  "path_key": "android-native-dev",
+  "enabled": true,
+  "tags": [
+    "Development",
+    "MiniMax",
+    "MiniMax-AI/skills",
+    "android"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/MiniMax-AI/skills/",
+    "subpath": "skills\\android-native-dev",
+    "branch": null
+  }
+}

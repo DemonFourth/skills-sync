@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "a201f315-c8cc-46ab-a057-9a05e44c86f0",
+  "path": "karpathy-guidelines",
+  "path_key": "karpathy-guidelines",
+  "enabled": true,
+  "tags": [
+    "Agent",
+    "VibeCoding"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/multica-ai/andrej-karpathy-skills",
+    "subpath": "skills\\karpathy-guidelines",
+    "branch": null
+  }
+}

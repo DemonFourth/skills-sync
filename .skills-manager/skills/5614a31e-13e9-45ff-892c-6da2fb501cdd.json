@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "skill_id": "5614a31e-13e9-45ff-892c-6da2fb501cdd",
+  "path": "a-stock-data",
+  "path_key": "a-stock-data",
+  "enabled": true,
+  "tags": [
+    "股票"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/simonlin1212/a-stock-data",
+    "subpath": null,
+    "branch": null
+  }
+}

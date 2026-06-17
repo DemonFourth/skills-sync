@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "skill_id": "89d623a9-e634-49a1-80f0-ded7c0fb7811",
+  "path": "code-simplification",
+  "path_key": "code-simplification",
+  "enabled": true,
+  "tags": [
+    "Agent",
+    "VibeCoding",
+    "addyosmani/agent-skills",
+    "开发规范"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/addyosmani/agent-skills",
+    "subpath": "skills\\code-simplification",
+    "branch": null
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "skill_id": "fc10e89e-0b43-4c0a-9dae-7e3606874d1a",
+  "path": "using-agent-skills",
+  "path_key": "using-agent-skills",
+  "enabled": true,
+  "tags": [
+    "Agent",
+    "VibeCoding",
+    "addyosmani/agent-skills",
+    "开发规范"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/addyosmani/agent-skills",
+    "subpath": "skills\\using-agent-skills",
+    "branch": null
+  }
+}

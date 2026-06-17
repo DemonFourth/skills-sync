@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "skill_id": "236acf9f-364b-4253-992d-b8df656ed068",
+  "path": "shipping-and-launch",
+  "path_key": "shipping-and-launch",
+  "enabled": true,
+  "tags": [
+    "Agent",
+    "VibeCoding",
+    "addyosmani/agent-skills",
+    "开发规范"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/addyosmani/agent-skills",
+    "subpath": "skills\\shipping-and-launch",
+    "branch": null
+  }
+}

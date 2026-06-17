@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "skill_id": "7d0bea4b-7070-41d9-b82a-9f9e8306ab38",
+  "path": "buddy-sings",
+  "path_key": "buddy-sings",
+  "enabled": true,
+  "tags": [
+    "MiniMax",
+    "MiniMax-AI/skills",
+    "多媒体",
+    "音乐"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/MiniMax-AI/skills/",
+    "subpath": "skills\\buddy-sings",
+    "branch": null
+  }
+}

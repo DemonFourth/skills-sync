@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "skill_id": "1d84acb4-774e-4fb1-bf28-4968008b07df",
+  "path": "using-git-worktrees",
+  "path_key": "using-git-worktrees",
+  "enabled": true,
+  "tags": [
+    "Coding",
+    "VibeCoding",
+    "obra/superpowers"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/obra/superpowers",
+    "subpath": "skills\\using-git-worktrees",
+    "branch": null
+  }
+}

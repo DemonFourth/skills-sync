@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "skill_id": "cb1d4d64-2ea6-416a-b7da-f1f1744036d9",
+  "path": "high-end-visual-design",
+  "path_key": "high-end-visual-design",
+  "enabled": true,
+  "tags": [
+    "Design",
+    "Development",
+    "Leonxlnx/taste-skill"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/Leonxlnx/taste-skill",
+    "subpath": "skills\\soft-skill",
+    "branch": null
+  }
+}

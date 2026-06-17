@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "skill_id": "2bac2b2f-5b9c-42ac-b089-9d269be77273",
+  "path": "security-and-hardening",
+  "path_key": "security-and-hardening",
+  "enabled": true,
+  "tags": [
+    "Agent",
+    "VibeCoding",
+    "addyosmani/agent-skills",
+    "开发规范"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/addyosmani/agent-skills",
+    "subpath": "skills\\security-and-hardening",
+    "branch": null
+  }
+}

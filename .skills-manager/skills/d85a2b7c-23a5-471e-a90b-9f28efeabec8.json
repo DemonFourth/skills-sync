@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "skill_id": "d85a2b7c-23a5-471e-a90b-9f28efeabec8",
+  "path": "git-workflow-and-versioning",
+  "path_key": "git-workflow-and-versioning",
+  "enabled": true,
+  "tags": [
+    "Agent",
+    "VibeCoding",
+    "addyosmani/agent-skills",
+    "开发规范"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/addyosmani/agent-skills",
+    "subpath": "skills\\git-workflow-and-versioning",
+    "branch": null
+  }
+}

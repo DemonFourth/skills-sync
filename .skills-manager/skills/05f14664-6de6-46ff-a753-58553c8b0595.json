@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "05f14664-6de6-46ff-a753-58553c8b0595",
+  "path": "pdf",
+  "path_key": "pdf",
+  "enabled": true,
+  "tags": [
+    "anthropics/skills",
+    "文档"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/anthropics/skills",
+    "subpath": "skills\\pdf",
+    "branch": null
+  }
+}

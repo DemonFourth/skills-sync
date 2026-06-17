@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "skill_id": "2d957fa6-ec04-42c1-8df7-c6c55e744dc0",
+  "path": "api-and-interface-design",
+  "path_key": "api-and-interface-design",
+  "enabled": true,
+  "tags": [
+    "Agent",
+    "VibeCoding",
+    "addyosmani/agent-skills",
+    "开发规范"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/addyosmani/agent-skills",
+    "subpath": "skills\\api-and-interface-design",
+    "branch": null
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "skill_id": "575f8d16-8782-4fa9-93cd-5d2e9b16f5fc",
+  "path": "using-superpowers",
+  "path_key": "using-superpowers",
+  "enabled": true,
+  "tags": [
+    "Coding",
+    "VibeCoding",
+    "obra/superpowers"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/obra/superpowers",
+    "subpath": "skills\\using-superpowers",
+    "branch": null
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "skill_id": "72b741c8-2024-445b-a60a-1a35aa14c024",
+  "path": "spec-driven-development",
+  "path_key": "spec-driven-development",
+  "enabled": true,
+  "tags": [
+    "Agent",
+    "VibeCoding",
+    "addyosmani/agent-skills",
+    "开发规范"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/addyosmani/agent-skills",
+    "subpath": "skills\\spec-driven-development",
+    "branch": null
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "skill_id": "2d828147-bc78-4091-8dee-681faaf77071",
+  "path": "deprecation-and-migration",
+  "path_key": "deprecation-and-migration",
+  "enabled": true,
+  "tags": [
+    "Agent",
+    "VibeCoding",
+    "addyosmani/agent-skills",
+    "开发规范"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/addyosmani/agent-skills",
+    "subpath": "skills\\deprecation-and-migration",
+    "branch": null
+  }
+}

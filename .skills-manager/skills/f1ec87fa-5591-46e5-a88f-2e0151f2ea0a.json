@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "skill_id": "f1ec87fa-5591-46e5-a88f-2e0151f2ea0a",
+  "path": "redesign-existing-projects",
+  "path_key": "redesign-existing-projects",
+  "enabled": true,
+  "tags": [
+    "Design",
+    "Development",
+    "Leonxlnx/taste-skill"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/Leonxlnx/taste-skill",
+    "subpath": "skills\\redesign-skill",
+    "branch": null
+  }
+}

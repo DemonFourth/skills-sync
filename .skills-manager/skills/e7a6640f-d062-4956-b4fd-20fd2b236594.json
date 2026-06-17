@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "skill_id": "e7a6640f-d062-4956-b4fd-20fd2b236594",
+  "path": "writing-skills",
+  "path_key": "writing-skills",
+  "enabled": true,
+  "tags": [
+    "Coding",
+    "VibeCoding",
+    "obra/superpowers"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/obra/superpowers",
+    "subpath": "skills\\writing-skills",
+    "branch": null
+  }
+}

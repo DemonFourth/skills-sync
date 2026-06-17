@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "skill_id": "a8088158-f2d5-4bde-88e1-1529c9e8659d",
+  "path": "verification-before-completion",
+  "path_key": "verification-before-completion",
+  "enabled": true,
+  "tags": [
+    "Coding",
+    "VibeCoding",
+    "obra/superpowers"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/obra/superpowers",
+    "subpath": "skills\\verification-before-completion",
+    "branch": null
+  }
+}

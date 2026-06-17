@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "skill_id": "c29f1d62-8f11-4747-978e-98bbb5b91645",
+  "path": "incremental-implementation",
+  "path_key": "incremental-implementation",
+  "enabled": true,
+  "tags": [
+    "Agent",
+    "VibeCoding",
+    "addyosmani/agent-skills",
+    "开发规范"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/addyosmani/agent-skills",
+    "subpath": "skills\\incremental-implementation",
+    "branch": null
+  }
+}

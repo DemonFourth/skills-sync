@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "d2e4d0db-b834-40c4-add5-a88a0707c1b7",
+  "path": "algorithmic-art",
+  "path_key": "algorithmic-art",
+  "enabled": true,
+  "tags": [
+    "Design",
+    "anthropics/skills"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/anthropics/skills",
+    "subpath": "skills\\algorithmic-art",
+    "branch": null
+  }
+}

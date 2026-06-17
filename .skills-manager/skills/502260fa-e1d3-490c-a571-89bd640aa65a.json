@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "skill_id": "502260fa-e1d3-490c-a571-89bd640aa65a",
+  "path": "subagent-driven-development",
+  "path_key": "subagent-driven-development",
+  "enabled": true,
+  "tags": [
+    "Coding",
+    "VibeCoding",
+    "obra/superpowers"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/obra/superpowers",
+    "subpath": "skills\\subagent-driven-development",
+    "branch": null
+  }
+}

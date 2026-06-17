@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "skill_id": "bc663a21-a3a9-4181-a83c-ce829560f032",
+  "path": "writing-plans",
+  "path_key": "writing-plans",
+  "enabled": true,
+  "tags": [
+    "Coding",
+    "VibeCoding",
+    "obra/superpowers"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/obra/superpowers",
+    "subpath": "skills\\writing-plans",
+    "branch": null
+  }
+}

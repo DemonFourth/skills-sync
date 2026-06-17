@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "skill_id": "61da1968-99f4-4580-8b9d-f428fd85253a",
+  "path": "systematic-debugging",
+  "path_key": "systematic-debugging",
+  "enabled": true,
+  "tags": [
+    "Coding",
+    "VibeCoding",
+    "obra/superpowers"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/obra/superpowers",
+    "subpath": "skills\\systematic-debugging",
+    "branch": null
+  }
+}

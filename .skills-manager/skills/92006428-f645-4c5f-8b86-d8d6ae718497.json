@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "skill_id": "92006428-f645-4c5f-8b86-d8d6ae718497",
+  "path": "pptx-generator",
+  "path_key": "pptx-generator",
+  "enabled": true,
+  "tags": [
+    "MiniMax",
+    "MiniMax-AI/skills",
+    "文档"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/MiniMax-AI/skills/",
+    "subpath": "skills\\pptx-generator",
+    "branch": null
+  }
+}

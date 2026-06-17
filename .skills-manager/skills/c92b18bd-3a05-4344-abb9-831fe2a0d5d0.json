@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "skill_id": "c92b18bd-3a05-4344-abb9-831fe2a0d5d0",
+  "path": "obsidian-markdown",
+  "path_key": "obsidian-markdown",
+  "enabled": true,
+  "tags": [
+    "Obsidian"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/kepano/obsidian-skills",
+    "subpath": "skills\\obsidian-markdown",
+    "branch": null
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "skill_id": "95c013a7-2835-4e48-99cc-6dcf20b350c3",
+  "path": "performance-optimization",
+  "path_key": "performance-optimization",
+  "enabled": true,
+  "tags": [
+    "Agent",
+    "VibeCoding",
+    "addyosmani/agent-skills",
+    "开发规范"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/addyosmani/agent-skills",
+    "subpath": "skills\\performance-optimization",
+    "branch": null
+  }
+}
