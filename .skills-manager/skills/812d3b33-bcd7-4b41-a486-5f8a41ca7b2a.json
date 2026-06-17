@@ -4,7 +4,12 @@
   "path": "web-access",
   "path_key": "web-access",
   "enabled": true,
-  "tags": [],
+  "tags": [
+    "Agent",
+    "Browser",
+    "CDP",
+    "搜索"
+  ],
   "source": {
     "type": "git",
     "ref": "https://github.com/eze-is/web-access",

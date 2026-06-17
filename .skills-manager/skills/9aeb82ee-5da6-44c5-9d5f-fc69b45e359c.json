@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "skill_id": "9aeb82ee-5da6-44c5-9d5f-fc69b45e359c",
+  "path": "obscura",
+  "path_key": "obscura",
+  "enabled": true,
+  "tags": [
+    "Agent",
+    "Browser",
+    "CDP",
+    "Cli"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/h4ckf0r0day/obscura",
+    "subpath": "skills\\obscura",
+    "branch": null
+  }
+}
