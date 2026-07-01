@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "skill_id": "ef8e16e3-ed81-4e98-9b22-8a07bd26715c",
+  "path": "improve-codebase-architecture",
+  "path_key": "improve-codebase-architecture",
+  "enabled": true,
+  "tags": [
+    "backend/后端",
+    "development/开发",
+    "refactoring/重构",
+    "report/报告",
+    "source:mattpocock/skills",
+    "workflow/工作流"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/mattpocock/skills/tree/main/skills/engineering/improve-codebase-architecture",
+    "subpath": "skills/engineering/improve-codebase-architecture",
+    "branch": "main"
+  }
+}

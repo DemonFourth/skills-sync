@@ -1,5 +1,77 @@
 # Changelog
 
+## v3.3.0 — 2026-06-28
+
+### 新增三层（端点 28 → 40，层数 7 → 10）
+
+**Layer 8 打板层（#23 / #15）**
+- **东财涨停板四池**（`push2ex.eastmoney.com`，与现有 push2 同源、走 `em_get` 限流）：`em_zt_pool`（涨停池：连板数 / 几天几板 / 封板资金 / 炸板次数 / 首末封板时间 / 行业）、`em_zb_pool`（炸板池：振幅 / 涨速）、`em_dt_pool`（跌停池：封单资金 / 连续跌停 / 开板次数）、`em_yzt_pool`（昨日涨停池：自算晋级率 / 赚钱效应）。
+- **同花顺涨停揭秘** `ths_limit_up_pool`：涨停原因题材 / 封板成功率 / 一字·换手·T字板 / 封单额 / 几天几板。
+- **打板情绪速算** `limit_up_sentiment`：炸板率 / 连板高度 / 连板梯队分布。
+
+**Layer 9 ETF 期权层（#13）**
+- 新浪源：`sina_option_codes`（50ETF / 300ETF / 科创50ETF / 500ETF 合约清单）、`sina_option_tquote`（T型报价：买卖五档 / 持仓量 / 行权价）、`sina_option_greeks`（希腊字母 Delta / Gamma / Theta / Vega + 隐含波动率 + 理论价值）。**交易所预算好，无需本地算 BSM。**
+
+**Layer 10 舆情互动层**
+- `cninfo_irm`（互动易问答：投资者提问 + 公司官方回复，AI 问答独家信源）、`ths_hot_list`（同花顺热榜：人气值 / 概念标签 / 排名变化）、`em_hot_rank`（东财人气榜 + 名称转换）、`em_hot_concept`（个股概念命中）。
+
+### 文档
+- **ETF 显式说明**：ETF 行情 / K线一直支持（腾讯 + mootdx，代码直接当股票查），README 使用示例表显式补上 ETF 例子，避免被看漏。
+- README（中英）架构图、端点清单、使用示例、亮点区，SKILL.md 触发场景 + 关键词，全部同步到 10 层 40 端点。
+
+### 测试
+- 三层全部本机实测真实数据（数据日 20260626）：涨停池 60 只 / 炸板 35 / 跌停 30 / 昨涨停 86 / 同花顺涨停揭秘 60，字段映射 + `price÷1000` + 时间格式化全对；ETF 期权 50ETF/300ETF 合约清单 + T型报价 + 希腊字母（Delta 0.535 平值校验对齐、IV 17.35%）；互动易（比亚迪 50 条中 12 条有公司回复）+ 同花顺热榜 100 条 + 东财人气榜（名称转换）+ 个股概念命中全通。
+- **实测纠正的 3 个坑**：东财四池价格字段 ÷1000（非 ÷10000）；互动易第二步参数放 query string（否则 400）；期权希腊字母解析 `[raw[0]] + raw[4:]`（跳 3 个空位）。
+
+### 说明
+- 数据源数（13）不变——三个新层用的 push2ex / 新浪 / 巨潮 / 同花顺 / 东财均为已有数据源品牌。
+
+## v3.2.5 — 2026-06-28
+
+### 修复（实测坐实的真 Bug · #31 / #28）
+- **§1.1 mootdx K线参数名写错，分钟数据恒退化为日线（#31，CRITICAL）**：旧代码 `client.bars(symbol=..., category=4, ...)` 用了不存在的参数名 `category`。mootdx `bars()` 真实签名是 `bars(symbol, frequency=9, start=0, offset=800, **kwargs)`——`category` 被 `**kwargs` **静默吞掉**，`frequency` 永远取默认值 **9（日线）**。后果：任何 agent 想取分钟/周/月 K 线全部静默退化成日线、且不报错（用户只能自行 fallback 到新浪 API）。**修复**：参数名改 `frequency`，并按 mootdx 0.11.7 源码重写频率值表（旧表 `7=1分钟…11=60分钟` 整段错误）。补 1 分钟（`frequency=8`）/ 5 分钟（`frequency=0`）示例。
+- **§1.1 复权口径未说明（#28）**：mootdx `bars` 返回**不复权**原始价（通达信原始数据，签名无 `adjust` 参数），跨除权除息日做估值/回测会失真。文档此前零说明 → 补明确警示：跨除权日需自行复权或改用带前复权的日 K 数据源（腾讯财经）。
+- **§full_valuation 机构一致预期 EPS 取错列（HIGH）**：旧代码 `row.iloc[2]` 按位置取，而同花顺 `ths_eps_forecast` 表列序为 `年度/预测机构数/最小值/均值/最大值`——`iloc[2]` 实为「**最小值**」，并非文档声明的「均值＝机构一致预期EPS」。导致 `pe_forward`/`PEG`/估值摘要**系统性偏差**（取值偏低）。**修复**：改按列名 `均值` / `预测机构数` 取，抗列序漂移；解析失败由静默 `except: pass` 改为打印 `[WARN]`。
+
+### 优化
+- **§东财 `em_get()` 增加连接级自动重试**（glm review P1.3）：挂载 `HTTPAdapter + urllib3.Retry`（`total=3`、指数退避、`status_forcelist=[429,500,502,503,504]`、仅 GET）。403 不重试（东财风控信号，靠 `EM_MIN_INTERVAL` 降频应对）。老版本 urllib3 缺参数时降级为无重试，不影响主流程。
+- **§download_pdf 文件名加固**：`org`（机构简称）与 `title` 一致做 `re.sub` 路径字符清洗 + 截断，避免机构名含 `/` 等字符拼坏保存路径。
+
+### 测试
+- 本机实跑 mootdx 0.11.7 坐实 #31：`bars(category=8)` 索引全为 `15:00`（日线，复现退化）；`bars(frequency=8)` 索引 `14:59/15:00`（真 1 分钟）、`frequency=0` 为 5 分钟间隔；`bars` 签名确认无 `category`/`adjust`。
+- 实跑同花顺 `worth.html`（600519）坐实 EPS 取列错误：`iloc[2]=最小值=66.27` vs `均值=68.82`；修复后按列名取到 `68.82`。
+- `em_get` Retry 挂载 smoke test 通过（`HTTPAdapter` 正常 mount）。
+
+### 说明
+- 端点数（28）、数据源数不变；本版为 bugfix + 文档修正。感谢 @hhsacsb（#31）、#28 提问者，及社区 glm review（@taicilang-lcy，#27）。
+
+## v3.2.4 — 2026-06-20
+
+### 修复（mootdx 0.11.x 兼容 · #26 / PR #7）
+- **mootdx 0.11.x 全新安装 BESTIP 空串崩溃**：干净环境下 `Quotes.factory(market='std')` 裸调用会抛 `ValueError: not enough values to unpack (expected 2, got 0)`。根因：`~/.mootdx/config.json` 的 `BESTIP.HQ` 初始为空字符串 `""`（非缺失键），mootdx 内部 `dict.get(key, default)` 取不到 default，拆包失败。**老用户（config 曾填充过 IP）不触发，故此前多次实测漏掉。**
+- **解法：新增 `tdx_client()` helper（Prerequisites 章节），所有 4 处 mootdx 调用统一改走它。** 顺序探测内置可用服务器列表 `_TDX_SERVERS`（TCP 握手），用第一个可达的显式 `server=(ip,port)` 绕过 BESTIP；三级 fallback（bestip 测速 → 裸 factory → 明确 RuntimeError）保证 IP 列表老化/换网/老用户场景都能工作。
+- **明确不锁版本**：锁 `mootdx==0.10.12` 在部分环境（干净 Python 3.9）下 `import mootdx` 因 numpy/pandas 二进制不兼容直接崩，比 0.11.x 更糟。helper 对 0.10 / 0.11 通用，故依赖仍保持 `mootdx>=0.10`。
+
+### 测试
+- helper 探测逻辑实测（2026-06-20，本机网络）：`_TDX_SERVERS` 10/10 TCP 可达；语法 `py_compile` 通过。
+- 早前隔离实测（临时 venv，mootdx 0.11.7）：强制 `BESTIP.HQ=""` 稳定复现 ValueError；改用 `server=(ip,port)` 显式传参后 `bars()` 正常取回 5 根。
+
+### 说明
+- 端点数（28）、数据源数不变；纯兼容性补丁。致谢 PR #7（@ericheroster）提供 helper 思路，本版在其基础上加了三级 fallback 防 IP 老化。
+
+## v3.2.3 — 2026-06-20
+
+### 新增（端点）
+- **§2.1 东财行业研报 `eastmoney_industry_reports()`**：研报层补上行业研报端点（此前只有个股研报）。与个股研报**同一端点** `reportapi.eastmoney.com/report/list`，仅 `qType` 不同（`0`=个股 / `1`=行业）。`industry_code="*"` 拉全行业（实测约 47928 篇 / 4793 页），传东财行业码（如 `1238`=IT服务Ⅱ，实测 1863 篇）精确过滤；返回 record 复用 §2.1 的 `download_pdf()` 下载 PDF（模板通用），走 `em_get` 限流。新增字段说明：`industryName`/`industryCode`/`emRatingName`/`reportType`/`attachPages`/`attachSize`。
+- 同步架构树研报层一行：「东财 reportapi → 个股研报 + 行业研报 + PDF下载 + 评级 + 三年EPS」。
+
+### 测试
+- 实测（2026-06-20，真实公开 API，零 key）：全行业 `qType=1` 返回 `hits=47928`、`TotalPage=4793`，字段含 `industryName`/`industryCode`；按行业码 `1238` 过滤 `hits=1863`；首篇 PDF（`AP202606181823678972`）`H3_{infoCode}_1.pdf` 模板下载成功（2512829 bytes，`%PDF` 头）。
+- 行业码表端点（`bxpa` 等）实测 404 不存在 → 文档注明用 `industry_code="*"` 拉取后从结果反查行业码，无独立码表。
+
+### 变更
+- 端点数 27 → 28（新增东财行业研报）；数据源数不变（仍走东财 reportapi）。
+
 ## v3.2.2 — 2026-06-03
 
 ### 修复（失效接口替换 + 隐藏 Bug）

@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "skill_id": "1d3f6820-1ee2-4766-8e54-c516c9e1f9bf",
+  "path": "ask-matt",
+  "path_key": "ask-matt",
+  "enabled": true,
+  "tags": [
+    "cli/命令行",
+    "coding-agent/编码代理",
+    "source:mattpocock/skills"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/mattpocock/skills/tree/main/skills/engineering/ask-matt",
+    "subpath": "skills/engineering/ask-matt",
+    "branch": "main"
+  }
+}

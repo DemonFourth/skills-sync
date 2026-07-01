@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "skill_id": "5183494e-af2e-49f0-90a0-b67d24348283",
+  "path": "skill-personalizer",
+  "path_key": "skill-personalizer",
+  "enabled": true,
+  "tags": [
+    "automation/自动化",
+    "coding-agent/编码代理",
+    "skill/技能",
+    "source:hqhq1025/skill-optimizer"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/hqhq1025/skill-optimizer",
+    "subpath": "skills/skill-personalizer",
+    "branch": null
+  }
+}

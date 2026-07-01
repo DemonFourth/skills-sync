@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "skill_id": "74ffc105-2778-475b-ac85-2b67c99e7823",
+  "path": "prototype",
+  "path_key": "prototype",
+  "enabled": true,
+  "tags": [
+    "development/开发",
+    "frontend/前端",
+    "source:mattpocock/skills",
+    "ui/界面",
+    "workflow/工作流"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/mattpocock/skills/tree/main/skills/engineering/prototype",
+    "subpath": "skills/engineering/prototype",
+    "branch": "main"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "skill_id": "c1a35f9d-5ac3-4f47-b263-996898c07b88",
+  "path": "skill-miner",
+  "path_key": "skill-miner",
+  "enabled": true,
+  "tags": [
+    "coding-agent/编码代理",
+    "data-analysis/数据分析",
+    "research/研究",
+    "skill/技能",
+    "source:hqhq1025/skill-optimizer"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/hqhq1025/skill-optimizer",
+    "subpath": "skills/skill-miner",
+    "branch": null
+  }
+}

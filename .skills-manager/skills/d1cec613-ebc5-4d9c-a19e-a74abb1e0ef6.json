@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "skill_id": "d1cec613-ebc5-4d9c-a19e-a74abb1e0ef6",
+  "path": "setup-pre-commit",
+  "path_key": "setup-pre-commit",
+  "enabled": true,
+  "tags": [
+    "automation/自动化",
+    "development/开发",
+    "git/版本控制",
+    "source:mattpocock/skills",
+    "workflow/工作流"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/mattpocock/skills/tree/main/skills/misc/setup-pre-commit",
+    "subpath": "skills/misc/setup-pre-commit",
+    "branch": "main"
+  }
+}

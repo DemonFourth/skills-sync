@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "skill_id": "d3064612-55ae-4ff3-b80f-46b07727d292",
+  "path": "teach",
+  "path_key": "teach",
+  "enabled": true,
+  "tags": [
+    "development/开发",
+    "docs/文档",
+    "source:mattpocock/skills",
+    "workflow/工作流",
+    "writing/写作"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/mattpocock/skills/tree/main/skills/productivity/teach",
+    "subpath": "skills/productivity/teach",
+    "branch": "main"
+  }
+}

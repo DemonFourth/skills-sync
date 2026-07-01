@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "skill_id": "792a90d0-41e0-4f9b-82ab-3cfb5a8261e0",
+  "path": "skill-generalizer",
+  "path_key": "skill-generalizer",
+  "enabled": true,
+  "tags": [
+    "coding-agent/编码代理",
+    "skill/技能",
+    "source:hqhq1025/skill-optimizer",
+    "writing/写作"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/hqhq1025/skill-optimizer",
+    "subpath": "skills/skill-generalizer",
+    "branch": null
+  }
+}

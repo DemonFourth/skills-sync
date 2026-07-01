@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "skill_id": "e0820105-aa4d-4bf6-af3c-006700867f93",
+  "path": "migrate-to-shoehorn",
+  "path_key": "migrate-to-shoehorn",
+  "enabled": true,
+  "tags": [
+    "development/开发",
+    "refactoring/重构",
+    "source:mattpocock/skills",
+    "testing/测试",
+    "workflow/工作流"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/mattpocock/skills/tree/main/skills/misc/migrate-to-shoehorn",
+    "subpath": "skills/misc/migrate-to-shoehorn",
+    "branch": "main"
+  }
+}

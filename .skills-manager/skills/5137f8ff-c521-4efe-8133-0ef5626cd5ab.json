@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "skill_id": "5137f8ff-c521-4efe-8133-0ef5626cd5ab",
+  "path": "scaffold-exercises",
+  "path_key": "scaffold-exercises",
+  "enabled": true,
+  "tags": [
+    "development/开发",
+    "source:mattpocock/skills",
+    "workflow/工作流"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/mattpocock/skills/tree/main/skills/misc/scaffold-exercises",
+    "subpath": "skills/misc/scaffold-exercises",
+    "branch": "main"
+  }
+}

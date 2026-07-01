@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "skill_id": "dedc1a6a-5773-4b96-b15e-d63166bca2d2",
+  "path": "codebase-design",
+  "path_key": "codebase-design",
+  "enabled": true,
+  "tags": [
+    "backend/后端",
+    "dev-standards/开发规范",
+    "development/开发",
+    "refactoring/重构",
+    "source:mattpocock/skills",
+    "workflow/工作流"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/mattpocock/skills/tree/main/skills/engineering/codebase-design",
+    "subpath": "skills/engineering/codebase-design",
+    "branch": "main"
+  }
+}
