@@ -41,6 +41,7 @@ def get_cache_key(topic: str, from_date: str, to_date: str, sources: str) -> str
 
 def get_cache_path(cache_key: str) -> Path:
     """Get path to cache file."""
+    ensure_cache_dir()
     return CACHE_DIR / f"{cache_key}.json"
 
 
@@ -67,7 +68,7 @@ def load_cache(cache_key: str, ttl_hours: int = DEFAULT_TTL_HOURS) -> Optional[d
         return None
 
     try:
-        with open(cache_path, 'r') as f:
+        with open(cache_path, 'r', encoding='utf-8') as f:
             return json.load(f)
     except (json.JSONDecodeError, OSError):
         return None
@@ -100,7 +101,7 @@ def load_cache_with_age(cache_key: str, ttl_hours: int = DEFAULT_TTL_HOURS) -> t
     age = get_cache_age_hours(cache_path)
 
     try:
-        with open(cache_path, 'r') as f:
+        with open(cache_path, 'r', encoding='utf-8') as f:
             return json.load(f), age
     except (json.JSONDecodeError, OSError):
         return None, None
@@ -112,8 +113,8 @@ def save_cache(cache_key: str, data: dict):
     cache_path = get_cache_path(cache_key)
 
     try:
-        with open(cache_path, 'w') as f:
-            json.dump(data, f)
+        with open(cache_path, 'w', encoding='utf-8') as f:
+            json.dump(data, f, ensure_ascii=False)
     except OSError:
         pass  # Silently fail on cache write errors
 
@@ -138,7 +139,7 @@ def load_model_cache() -> dict:
         return {}
 
     try:
-        with open(MODEL_CACHE_FILE, 'r') as f:
+        with open(MODEL_CACHE_FILE, 'r', encoding='utf-8') as f:
             return json.load(f)
     except (json.JSONDecodeError, OSError):
         return {}
@@ -148,8 +149,8 @@ def save_model_cache(data: dict):
     """Save model selection cache."""
     ensure_cache_dir()
     try:
-        with open(MODEL_CACHE_FILE, 'w') as f:
-            json.dump(data, f)
+        with open(MODEL_CACHE_FILE, 'w', encoding='utf-8') as f:
+            json.dump(data, f, ensure_ascii=False)
     except OSError:
         pass
 

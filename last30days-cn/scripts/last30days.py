@@ -148,6 +148,7 @@ from lib import (
     toutiao,
     dates,
     dedupe,
+    doctor,
     cluster,
     env,
     normalize,
@@ -155,6 +156,7 @@ from lib import (
     render,
     schema,
     score,
+    cache,
     setup_wizard,
     query_type as qt,
     crawler_bridge,
@@ -224,6 +226,47 @@ def _search_toutiao(topic, from_date, to_date, depth):
         return items, None
     except Exception as e:
         return [], f"{type(e).__name__}: {e}"
+
+
+def _cache_sources_token(depth: str, search_sources: set, query_type: str) -> str:
+    source_part = ",".join(sorted(search_sources)) if search_sources else f"auto:{query_type}"
+    return f"{depth}|{source_part}"
+
+
+def _save_raw_output(args, report: schema.Report) -> None:
+    if not args.save_dir:
+        return
+    import re as re_mod
+
+    save_dir = Path(args.save_dir).expanduser()
+    save_dir.mkdir(parents=True, exist_ok=True)
+    slug = re_mod.sub(r'[^a-z0-9\u4e00-\u9fff]+', '-', report.topic.lower()).strip('-')[:60]
+    save_path = save_dir / f"{slug}-raw.md"
+    if save_path.exists():
+        save_path = save_dir / f"{slug}-raw-{datetime.now().strftime('%Y-%m-%d')}.md"
+    content = render.render_compact(report)
+    content += "\n" + render.render_source_status(report)
+    save_path.write_text(content, encoding="utf-8")
+    print(f"已保存: {save_path}", file=sys.stderr)
+
+
+def _emit(args, report: schema.Report) -> None:
+    if args.emit == "compact":
+        print(render.render_compact(report))
+        print(render.render_source_status(report))
+    elif args.emit == "json":
+        print(json.dumps(report.to_dict(), indent=2, ensure_ascii=False))
+    elif args.emit == "md":
+        print(render.render_full_report(report))
+    elif args.emit == "html":
+        print(render.render_html_report(report))
+    elif args.emit == "context":
+        print(report.context_snippet_md)
+    elif args.emit == "path":
+        print(render.get_context_path())
+    elif args.emit == "html-path":
+        print(render.get_html_path())
+    _save_raw_output(args, report)
 
 
 def run_research(
@@ -315,6 +358,9 @@ def main():
     parser.add_argument("--timeout", type=int, default=None, metavar="SECS", help="全局超时秒数")
     parser.add_argument("--search", type=str, default=None, metavar="SOURCES", help="逗号分隔的搜索源列表")
     parser.add_argument("--save-dir", type=str, default=None, metavar="DIR", help="自动保存原始输出")
+    parser.add_argument("--no-cache", action="store_true", help="跳过缓存读取与写入")
+    parser.add_argument("--refresh", action="store_true", help="忽略缓存并刷新结果")
+    parser.add_argument("--cache-ttl", type=int, default=cache.DEFAULT_TTL_HOURS, metavar="HOURS", help="缓存有效期小时数")
 
     args = parser.parse_args()
     args.topic = " ".join(args.topic) if args.topic else None
@@ -339,25 +385,11 @@ def main():
     config = env.get_config()
 
     if args.diagnose:
-        crawler_status = crawler_bridge.get_crawler_status()
-        diag = {
-            "weibo": env.is_weibo_available(config),
-            "xiaohongshu": env.is_xiaohongshu_available(config),
-            "bilibili": env.probe_bilibili(),
-            "zhihu": env.probe_zhihu(),
-            "douyin": env.is_douyin_available(config),
-            "wechat": env.is_wechat_available(config),
-            "baidu_api": env.is_baidu_api_available(config),
-            "toutiao": env.probe_toutiao(),
-            "xiaohongshu_api_base": env.get_xiaohongshu_api_base(config),
-            "crawler_engine": {
-                "playwright_available": crawler_status["playwright_available"],
-                "cached_logins": crawler_status["cached_logins"],
-                "note": "安装 Playwright 后，微博/小红书/抖音/B站/知乎可无需 API Key 使用爬虫模式",
-            },
-            "note_douyin_toutiao": "抖音/头条原生接口需签名参数，常被风控；接口失败时改用公开搜索引擎兜底，仅能拿到公开链接，无真实互动数据与精确日期。",
-        }
-        print(json.dumps(diag, indent=2, ensure_ascii=False))
+        diag = doctor.build_report(config)
+        if args.emit == "json":
+            print(json.dumps(doctor.render_json(diag), indent=2, ensure_ascii=False))
+        else:
+            print(doctor.render_text(diag))
         sys.exit(0)
 
     if args.topic and args.topic.strip().lower() == "setup":
@@ -386,12 +418,33 @@ def main():
 
     query_type = qt.detect_query_type(args.topic)
     search_topic = query.extract_core_subject(args.topic)
+    cache_key = cache.get_cache_key(
+        args.topic,
+        from_date,
+        to_date,
+        _cache_sources_token(depth, search_sources, query_type),
+    )
 
     sys.stderr.write(f"正在搜索: {args.topic}\n")
     if search_topic != args.topic:
         sys.stderr.write(f"提纯关键词: {search_topic}\n")
     sys.stderr.write(f"查询类型: {query_type} | 日期范围: {from_date} 至 {to_date}\n")
     sys.stderr.flush()
+
+    if not args.no_cache and not args.refresh:
+        cached_data, age_hours = cache.load_cache_with_age(cache_key, ttl_hours=args.cache_ttl)
+        if cached_data:
+            report = schema.Report.from_dict(cached_data)
+            report.from_cache = True
+            report.cache_age_hours = age_hours
+            if not report.context_snippet_md:
+                report.context_snippet_md = render.render_context_snippet(report)
+            render.write_outputs(report)
+            age_text = f"{age_hours:.1f}" if age_hours is not None else "未知"
+            sys.stderr.write(f"⚡ 使用缓存结果（约 {age_text} 小时前，--refresh 可强制刷新）\n")
+            sys.stderr.flush()
+            _emit(args, report)
+            return
 
     raw_results = run_research(
         search_topic, config, from_date, to_date, depth,
@@ -469,6 +522,15 @@ def main():
     deduped_baidu = score.relevance_filter(deduped_baidu, "BAIDU")
     deduped_toutiao = score.relevance_filter(deduped_toutiao, "TOUTIAO")
 
+    deduped_weibo = score.apply_per_author_cap(deduped_weibo)
+    deduped_xhs = score.apply_per_author_cap(deduped_xhs)
+    deduped_bili = score.apply_per_author_cap(deduped_bili)
+    deduped_zhihu = score.apply_per_author_cap(deduped_zhihu)
+    deduped_douyin = score.apply_per_author_cap(deduped_douyin)
+    deduped_wechat = score.apply_per_author_cap(deduped_wechat)
+    deduped_baidu = score.apply_per_author_cap(deduped_baidu)
+    deduped_toutiao = score.apply_per_author_cap(deduped_toutiao)
+
     dedupe.cross_source_link(
         deduped_weibo, deduped_xhs, deduped_bili, deduped_zhihu,
         deduped_douyin, deduped_wechat, deduped_baidu, deduped_toutiao,
@@ -500,41 +562,15 @@ def main():
 
     report.context_snippet_md = render.render_context_snippet(report)
     render.write_outputs(report)
+    if not args.no_cache:
+        cache.save_cache(cache_key, report.to_dict())
 
     total = sum(len(getattr(report, src, [])) for src in ["weibo", "xiaohongshu", "bilibili", "zhihu", "douyin", "wechat", "baidu", "toutiao"])
     sys.stderr.write(f"\n完成! 共 {total} 条结果\n")
     sys.stderr.flush()
 
-    if args.emit == "compact":
-        print(render.render_compact(report))
-        print(render.render_source_status(report))
-    elif args.emit == "json":
-        print(json.dumps(report.to_dict(), indent=2, ensure_ascii=False))
-    elif args.emit == "md":
-        print(render.render_full_report(report))
-    elif args.emit == "html":
-        print(render.render_html_report(report))
-    elif args.emit == "context":
-        print(report.context_snippet_md)
-    elif args.emit == "path":
-        print(render.get_context_path())
-    elif args.emit == "html-path":
-        print(render.get_html_path())
-
-    if args.save_dir:
-        import re as re_mod
-        save_dir = Path(args.save_dir).expanduser()
-        save_dir.mkdir(parents=True, exist_ok=True)
-        slug = re_mod.sub(r'[^a-z0-9\u4e00-\u9fff]+', '-', args.topic.lower()).strip('-')[:60]
-        save_path = save_dir / f"{slug}-raw.md"
-        if save_path.exists():
-            save_path = save_dir / f"{slug}-raw-{datetime.now().strftime('%Y-%m-%d')}.md"
-        content = render.render_compact(report)
-        content += "\n" + render.render_source_status(report)
-        save_path.write_text(content, encoding="utf-8")
-        print(f"已保存: {save_path}", file=sys.stderr)
+    _emit(args, report)
 
 
 if __name__ == "__main__":
     main()
-
