@@ -13,7 +13,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/OpenSenseNova/SenseNova-Skills",
-    "subpath": "skills\\sn-research-planning",
+    "subpath": "skills",
     "branch": null
   }
 }
