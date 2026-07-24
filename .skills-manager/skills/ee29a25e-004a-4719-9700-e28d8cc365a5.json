@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "ee29a25e-004a-4719-9700-e28d8cc365a5",
+  "path": "ima-skill",
+  "path_key": "ima-skill",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "local",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}
