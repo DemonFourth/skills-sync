@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "skill_id": "1f185332-11e0-49e8-8119-d49ccb60af49",
+  "path": "hithink-finance",
+  "path_key": "hithink-finance",
+  "enabled": true,
+  "tags": [
+    "finance/金融"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/HiThink-Tech/Financial-API",
+    "subpath": "skills\\hithink-finance",
+    "branch": null
+  }
+}
