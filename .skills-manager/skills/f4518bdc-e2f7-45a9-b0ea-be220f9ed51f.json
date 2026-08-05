@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "skill_id": "f4518bdc-e2f7-45a9-b0ea-be220f9ed51f",
+  "path": "wizard",
+  "path_key": "wizard",
+  "enabled": true,
+  "tags": [
+    "automation/自动化",
+    "cli/命令行",
+    "development/开发",
+    "source:mattpocock/skills",
+    "workflow/工作流"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/mattpocock/skills/tree/main/skills/engineering/wizard",
+    "subpath": "skills/engineering/wizard",
+    "branch": "main"
+  }
+}

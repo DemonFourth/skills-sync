@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "skill_id": "fbe01ffd-08ef-4c05-b4d8-716cb9644f88",
+  "path": "code-review",
+  "path_key": "code-review",
+  "enabled": true,
+  "tags": [
+    "dev-standards/开发规范",
+    "development/开发",
+    "source:mattpocock/skills",
+    "testing/测试",
+    "workflow/工作流"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/mattpocock/skills/tree/main/skills/engineering/code-review",
+    "subpath": "skills/engineering/code-review",
+    "branch": "main"
+  }
+}

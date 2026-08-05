@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "skill_id": "9be85b42-1c17-43a0-9841-6f60a59dc3fe",
+  "path": "to-questionnaire",
+  "path_key": "to-questionnaire",
+  "enabled": true,
+  "tags": [
+    "development/开发",
+    "docs/文档",
+    "source:mattpocock/skills",
+    "workflow/工作流"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/mattpocock/skills/tree/main/skills/productivity/to-questionnaire",
+    "subpath": "skills/productivity/to-questionnaire",
+    "branch": "main"
+  }
+}
