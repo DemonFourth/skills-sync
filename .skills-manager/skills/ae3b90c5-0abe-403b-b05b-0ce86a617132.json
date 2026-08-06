@@ -6,7 +6,6 @@
   "enabled": true,
   "tags": [
     "domain/元技能",
-    "needs-api-key/需API密钥",
     "source:alchaincyf/darwin-skill"
   ],
   "source": {
