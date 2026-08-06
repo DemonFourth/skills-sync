@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "scenario_id": "a1a70049-ca0f-4d6e-b6ec-8a10da063893",
+  "name": "元技能管理 Skill",
+  "description": null,
+  "icon": "sparkles",
+  "sort_order": 999
+}
