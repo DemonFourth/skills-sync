@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "30b2ebc5-952b-49a1-afd3-e833fe11fe6b",
+  "path": "drawio-skill",
+  "path_key": "drawio-skill",
+  "enabled": true,
+  "tags": [
+    "domain/设计视觉",
+    "source:Agents365-ai/drawio-skill"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/Agents365-ai/drawio-skill",
+    "subpath": null,
+    "branch": null
+  }
+}
