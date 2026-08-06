@@ -14,7 +14,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/steipete/agent-scripts",
-    "subpath": "skills/swiftui-liquid-glass",
+    "subpath": null,
     "branch": null
   }
 }

@@ -15,7 +15,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/anthropics/skills",
-    "subpath": "skills\\web-artifacts-builder",
+    "subpath": null,
     "branch": null
   }
 }

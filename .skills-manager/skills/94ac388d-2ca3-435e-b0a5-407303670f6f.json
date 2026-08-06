@@ -12,7 +12,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/steipete/agent-scripts",
-    "subpath": "skills/obsidian",
+    "subpath": null,
     "branch": null
   }
 }

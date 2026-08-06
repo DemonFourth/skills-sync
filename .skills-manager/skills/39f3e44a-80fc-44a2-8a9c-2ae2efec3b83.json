@@ -14,7 +14,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/Leonxlnx/taste-skill",
-    "subpath": "skills\\brutalist-skill",
+    "subpath": null,
     "branch": null
   }
 }

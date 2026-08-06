@@ -14,7 +14,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/mattpocock/skills/tree/main/skills/misc/setup-pre-commit",
-    "subpath": "skills/misc/setup-pre-commit",
-    "branch": "main"
+    "subpath": null,
+    "branch": null
   }
 }

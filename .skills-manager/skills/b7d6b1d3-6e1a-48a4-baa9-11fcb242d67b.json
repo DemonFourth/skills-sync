@@ -13,7 +13,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/anthropics/skills",
-    "subpath": "skills\\pptx",
+    "subpath": null,
     "branch": null
   }
 }

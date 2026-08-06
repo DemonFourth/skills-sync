@@ -13,7 +13,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/steipete/agent-scripts",
-    "subpath": "skills/video-transcript-downloader",
+    "subpath": null,
     "branch": null
   }
 }

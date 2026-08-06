@@ -14,7 +14,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/Leonxlnx/taste-skill",
-    "subpath": "skills\\gpt-tasteskill",
+    "subpath": null,
     "branch": null
   }
 }

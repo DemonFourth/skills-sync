@@ -12,7 +12,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/OpenSenseNova/SenseNova-Skills",
-    "subpath": "skills\\sn-search-social-cn",
+    "subpath": null,
     "branch": null
   }
 }

@@ -12,7 +12,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/steipete/agent-scripts",
-    "subpath": "skills/cloudflare-registrar",
+    "subpath": null,
     "branch": null
   }
 }

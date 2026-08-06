@@ -10,7 +10,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/steipete/agent-scripts",
-    "subpath": "skills/openclaw-relay",
+    "subpath": null,
     "branch": null
   }
 }

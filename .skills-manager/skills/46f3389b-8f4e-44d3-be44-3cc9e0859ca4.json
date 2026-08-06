@@ -15,7 +15,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/ConardLi/garden-skills",
-    "subpath": "skills\\gpt-image-2",
+    "subpath": null,
     "branch": null
   }
 }

@@ -14,7 +14,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/mattpocock/skills/tree/main/skills/engineering/code-review",
-    "subpath": "skills/engineering/code-review",
-    "branch": "main"
+    "subpath": null,
+    "branch": null
   }
 }

@@ -13,7 +13,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/steipete/agent-scripts",
-    "subpath": "skills/npm",
+    "subpath": null,
     "branch": null
   }
 }

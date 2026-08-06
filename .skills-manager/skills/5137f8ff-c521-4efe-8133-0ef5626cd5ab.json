@@ -12,7 +12,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/mattpocock/skills/tree/main/skills/misc/scaffold-exercises",
-    "subpath": "skills/misc/scaffold-exercises",
-    "branch": "main"
+    "subpath": null,
+    "branch": null
   }
 }

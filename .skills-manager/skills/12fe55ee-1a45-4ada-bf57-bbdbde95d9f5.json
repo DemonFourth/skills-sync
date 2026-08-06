@@ -16,7 +16,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/MiniMax-AI/skills/",
-    "subpath": "skills\\minimax-music-gen",
+    "subpath": null,
     "branch": null
   }
 }

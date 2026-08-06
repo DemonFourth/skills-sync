@@ -14,7 +14,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/ConardLi/garden-skills",
-    "subpath": "skills\\web-design-engineer",
+    "subpath": null,
     "branch": null
   }
 }

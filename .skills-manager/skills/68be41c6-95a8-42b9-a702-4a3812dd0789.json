@@ -15,7 +15,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/MiniMax-AI/skills/",
-    "subpath": "skills\\minimax-xlsx",
+    "subpath": null,
     "branch": null
   }
 }

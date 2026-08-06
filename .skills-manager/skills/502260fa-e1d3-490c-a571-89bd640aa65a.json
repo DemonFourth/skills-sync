@@ -13,7 +13,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/obra/superpowers",
-    "subpath": "skills\\subagent-driven-development",
+    "subpath": null,
     "branch": null
   }
 }

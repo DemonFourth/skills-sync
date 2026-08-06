@@ -17,7 +17,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/MiniMax-AI/skills/",
-    "subpath": "skills\\ios-application-dev",
+    "subpath": null,
     "branch": null
   }
 }

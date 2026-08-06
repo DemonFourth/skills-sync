@@ -14,7 +14,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/RKiding/Awesome-finance-skills",
-    "subpath": "skills\\alphaear-reporter",
+    "subpath": null,
     "branch": null
   }
 }

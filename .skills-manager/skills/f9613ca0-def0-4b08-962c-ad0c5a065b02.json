@@ -15,7 +15,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/OpenSenseNova/SenseNova-Skills",
-    "subpath": "skills\\sn-da-large-file-analysis",
+    "subpath": null,
     "branch": null
   }
 }

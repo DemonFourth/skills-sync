@@ -14,7 +14,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/anthropics/skills",
-    "subpath": "skills\\docx",
+    "subpath": null,
     "branch": null
   }
 }

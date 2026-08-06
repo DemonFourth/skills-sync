@@ -15,7 +15,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/OpenSenseNova/SenseNova-Skills",
-    "subpath": "skills\\sn-md-to-html-report",
+    "subpath": null,
     "branch": null
   }
 }

@@ -11,7 +11,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/HiThink-Tech/Financial-API",
-    "subpath": "skills\\hithink-finance",
+    "subpath": null,
     "branch": null
   }
 }

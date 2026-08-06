@@ -16,7 +16,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/addyosmani/agent-skills",
-    "subpath": "skills\\source-driven-development",
+    "subpath": null,
     "branch": null
   }
 }

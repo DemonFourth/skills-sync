@@ -12,7 +12,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/steipete/agent-scripts",
-    "subpath": "skills/domain-dns-ops",
+    "subpath": null,
     "branch": null
   }
 }

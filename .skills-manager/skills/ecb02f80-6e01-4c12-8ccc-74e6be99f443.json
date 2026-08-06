@@ -12,7 +12,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/anthropics/skills",
-    "subpath": "skills\\canvas-design",
+    "subpath": null,
     "branch": null
   }
 }

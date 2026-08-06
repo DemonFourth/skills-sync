@@ -14,7 +14,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/mattpocock/skills/tree/main/skills/engineering/wizard",
-    "subpath": "skills/engineering/wizard",
-    "branch": "main"
+    "subpath": null,
+    "branch": null
   }
 }

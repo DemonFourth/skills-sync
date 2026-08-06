@@ -12,7 +12,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/steipete/agent-scripts",
-    "subpath": "skills/github-deep-review",
+    "subpath": null,
     "branch": null
   }
 }

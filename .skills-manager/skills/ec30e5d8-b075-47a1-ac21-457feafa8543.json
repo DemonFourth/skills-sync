@@ -14,7 +14,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/mattpocock/skills/tree/main/skills/engineering/domain-modeling",
-    "subpath": "skills/engineering/domain-modeling",
-    "branch": "main"
+    "subpath": null,
+    "branch": null
   }
 }

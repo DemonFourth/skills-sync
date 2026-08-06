@@ -14,7 +14,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/steipete/agent-scripts",
-    "subpath": "skills/swift-concurrency-expert",
+    "subpath": null,
     "branch": null
   }
 }

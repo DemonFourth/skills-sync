@@ -17,7 +17,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/anthropics/skills",
-    "subpath": "skills\\webapp-testing",
+    "subpath": null,
     "branch": null
   }
 }

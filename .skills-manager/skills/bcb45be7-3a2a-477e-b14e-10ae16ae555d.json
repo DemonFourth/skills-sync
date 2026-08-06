@@ -14,7 +14,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/OpenSenseNova/SenseNova-Skills",
-    "subpath": "skills\\sn-research-report",
+    "subpath": null,
     "branch": null
   }
 }

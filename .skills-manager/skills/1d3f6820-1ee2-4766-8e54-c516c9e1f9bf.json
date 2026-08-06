@@ -12,7 +12,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/mattpocock/skills/tree/main/skills/engineering/ask-matt",
-    "subpath": "skills/engineering/ask-matt",
-    "branch": "main"
+    "subpath": null,
+    "branch": null
   }
 }

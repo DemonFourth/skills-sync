@@ -14,7 +14,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/mattpocock/skills/tree/main/skills/productivity/teach",
-    "subpath": "skills/productivity/teach",
-    "branch": "main"
+    "subpath": null,
+    "branch": null
   }
 }
