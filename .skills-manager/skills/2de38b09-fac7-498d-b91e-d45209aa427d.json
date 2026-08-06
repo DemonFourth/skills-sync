@@ -5,10 +5,7 @@
   "path_key": "kb-retriever",
   "enabled": true,
   "tags": [
-    "data/数据",
-    "python-runtime/Python运行时",
-    "rag/检索增强",
-    "search/搜索",
+    "domain/研究与搜索",
     "source:ConardLi/garden-skills"
   ],
   "source": {

@@ -5,6 +5,7 @@
   "path_key": "nano-banana-pro",
   "enabled": true,
   "tags": [
+    "domain/设计视觉",
     "source:steipete/agent-scripts"
   ],
   "source": {

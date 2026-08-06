@@ -5,6 +5,7 @@
   "path_key": "clawsweeper-status",
   "enabled": true,
   "tags": [
+    "domain/智能体运维",
     "source:steipete/agent-scripts"
   ],
   "source": {

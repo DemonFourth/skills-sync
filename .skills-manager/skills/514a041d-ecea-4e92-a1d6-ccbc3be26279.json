@@ -5,9 +5,7 @@
   "path_key": "xlsx",
   "enabled": true,
   "tags": [
-    "data/数据",
-    "docs/文档",
-    "python-runtime/Python运行时",
+    "domain/数据分析",
     "source:anthropics/skills"
   ],
   "source": {

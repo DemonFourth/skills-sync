@@ -5,7 +5,7 @@
   "path_key": "using-superpowers",
   "enabled": true,
   "tags": [
-    "coding-agent/编码代理",
+    "domain/元技能",
     "needs-api-key/需API密钥",
     "source:obra/superpowers"
   ],

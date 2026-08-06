@@ -5,9 +5,8 @@
   "path_key": "verification-before-completion",
   "enabled": true,
   "tags": [
-    "coding-agent/编码代理",
-    "source:obra/superpowers",
-    "testing/测试"
+    "domain/元技能",
+    "source:obra/superpowers"
   ],
   "source": {
     "type": "git",

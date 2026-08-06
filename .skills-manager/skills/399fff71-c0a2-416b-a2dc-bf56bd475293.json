@@ -5,8 +5,8 @@
   "path_key": "speaking",
   "enabled": true,
   "tags": [
-    "source:steipete/agent-scripts",
-    "writing/写作"
+    "domain/效率工具",
+    "source:steipete/agent-scripts"
   ],
   "source": {
     "type": "git",

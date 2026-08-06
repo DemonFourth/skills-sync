@@ -5,10 +5,7 @@
   "path_key": "design-taste-frontend",
   "enabled": true,
   "tags": [
-    "coding-agent/编码代理",
-    "design/设计",
-    "development/开发",
-    "frontend/前端",
+    "domain/前端界面",
     "source:Leonxlnx/taste-skill"
   ],
   "source": {

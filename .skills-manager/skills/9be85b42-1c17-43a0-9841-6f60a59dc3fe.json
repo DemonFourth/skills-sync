@@ -5,10 +5,8 @@
   "path_key": "to-questionnaire",
   "enabled": true,
   "tags": [
-    "development/开发",
-    "docs/文档",
-    "source:mattpocock/skills",
-    "workflow/工作流"
+    "domain/元技能",
+    "source:mattpocock/skills"
   ],
   "source": {
     "type": "git",

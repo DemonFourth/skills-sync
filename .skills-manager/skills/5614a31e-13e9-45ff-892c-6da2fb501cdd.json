@@ -5,10 +5,9 @@
   "path_key": "a-stock-data",
   "enabled": true,
   "tags": [
-    "data/数据",
+    "domain/数据分析",
     "needs-api-key/需API密钥",
-    "python-runtime/Python运行时",
-    "stock/股票"
+    "source:simonlin1212/a-stock-data"
   ],
   "source": {
     "type": "git",

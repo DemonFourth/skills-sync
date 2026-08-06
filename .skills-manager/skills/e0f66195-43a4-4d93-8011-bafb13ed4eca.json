@@ -5,10 +5,8 @@
   "path_key": "sn-dimension-research",
   "enabled": true,
   "tags": [
-    "report/报告",
-    "research/研究",
-    "source:OpenSenseNova/skills",
-    "workflow/工作流"
+    "domain/研究与搜索",
+    "source:OpenSenseNova/skills"
   ],
   "source": {
     "type": "git",

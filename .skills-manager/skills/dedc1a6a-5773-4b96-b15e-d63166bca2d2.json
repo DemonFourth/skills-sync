@@ -5,12 +5,8 @@
   "path_key": "codebase-design",
   "enabled": true,
   "tags": [
-    "backend/后端",
-    "dev-standards/开发规范",
-    "development/开发",
-    "refactoring/重构",
-    "source:mattpocock/skills",
-    "workflow/工作流"
+    "domain/编码开发",
+    "source:mattpocock/skills"
   ],
   "source": {
     "type": "git",

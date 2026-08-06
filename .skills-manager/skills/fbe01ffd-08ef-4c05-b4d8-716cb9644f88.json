@@ -5,11 +5,8 @@
   "path_key": "code-review",
   "enabled": true,
   "tags": [
-    "dev-standards/开发规范",
-    "development/开发",
-    "source:mattpocock/skills",
-    "testing/测试",
-    "workflow/工作流"
+    "domain/编码开发",
+    "source:mattpocock/skills"
   ],
   "source": {
     "type": "git",

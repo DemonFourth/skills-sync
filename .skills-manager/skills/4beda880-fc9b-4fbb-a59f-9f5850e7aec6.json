@@ -5,9 +5,7 @@
   "path_key": "research",
   "enabled": true,
   "tags": [
-    "development/开发",
-    "docs/文档",
-    "research/研究",
+    "domain/研究与搜索",
     "source:mattpocock/skills"
   ],
   "source": {

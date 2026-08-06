@@ -5,11 +5,8 @@
   "path_key": "wizard",
   "enabled": true,
   "tags": [
-    "automation/自动化",
-    "cli/命令行",
-    "development/开发",
-    "source:mattpocock/skills",
-    "workflow/工作流"
+    "domain/元技能",
+    "source:mattpocock/skills"
   ],
   "source": {
     "type": "git",

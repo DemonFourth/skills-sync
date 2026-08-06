@@ -5,8 +5,7 @@
   "path_key": "alphaear-predictor",
   "enabled": true,
   "tags": [
-    "finance/金融",
-    "python-runtime/Python运行时",
+    "domain/数据分析",
     "source:RKiding/finance-skills"
   ],
   "source": {

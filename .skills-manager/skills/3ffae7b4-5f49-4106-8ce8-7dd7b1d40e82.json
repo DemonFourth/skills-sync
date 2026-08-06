@@ -5,9 +5,7 @@
   "path_key": "swiftui-performance-audit",
   "enabled": true,
   "tags": [
-    "coding-agent/编码代理",
-    "development/开发",
-    "mobile/移动端",
+    "domain/编码开发",
     "source:steipete/agent-scripts"
   ],
   "source": {

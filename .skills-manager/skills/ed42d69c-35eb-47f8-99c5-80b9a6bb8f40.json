@@ -5,10 +5,7 @@
   "path_key": "observability-and-instrumentation",
   "enabled": true,
   "tags": [
-    "coding-agent/编码代理",
-    "dev-standards/开发规范",
-    "devops/运维",
-    "npm-runtime/npm运行时",
+    "domain/编码开发",
     "source:addyosmani/agent-skills"
   ],
   "source": {

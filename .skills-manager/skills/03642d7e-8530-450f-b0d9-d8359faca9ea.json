@@ -5,10 +5,7 @@
   "path_key": "flutter-dev",
   "enabled": true,
   "tags": [
-    "coding-agent/编码代理",
-    "development/开发",
-    "minimax/MiniMax",
-    "mobile/移动端",
+    "domain/编码开发",
     "needs-api-key/需API密钥",
     "source:MiniMax-AI/skills"
   ],

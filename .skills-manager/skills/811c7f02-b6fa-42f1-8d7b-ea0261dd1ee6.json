@@ -5,9 +5,7 @@
   "path_key": "markdown-converter",
   "enabled": true,
   "tags": [
-    "coding-agent/编码代理",
-    "docs/文档",
-    "markdown/标记语言",
+    "domain/内容写作",
     "source:steipete/agent-scripts"
   ],
   "source": {

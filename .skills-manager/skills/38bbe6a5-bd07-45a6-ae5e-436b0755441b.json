@@ -5,7 +5,7 @@
   "path_key": "sonos",
   "enabled": true,
   "tags": [
-    "audio/音频",
+    "domain/多媒体",
     "source:steipete/agent-scripts"
   ],
   "source": {

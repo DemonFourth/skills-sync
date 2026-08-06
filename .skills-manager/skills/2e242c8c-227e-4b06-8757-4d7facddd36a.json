@@ -4,7 +4,10 @@
   "path": "writing-shape",
   "path_key": "writing-shape",
   "enabled": true,
-  "tags": [],
+  "tags": [
+    "domain/内容写作",
+    "source:mattpocock/skills"
+  ],
   "source": {
     "type": "skillssh",
     "ref": "mattpocock/skills/writing-shape",

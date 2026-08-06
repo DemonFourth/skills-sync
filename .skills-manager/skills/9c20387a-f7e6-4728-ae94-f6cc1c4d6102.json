@@ -5,10 +5,7 @@
   "path_key": "swiftui-view-refactor",
   "enabled": true,
   "tags": [
-    "coding-agent/编码代理",
-    "development/开发",
-    "mobile/移动端",
-    "refactoring/重构",
+    "domain/编码开发",
     "source:steipete/agent-scripts"
   ],
   "source": {

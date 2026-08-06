@@ -5,9 +5,7 @@
   "path_key": "frontend-ui-engineering",
   "enabled": true,
   "tags": [
-    "coding-agent/编码代理",
-    "dev-standards/开发规范",
-    "frontend/前端",
+    "domain/前端界面",
     "needs-api-key/需API密钥",
     "source:addyosmani/agent-skills"
   ],

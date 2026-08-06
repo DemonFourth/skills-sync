@@ -5,8 +5,7 @@
   "path_key": "xurl",
   "enabled": true,
   "tags": [
-    "automation/自动化",
-    "coding-agent/编码代理",
+    "domain/编码开发",
     "source:steipete/agent-scripts"
   ],
   "source": {

@@ -5,12 +5,8 @@
   "path_key": "improve-codebase-architecture",
   "enabled": true,
   "tags": [
-    "backend/后端",
-    "development/开发",
-    "refactoring/重构",
-    "report/报告",
-    "source:mattpocock/skills",
-    "workflow/工作流"
+    "domain/编码开发",
+    "source:mattpocock/skills"
   ],
   "source": {
     "type": "git",

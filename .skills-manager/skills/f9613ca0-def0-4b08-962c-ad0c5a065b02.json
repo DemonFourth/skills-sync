@@ -5,11 +5,7 @@
   "path_key": "sn-da-large-file-analysis",
   "enabled": true,
   "tags": [
-    "data-analysis/数据分析",
-    "data/数据",
-    "docs/文档",
-    "excel/电子表格",
-    "python-runtime/Python运行时",
+    "domain/数据分析",
     "source:OpenSenseNova/skills"
   ],
   "source": {

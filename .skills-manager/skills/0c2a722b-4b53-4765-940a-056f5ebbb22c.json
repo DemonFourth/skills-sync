@@ -5,11 +5,8 @@
   "path_key": "sn-da-image-caption",
   "enabled": true,
   "tags": [
-    "data-analysis/数据分析",
-    "docs/文档",
-    "image/图像",
+    "domain/数据分析",
     "needs-api-key/需API密钥",
-    "python-runtime/Python运行时",
     "source:OpenSenseNova/skills"
   ],
   "source": {

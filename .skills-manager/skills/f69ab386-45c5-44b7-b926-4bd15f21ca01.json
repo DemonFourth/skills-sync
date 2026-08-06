@@ -5,8 +5,8 @@
   "path_key": "obsidian-cli",
   "enabled": true,
   "tags": [
-    "automation/自动化",
-    "obsidian/黑曜石"
+    "domain/效率工具",
+    "source:kepano/obsidian-skills"
   ],
   "source": {
     "type": "git",

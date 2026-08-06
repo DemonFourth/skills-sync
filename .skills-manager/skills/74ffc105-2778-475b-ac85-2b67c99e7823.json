@@ -5,11 +5,8 @@
   "path_key": "prototype",
   "enabled": true,
   "tags": [
-    "development/开发",
-    "frontend/前端",
-    "source:mattpocock/skills",
-    "ui/界面",
-    "workflow/工作流"
+    "domain/前端界面",
+    "source:mattpocock/skills"
   ],
   "source": {
     "type": "git",

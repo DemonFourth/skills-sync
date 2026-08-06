@@ -5,10 +5,8 @@
   "path_key": "triage",
   "enabled": true,
   "tags": [
-    "cli/命令行",
-    "development/开发",
-    "source:mattpocock/skills",
-    "workflow/工作流"
+    "domain/元技能",
+    "source:mattpocock/skills"
   ],
   "source": {
     "type": "git",

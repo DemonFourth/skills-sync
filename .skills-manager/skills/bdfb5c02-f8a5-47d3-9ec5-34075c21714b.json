@@ -5,6 +5,7 @@
   "path_key": "beeper",
   "enabled": true,
   "tags": [
+    "domain/智能体运维",
     "needs-api-key/需API密钥",
     "source:steipete/agent-scripts"
   ],

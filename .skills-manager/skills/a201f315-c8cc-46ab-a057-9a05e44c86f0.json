@@ -5,8 +5,8 @@
   "path_key": "karpathy-guidelines",
   "enabled": true,
   "tags": [
-    "coding-agent/编码代理",
-    "llm/大模型"
+    "domain/编码开发",
+    "source:multica-ai/andrej-karpathy-skills"
   ],
   "source": {
     "type": "git",

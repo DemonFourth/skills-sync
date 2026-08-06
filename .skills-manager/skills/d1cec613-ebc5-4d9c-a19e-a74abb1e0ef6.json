@@ -5,11 +5,8 @@
   "path_key": "setup-pre-commit",
   "enabled": true,
   "tags": [
-    "automation/自动化",
-    "development/开发",
-    "git/版本控制",
-    "source:mattpocock/skills",
-    "workflow/工作流"
+    "domain/编码开发",
+    "source:mattpocock/skills"
   ],
   "source": {
     "type": "git",

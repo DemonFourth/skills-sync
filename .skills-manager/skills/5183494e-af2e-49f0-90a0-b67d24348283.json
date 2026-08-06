@@ -5,9 +5,7 @@
   "path_key": "skill-personalizer",
   "enabled": true,
   "tags": [
-    "automation/自动化",
-    "coding-agent/编码代理",
-    "skill/技能",
+    "domain/元技能",
     "source:hqhq1025/skill-optimizer"
   ],
   "source": {

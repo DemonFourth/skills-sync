@@ -5,11 +5,8 @@
   "path_key": "alphaear-reporter",
   "enabled": true,
   "tags": [
-    "python-runtime/Python运行时",
-    "report/报告",
-    "source:RKiding/finance-skills",
-    "workflow/工作流",
-    "writing/写作"
+    "domain/内容写作",
+    "source:RKiding/finance-skills"
   ],
   "source": {
     "type": "git",

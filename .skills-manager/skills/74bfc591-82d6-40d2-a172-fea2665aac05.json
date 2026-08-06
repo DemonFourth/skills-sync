@@ -5,11 +5,8 @@
   "path_key": "git-guardrails-claude-code",
   "enabled": true,
   "tags": [
-    "development/开发",
-    "git/版本控制",
-    "security/安全",
-    "source:mattpocock/skills",
-    "workflow/工作流"
+    "domain/编码开发",
+    "source:mattpocock/skills"
   ],
   "source": {
     "type": "git",

@@ -5,16 +5,14 @@
   "path_key": "lean-ctx",
   "enabled": true,
   "tags": [
-    "api/接口",
-    "coding-agent/编码代理",
-    "context/上下文",
+    "domain/元技能",
     "needs-api-key/需API密钥",
-    "npm-runtime/npm运行时"
+    "source:yvgude/lean-ctx"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/yvgude/lean-ctx",
-    "subpath": null,
+    "subpath": "skills",
     "branch": null
   }
 }

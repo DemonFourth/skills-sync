@@ -5,8 +5,7 @@
   "path_key": "github-deep-review",
   "enabled": true,
   "tags": [
-    "coding-agent/编码代理",
-    "git/版本控制",
+    "domain/编码开发",
     "source:steipete/agent-scripts"
   ],
   "source": {

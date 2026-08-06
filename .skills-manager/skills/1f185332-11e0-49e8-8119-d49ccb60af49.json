@@ -5,8 +5,9 @@
   "path_key": "hithink-finance",
   "enabled": true,
   "tags": [
-    "finance/金融",
-    "needs-api-key/需API密钥"
+    "domain/数据分析",
+    "needs-api-key/需API密钥",
+    "source:HiThink-Tech/Financial-API"
   ],
   "source": {
     "type": "git",

@@ -5,9 +5,8 @@
   "path_key": "sn-image-resume",
   "enabled": true,
   "tags": [
-    "image/图像",
+    "domain/设计视觉",
     "needs-api-key/需API密钥",
-    "python-runtime/Python运行时",
     "source:OpenSenseNova/skills"
   ],
   "source": {

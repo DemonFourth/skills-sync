@@ -5,10 +5,7 @@
   "path_key": "swift-concurrency-expert",
   "enabled": true,
   "tags": [
-    "coding-agent/编码代理",
-    "development/开发",
-    "docs/文档",
-    "mobile/移动端",
+    "domain/编码开发",
     "source:steipete/agent-scripts"
   ],
   "source": {

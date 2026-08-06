@@ -5,6 +5,7 @@
   "path_key": "things-todo",
   "enabled": true,
   "tags": [
+    "domain/效率工具",
     "source:steipete/agent-scripts"
   ],
   "source": {

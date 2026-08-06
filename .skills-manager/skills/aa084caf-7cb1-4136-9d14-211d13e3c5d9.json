@@ -5,8 +5,7 @@
   "path_key": "one-password",
   "enabled": true,
   "tags": [
-    "automation/自动化",
-    "security/安全",
+    "domain/效率工具",
     "source:steipete/agent-scripts"
   ],
   "source": {

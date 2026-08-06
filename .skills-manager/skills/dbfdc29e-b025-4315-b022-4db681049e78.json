@@ -5,9 +5,8 @@
   "path_key": "grilling",
   "enabled": true,
   "tags": [
-    "development/开发",
-    "source:mattpocock/skills",
-    "workflow/工作流"
+    "domain/元技能",
+    "source:mattpocock/skills"
   ],
   "source": {
     "type": "git",
