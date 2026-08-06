@@ -12,7 +12,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/yvgude/lean-ctx",
-    "subpath": "skills",
+    "subpath": null,
     "branch": null
   }
 }
