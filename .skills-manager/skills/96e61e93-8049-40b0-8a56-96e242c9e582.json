@@ -11,7 +11,7 @@
   "source": {
     "type": "skillssh",
     "ref": "panniantong/agent-reach/agent-reach",
-    "subpath": null,
+    "subpath": "agent_reach\\skill",
     "branch": null
   }
 }

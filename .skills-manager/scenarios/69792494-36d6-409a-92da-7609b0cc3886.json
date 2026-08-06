@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "scenario_id": "69792494-36d6-409a-92da-7609b0cc3886",
+  "name": "自媒体内容创作",
+  "description": "中文平台选题调研 → 写作/排版 → HTML专题页/网页视频/发布",
+  "icon": "megaphone",
+  "sort_order": 100
+}

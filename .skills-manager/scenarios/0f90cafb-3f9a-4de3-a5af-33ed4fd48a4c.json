@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "scenario_id": "0f90cafb-3f9a-4de3-a5af-33ed4fd48a4c",
+  "name": "生图生视频 / 视觉创作",
+  "description": "文生图/图编辑 → 品牌/海报/信息图 → GIF/视频/音乐",
+  "icon": "image",
+  "sort_order": 100
+}
