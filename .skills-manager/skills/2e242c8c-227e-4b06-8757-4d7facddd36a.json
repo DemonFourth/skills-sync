@@ -1,1 +1,17 @@
-{  "schema_version": 1,  "skill_id": "2e242c8c-227e-4b06-8757-4d7facddd36a",  "path": "writing-shape",  "path_key": "writing-shape",  "enabled": true,  "tags": [    "domain/内容写作",    "source:mattpocock/skills"  ],  "source": {    "type": "skillssh",    "ref": "mattpocock/skills/writing-shape",    "subpath": null,    "branch": null  }}
+{
+  "schema_version": 1,
+  "skill_id": "2e242c8c-227e-4b06-8757-4d7facddd36a",
+  "path": "writing-shape",
+  "path_key": "writing-shape",
+  "enabled": true,
+  "tags": [
+    "domain/内容写作",
+    "source:mattpocock/skills"
+  ],
+  "source": {
+    "type": "skillssh",
+    "ref": "mattpocock/skills/writing-shape",
+    "subpath": null,
+    "branch": null
+  }
+}
