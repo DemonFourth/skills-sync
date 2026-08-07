@@ -5,13 +5,15 @@
   "path_key": "alphaear-news",
   "enabled": true,
   "tags": [
-    "domain/研究与搜索",
+    "finance/金融",
+    "python-runtime/Python运行时",
+    "search/搜索",
     "source:RKiding/finance-skills"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/RKiding/Awesome-finance-skills",
-    "subpath": null,
+    "subpath": "skills\\alphaear-news",
     "branch": null
   }
 }

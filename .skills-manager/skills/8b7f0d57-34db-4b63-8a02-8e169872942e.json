@@ -5,14 +5,15 @@
   "path_key": "executing-plans",
   "enabled": true,
   "tags": [
-    "domain/元技能",
+    "automation/自动化",
+    "coding-agent/编码代理",
     "needs-api-key/需API密钥",
     "source:obra/superpowers"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/obra/superpowers",
-    "subpath": null,
+    "subpath": "skills\\executing-plans",
     "branch": null
   }
 }

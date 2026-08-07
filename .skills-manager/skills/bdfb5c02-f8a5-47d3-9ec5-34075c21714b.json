@@ -5,14 +5,13 @@
   "path_key": "beeper",
   "enabled": true,
   "tags": [
-    "domain/智能体运维",
     "needs-api-key/需API密钥",
     "source:steipete/agent-scripts"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/steipete/agent-scripts",
-    "subpath": null,
+    "subpath": "skills/beeper",
     "branch": null
   }
 }

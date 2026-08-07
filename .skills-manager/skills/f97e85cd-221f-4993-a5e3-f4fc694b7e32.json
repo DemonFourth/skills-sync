@@ -5,14 +5,16 @@
   "path_key": "minimax-docx",
   "enabled": true,
   "tags": [
-    "domain/内容写作",
+    "docs/文档",
+    "minimax/MiniMax",
     "needs-api-key/需API密钥",
-    "source:MiniMax-AI/skills"
+    "source:MiniMax-AI/skills",
+    "writing/写作"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/MiniMax-AI/skills/",
-    "subpath": null,
+    "subpath": "skills\\minimax-docx",
     "branch": null
   }
 }

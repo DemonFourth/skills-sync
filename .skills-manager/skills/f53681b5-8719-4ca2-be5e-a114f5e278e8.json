@@ -5,13 +5,15 @@
   "path_key": "native-app-performance",
   "enabled": true,
   "tags": [
-    "domain/编码开发",
+    "coding-agent/编码代理",
+    "development/开发",
+    "mobile/移动端",
     "source:steipete/agent-scripts"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/steipete/agent-scripts",
-    "subpath": null,
+    "subpath": "skills/native-app-performance",
     "branch": null
   }
 }

@@ -5,13 +5,17 @@
   "path_key": "codebase-design",
   "enabled": true,
   "tags": [
-    "domain/编码开发",
-    "source:mattpocock/skills"
+    "backend/后端",
+    "dev-standards/开发规范",
+    "development/开发",
+    "refactoring/重构",
+    "source:mattpocock/skills",
+    "workflow/工作流"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/mattpocock/skills/tree/main/skills/engineering/codebase-design",
-    "subpath": "skills",
-    "branch": null
+    "subpath": "skills/engineering/codebase-design",
+    "branch": "main"
   }
 }

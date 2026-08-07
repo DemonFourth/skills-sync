@@ -5,13 +5,14 @@
   "path_key": "sn-ppt-creative",
   "enabled": true,
   "tags": [
-    "domain/内容写作",
+    "ppt/幻灯片",
+    "python-runtime/Python运行时",
     "source:OpenSenseNova/skills"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/OpenSenseNova/SenseNova-Skills",
-    "subpath": null,
+    "subpath": "skills\\sn-ppt-creative",
     "branch": null
   }
 }

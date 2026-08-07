@@ -5,14 +5,19 @@
   "path_key": "frontend-dev",
   "enabled": true,
   "tags": [
-    "domain/前端界面",
+    "coding-agent/编码代理",
+    "development/开发",
+    "frontend/前端",
+    "minimax/MiniMax",
     "needs-api-key/需API密钥",
-    "source:MiniMax-AI/skills"
+    "python-runtime/Python运行时",
+    "source:MiniMax-AI/skills",
+    "writing/写作"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/MiniMax-AI/skills/",
-    "subpath": null,
+    "subpath": "skills\\frontend-dev",
     "branch": null
   }
 }

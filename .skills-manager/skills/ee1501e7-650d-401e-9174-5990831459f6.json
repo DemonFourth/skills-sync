@@ -5,14 +5,17 @@
   "path_key": "skill-creator",
   "enabled": true,
   "tags": [
-    "domain/元技能",
     "needs-api-key/需API密钥",
-    "source:anthropics/skills"
+    "npm-runtime/npm运行时",
+    "python-runtime/Python运行时",
+    "skill/技能",
+    "source:anthropics/skills",
+    "testing/测试"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/anthropics/skills",
-    "subpath": null,
+    "subpath": "skills\\skill-creator",
     "branch": null
   }
 }

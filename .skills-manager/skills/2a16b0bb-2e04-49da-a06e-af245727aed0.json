@@ -5,13 +5,12 @@
   "path_key": "sn-update",
   "enabled": true,
   "tags": [
-    "domain/运维工具",
     "source:OpenSenseNova/skills"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/OpenSenseNova/SenseNova-Skills",
-    "subpath": null,
+    "subpath": "skills\\sn-update",
     "branch": null
   }
 }

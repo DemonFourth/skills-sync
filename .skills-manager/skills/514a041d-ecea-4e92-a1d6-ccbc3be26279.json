@@ -5,13 +5,15 @@
   "path_key": "xlsx",
   "enabled": true,
   "tags": [
-    "domain/数据分析",
+    "data/数据",
+    "docs/文档",
+    "python-runtime/Python运行时",
     "source:anthropics/skills"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/anthropics/skills",
-    "subpath": null,
+    "subpath": "skills\\xlsx",
     "branch": null
   }
 }

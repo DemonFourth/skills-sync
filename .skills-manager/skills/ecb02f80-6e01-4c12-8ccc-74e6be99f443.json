@@ -5,14 +5,14 @@
   "path_key": "canvas-design",
   "enabled": true,
   "tags": [
-    "domain/设计视觉",
+    "design/设计",
     "needs-api-key/需API密钥",
     "source:anthropics/skills"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/anthropics/skills",
-    "subpath": null,
+    "subpath": "skills\\canvas-design",
     "branch": null
   }
 }

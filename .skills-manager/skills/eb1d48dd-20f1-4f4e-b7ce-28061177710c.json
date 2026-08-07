@@ -5,14 +5,16 @@
   "path_key": "sn-search-code",
   "enabled": true,
   "tags": [
-    "domain/研究与搜索",
+    "git/版本控制",
     "needs-api-key/需API密钥",
+    "python-runtime/Python运行时",
+    "search/搜索",
     "source:OpenSenseNova/skills"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/OpenSenseNova/SenseNova-Skills",
-    "subpath": null,
+    "subpath": "skills\\sn-search-code",
     "branch": null
   }
 }

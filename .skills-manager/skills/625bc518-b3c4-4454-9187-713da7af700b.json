@@ -5,13 +5,15 @@
   "path_key": "finishing-a-development-branch",
   "enabled": true,
   "tags": [
-    "domain/元技能",
+    "coding-agent/编码代理",
+    "git/版本控制",
+    "npm-runtime/npm运行时",
     "source:obra/superpowers"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/obra/superpowers",
-    "subpath": null,
+    "subpath": "skills\\finishing-a-development-branch",
     "branch": null
   }
 }

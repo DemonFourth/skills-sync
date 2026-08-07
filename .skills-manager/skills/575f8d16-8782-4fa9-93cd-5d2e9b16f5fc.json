@@ -5,14 +5,14 @@
   "path_key": "using-superpowers",
   "enabled": true,
   "tags": [
-    "domain/元技能",
+    "coding-agent/编码代理",
     "needs-api-key/需API密钥",
     "source:obra/superpowers"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/obra/superpowers",
-    "subpath": null,
+    "subpath": "skills\\using-superpowers",
     "branch": null
   }
 }

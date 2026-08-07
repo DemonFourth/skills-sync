@@ -5,14 +5,16 @@
   "path_key": "gif-sticker-maker",
   "enabled": true,
   "tags": [
-    "domain/多媒体",
+    "gif/动图",
+    "minimax/MiniMax",
     "needs-api-key/需API密钥",
+    "python-runtime/Python运行时",
     "source:MiniMax-AI/skills"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/MiniMax-AI/skills/",
-    "subpath": null,
+    "subpath": "skills\\gif-sticker-maker",
     "branch": null
   }
 }

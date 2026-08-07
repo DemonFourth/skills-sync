@@ -5,14 +5,16 @@
   "path_key": "sn-search-image",
   "enabled": true,
   "tags": [
-    "domain/研究与搜索",
+    "api/接口",
     "needs-api-key/需API密钥",
+    "python-runtime/Python运行时",
+    "search/搜索",
     "source:OpenSenseNova/skills"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/OpenSenseNova/SenseNova-Skills",
-    "subpath": null,
+    "subpath": "skills\\sn-search-image",
     "branch": null
   }
 }

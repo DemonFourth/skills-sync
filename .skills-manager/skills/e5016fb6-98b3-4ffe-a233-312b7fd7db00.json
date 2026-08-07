@@ -5,13 +5,15 @@
   "path_key": "create-cli",
   "enabled": true,
   "tags": [
-    "domain/编码开发",
+    "cli/命令行",
+    "coding-agent/编码代理",
+    "development/开发",
     "source:steipete/agent-scripts"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/steipete/agent-scripts",
-    "subpath": null,
+    "subpath": "skills/create-cli",
     "branch": null
   }
 }

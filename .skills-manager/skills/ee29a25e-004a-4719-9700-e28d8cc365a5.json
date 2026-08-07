@@ -4,10 +4,7 @@
   "path": "ima-skill",
   "path_key": "ima-skill",
   "enabled": true,
-  "tags": [
-    "domain/效率工具",
-    "source:local"
-  ],
+  "tags": [],
   "source": {
     "type": "local",
     "ref": null,

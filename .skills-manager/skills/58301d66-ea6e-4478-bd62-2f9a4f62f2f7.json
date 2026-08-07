@@ -5,13 +5,15 @@
   "path_key": "clickclack",
   "enabled": true,
   "tags": [
-    "domain/智能体运维",
+    "automation/自动化",
+    "browser/浏览器",
+    "coding-agent/编码代理",
     "source:steipete/agent-scripts"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/steipete/agent-scripts",
-    "subpath": null,
+    "subpath": "skills/clickclack",
     "branch": null
   }
 }

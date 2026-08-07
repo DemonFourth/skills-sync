@@ -5,13 +5,16 @@
   "path_key": "shipping-and-launch",
   "enabled": true,
   "tags": [
-    "domain/运维工具",
+    "coding-agent/编码代理",
+    "dev-standards/开发规范",
+    "devops/运维",
+    "npm-runtime/npm运行时",
     "source:addyosmani/agent-skills"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/addyosmani/agent-skills",
-    "subpath": "skills",
+    "subpath": "skills\\shipping-and-launch",
     "branch": null
   }
 }

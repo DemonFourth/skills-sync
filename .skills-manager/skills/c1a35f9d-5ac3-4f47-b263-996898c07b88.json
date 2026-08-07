@@ -5,13 +5,16 @@
   "path_key": "skill-miner",
   "enabled": true,
   "tags": [
-    "domain/元技能",
+    "coding-agent/编码代理",
+    "data-analysis/数据分析",
+    "research/研究",
+    "skill/技能",
     "source:hqhq1025/skill-optimizer"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/hqhq1025/skill-optimizer",
-    "subpath": null,
+    "subpath": "skills/skill-miner",
     "branch": null
   }
 }

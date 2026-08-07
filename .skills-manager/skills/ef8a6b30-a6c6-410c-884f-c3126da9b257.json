@@ -5,13 +5,12 @@
   "path_key": "openclaw-relay",
   "enabled": true,
   "tags": [
-    "domain/智能体运维",
     "source:steipete/agent-scripts"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/steipete/agent-scripts",
-    "subpath": null,
+    "subpath": "skills/openclaw-relay",
     "branch": null
   }
 }

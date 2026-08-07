@@ -5,13 +5,14 @@
   "path_key": "idea-refine",
   "enabled": true,
   "tags": [
-    "domain/元技能",
+    "coding-agent/编码代理",
+    "dev-standards/开发规范",
     "source:addyosmani/agent-skills"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/addyosmani/agent-skills",
-    "subpath": "skills",
+    "subpath": "skills\\idea-refine",
     "branch": null
   }
 }

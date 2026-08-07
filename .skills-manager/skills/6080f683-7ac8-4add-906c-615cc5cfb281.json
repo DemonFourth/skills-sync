@@ -5,13 +5,15 @@
   "path_key": "resolving-merge-conflicts",
   "enabled": true,
   "tags": [
-    "domain/编码开发",
-    "source:mattpocock/skills"
+    "development/开发",
+    "git/版本控制",
+    "source:mattpocock/skills",
+    "workflow/工作流"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/mattpocock/skills/tree/main/skills/engineering/resolving-merge-conflicts",
-    "subpath": "skills",
-    "branch": null
+    "subpath": "skills/engineering/resolving-merge-conflicts",
+    "branch": "main"
   }
 }

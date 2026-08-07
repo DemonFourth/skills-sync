@@ -5,14 +5,17 @@
   "path_key": "doc-coauthoring",
   "enabled": true,
   "tags": [
-    "domain/内容写作",
+    "api/接口",
+    "automation/自动化",
+    "docs/文档",
     "needs-api-key/需API密钥",
-    "source:anthropics/skills"
+    "source:anthropics/skills",
+    "writing/写作"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/anthropics/skills",
-    "subpath": null,
+    "subpath": "skills\\doc-coauthoring",
     "branch": null
   }
 }

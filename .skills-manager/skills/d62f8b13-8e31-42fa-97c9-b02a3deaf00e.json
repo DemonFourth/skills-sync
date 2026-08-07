@@ -5,13 +5,15 @@
   "path_key": "sn-research-planning",
   "enabled": true,
   "tags": [
-    "domain/研究与搜索",
-    "source:OpenSenseNova/skills"
+    "report/报告",
+    "research/研究",
+    "source:OpenSenseNova/skills",
+    "workflow/工作流"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/OpenSenseNova/SenseNova-Skills",
-    "subpath": null,
+    "subpath": "skills",
     "branch": null
   }
 }

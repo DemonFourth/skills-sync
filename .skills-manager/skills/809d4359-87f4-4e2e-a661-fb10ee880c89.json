@@ -5,13 +5,12 @@
   "path_key": "reminders",
   "enabled": true,
   "tags": [
-    "domain/效率工具",
     "source:steipete/agent-scripts"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/steipete/agent-scripts",
-    "subpath": null,
+    "subpath": "skills/reminders",
     "branch": null
   }
 }

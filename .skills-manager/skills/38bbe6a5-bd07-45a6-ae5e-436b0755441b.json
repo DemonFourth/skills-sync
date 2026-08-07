@@ -5,13 +5,13 @@
   "path_key": "sonos",
   "enabled": true,
   "tags": [
-    "domain/多媒体",
+    "audio/音频",
     "source:steipete/agent-scripts"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/steipete/agent-scripts",
-    "subpath": null,
+    "subpath": "skills/sonos",
     "branch": null
   }
 }

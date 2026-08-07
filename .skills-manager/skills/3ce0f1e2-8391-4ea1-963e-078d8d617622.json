@@ -5,13 +5,16 @@
   "path_key": "docx",
   "enabled": true,
   "tags": [
-    "domain/内容写作",
-    "source:anthropics/skills"
+    "docs/文档",
+    "npm-runtime/npm运行时",
+    "python-runtime/Python运行时",
+    "source:anthropics/skills",
+    "writing/写作"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/anthropics/skills",
-    "subpath": null,
+    "subpath": "skills\\docx",
     "branch": null
   }
 }

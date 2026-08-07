@@ -5,13 +5,14 @@
   "path_key": "domain-dns-ops",
   "enabled": true,
   "tags": [
-    "domain/运维工具",
+    "automation/自动化",
+    "devops/运维",
     "source:steipete/agent-scripts"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/steipete/agent-scripts",
-    "subpath": null,
+    "subpath": "skills/domain-dns-ops",
     "branch": null
   }
 }

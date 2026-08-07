@@ -5,14 +5,19 @@
   "path_key": "ios-application-dev",
   "enabled": true,
   "tags": [
-    "domain/编码开发",
+    "coding-agent/编码代理",
+    "development/开发",
+    "ios/iOS",
+    "minimax/MiniMax",
+    "mobile/移动端",
     "needs-api-key/需API密钥",
+    "python-runtime/Python运行时",
     "source:MiniMax-AI/skills"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/MiniMax-AI/skills/",
-    "subpath": null,
+    "subpath": "skills\\ios-application-dev",
     "branch": null
   }
 }

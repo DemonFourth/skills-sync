@@ -5,14 +5,14 @@
   "path_key": "find-skills",
   "enabled": true,
   "tags": [
-    "domain/元技能",
     "needs-api-key/需API密钥",
-    "source:vercel-labs/skills"
+    "npm-runtime/npm运行时",
+    "skill/技能"
   ],
   "source": {
     "type": "skillssh",
     "ref": "vercel-labs/skills/find-skills",
-    "subpath": null,
+    "subpath": "skills\\find-skills",
     "branch": null
   }
 }

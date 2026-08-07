@@ -5,13 +5,14 @@
   "path_key": "ask-matt",
   "enabled": true,
   "tags": [
-    "domain/元技能",
+    "cli/命令行",
+    "coding-agent/编码代理",
     "source:mattpocock/skills"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/mattpocock/skills/tree/main/skills/engineering/ask-matt",
-    "subpath": "skills",
-    "branch": null
+    "subpath": "skills/engineering/ask-matt",
+    "branch": "main"
   }
 }

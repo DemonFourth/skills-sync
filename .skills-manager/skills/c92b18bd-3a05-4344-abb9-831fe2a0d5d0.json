@@ -5,13 +5,12 @@
   "path_key": "obsidian-markdown",
   "enabled": true,
   "tags": [
-    "domain/效率工具",
-    "source:kepano/obsidian-skills"
+    "obsidian/黑曜石"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/kepano/obsidian-skills",
-    "subpath": null,
+    "subpath": "skills\\obsidian-markdown",
     "branch": null
   }
 }

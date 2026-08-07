@@ -5,13 +5,15 @@
   "path_key": "brandkit",
   "enabled": true,
   "tags": [
-    "domain/设计视觉",
-    "source:Leonxlnx/taste-skill"
+    "design/设计",
+    "image/图像",
+    "source:Leonxlnx/taste-skill",
+    "ui/界面"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/Leonxlnx/taste-skill",
-    "subpath": null,
+    "subpath": "skills\\brandkit",
     "branch": null
   }
 }

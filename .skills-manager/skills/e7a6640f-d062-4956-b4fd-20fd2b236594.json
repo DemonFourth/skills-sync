@@ -5,14 +5,16 @@
   "path_key": "writing-skills",
   "enabled": true,
   "tags": [
-    "domain/元技能",
+    "coding-agent/编码代理",
     "needs-api-key/需API密钥",
-    "source:obra/superpowers"
+    "source:obra/superpowers",
+    "testing/测试",
+    "writing/写作"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/obra/superpowers",
-    "subpath": null,
+    "subpath": "skills\\writing-skills",
     "branch": null
   }
 }

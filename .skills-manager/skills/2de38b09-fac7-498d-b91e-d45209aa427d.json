@@ -5,13 +5,16 @@
   "path_key": "kb-retriever",
   "enabled": true,
   "tags": [
-    "domain/研究与搜索",
+    "data/数据",
+    "python-runtime/Python运行时",
+    "rag/检索增强",
+    "search/搜索",
     "source:ConardLi/garden-skills"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/ConardLi/garden-skills",
-    "subpath": null,
+    "subpath": "skills\\kb-retriever",
     "branch": null
   }
 }

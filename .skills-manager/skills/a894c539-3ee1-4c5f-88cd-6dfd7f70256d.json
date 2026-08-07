@@ -5,13 +5,15 @@
   "path_key": "documentation-and-adrs",
   "enabled": true,
   "tags": [
-    "domain/编码开发",
-    "source:addyosmani/agent-skills"
+    "coding-agent/编码代理",
+    "dev-standards/开发规范",
+    "source:addyosmani/agent-skills",
+    "writing/写作"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/addyosmani/agent-skills",
-    "subpath": "skills",
+    "subpath": "skills\\documentation-and-adrs",
     "branch": null
   }
 }

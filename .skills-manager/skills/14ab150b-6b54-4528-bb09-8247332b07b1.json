@@ -5,13 +5,15 @@
   "path_key": "grill-with-docs",
   "enabled": true,
   "tags": [
-    "domain/元技能",
-    "source:mattpocock/skills"
+    "development/开发",
+    "docs/文档",
+    "source:mattpocock/skills",
+    "workflow/工作流"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/mattpocock/skills/tree/main/skills/engineering/grill-with-docs",
-    "subpath": "skills",
-    "branch": null
+    "subpath": "skills/engineering/grill-with-docs",
+    "branch": "main"
   }
 }

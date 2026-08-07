@@ -5,8 +5,8 @@
   "path_key": "agent-reach",
   "enabled": true,
   "tags": [
-    "domain/研究与搜索",
-    "source:local"
+    "research/研究",
+    "search/搜索"
   ],
   "source": {
     "type": "skillssh",

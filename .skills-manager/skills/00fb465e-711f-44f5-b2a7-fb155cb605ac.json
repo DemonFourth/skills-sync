@@ -5,14 +5,15 @@
   "path_key": "sn-image-resume",
   "enabled": true,
   "tags": [
-    "domain/设计视觉",
+    "image/图像",
     "needs-api-key/需API密钥",
+    "python-runtime/Python运行时",
     "source:OpenSenseNova/skills"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/OpenSenseNova/SenseNova-Skills",
-    "subpath": null,
+    "subpath": "skills\\sn-image-resume",
     "branch": null
   }
 }

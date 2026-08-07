@@ -5,13 +5,17 @@
   "path_key": "android-native-dev",
   "enabled": true,
   "tags": [
-    "domain/编码开发",
+    "android/安卓",
+    "coding-agent/编码代理",
+    "development/开发",
+    "minimax/MiniMax",
+    "mobile/移动端",
     "source:MiniMax-AI/skills"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/MiniMax-AI/skills/",
-    "subpath": null,
+    "subpath": "skills\\android-native-dev",
     "branch": null
   }
 }

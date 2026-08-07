@@ -5,13 +5,15 @@
   "path_key": "handoff",
   "enabled": true,
   "tags": [
-    "domain/内容写作",
-    "source:mattpocock/skills"
+    "development/开发",
+    "source:mattpocock/skills",
+    "workflow/工作流",
+    "writing/写作"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/mattpocock/skills/tree/main/skills/productivity/handoff",
-    "subpath": "skills",
-    "branch": null
+    "subpath": "skills/productivity/handoff",
+    "branch": "main"
   }
 }

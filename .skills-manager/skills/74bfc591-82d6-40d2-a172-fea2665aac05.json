@@ -5,13 +5,16 @@
   "path_key": "git-guardrails-claude-code",
   "enabled": true,
   "tags": [
-    "domain/编码开发",
-    "source:mattpocock/skills"
+    "development/开发",
+    "git/版本控制",
+    "security/安全",
+    "source:mattpocock/skills",
+    "workflow/工作流"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/mattpocock/skills/tree/main/skills/misc/git-guardrails-claude-code",
-    "subpath": "skills",
-    "branch": null
+    "subpath": "skills/misc/git-guardrails-claude-code",
+    "branch": "main"
   }
 }

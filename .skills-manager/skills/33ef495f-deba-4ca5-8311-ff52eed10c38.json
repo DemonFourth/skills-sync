@@ -5,13 +5,16 @@
   "path_key": "defuddle",
   "enabled": true,
   "tags": [
-    "domain/效率工具",
-    "source:kepano/obsidian-skills"
+    "coding-agent/编码代理",
+    "frontend/前端",
+    "markdown/标记语言",
+    "npm-runtime/npm运行时",
+    "obsidian/黑曜石"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/kepano/obsidian-skills",
-    "subpath": null,
+    "subpath": "skills\\defuddle",
     "branch": null
   }
 }

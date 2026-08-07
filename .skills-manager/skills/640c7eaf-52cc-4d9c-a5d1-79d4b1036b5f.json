@@ -5,13 +5,16 @@
   "path_key": "alphaear-reporter",
   "enabled": true,
   "tags": [
-    "domain/内容写作",
-    "source:RKiding/finance-skills"
+    "python-runtime/Python运行时",
+    "report/报告",
+    "source:RKiding/finance-skills",
+    "workflow/工作流",
+    "writing/写作"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/RKiding/Awesome-finance-skills",
-    "subpath": null,
+    "subpath": "skills\\alphaear-reporter",
     "branch": null
   }
 }

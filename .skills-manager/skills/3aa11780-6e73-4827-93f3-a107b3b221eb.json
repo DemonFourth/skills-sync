@@ -5,13 +5,14 @@
   "path_key": "agent-transcript",
   "enabled": true,
   "tags": [
-    "domain/编码开发",
+    "coding-agent/编码代理",
+    "development/开发",
     "source:steipete/agent-scripts"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/steipete/agent-scripts",
-    "subpath": null,
+    "subpath": "skills/agent-transcript",
     "branch": null
   }
 }

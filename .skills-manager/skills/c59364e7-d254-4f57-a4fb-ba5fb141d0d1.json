@@ -5,13 +5,15 @@
   "path_key": "full-output-enforcement",
   "enabled": true,
   "tags": [
-    "domain/编码开发",
+    "coding-agent/编码代理",
+    "design/设计",
+    "llm/大模型",
     "source:Leonxlnx/taste-skill"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/Leonxlnx/taste-skill",
-    "subpath": null,
+    "subpath": "skills\\output-skill",
     "branch": null
   }
 }

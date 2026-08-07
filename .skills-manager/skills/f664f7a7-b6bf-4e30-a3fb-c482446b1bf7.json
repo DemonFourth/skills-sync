@@ -5,13 +5,15 @@
   "path_key": "slack-gif-creator",
   "enabled": true,
   "tags": [
-    "domain/多媒体",
+    "design/设计",
+    "gif/动图",
+    "python-runtime/Python运行时",
     "source:anthropics/skills"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/anthropics/skills",
-    "subpath": null,
+    "subpath": "skills\\slack-gif-creator",
     "branch": null
   }
 }

@@ -5,13 +5,15 @@
   "path_key": "github-project-triage",
   "enabled": true,
   "tags": [
-    "domain/编码开发",
+    "automation/自动化",
+    "coding-agent/编码代理",
+    "git/版本控制",
     "source:steipete/agent-scripts"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/steipete/agent-scripts",
-    "subpath": null,
+    "subpath": "skills/github-project-triage",
     "branch": null
   }
 }

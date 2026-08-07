@@ -5,13 +5,14 @@
   "path_key": "shader-dev",
   "enabled": true,
   "tags": [
-    "domain/编码开发",
+    "image/图像",
+    "minimax/MiniMax",
     "source:MiniMax-AI/skills"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/MiniMax-AI/skills/",
-    "subpath": null,
+    "subpath": "skills\\shader-dev",
     "branch": null
   }
 }

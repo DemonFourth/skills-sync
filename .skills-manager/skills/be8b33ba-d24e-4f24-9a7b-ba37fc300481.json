@@ -5,14 +5,16 @@
   "path_key": "frontend-ui-engineering",
   "enabled": true,
   "tags": [
-    "domain/前端界面",
+    "coding-agent/编码代理",
+    "dev-standards/开发规范",
+    "frontend/前端",
     "needs-api-key/需API密钥",
     "source:addyosmani/agent-skills"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/addyosmani/agent-skills",
-    "subpath": "skills",
+    "subpath": "skills\\frontend-ui-engineering",
     "branch": null
   }
 }

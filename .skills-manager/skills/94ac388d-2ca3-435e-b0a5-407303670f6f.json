@@ -5,13 +5,14 @@
   "path_key": "obsidian",
   "enabled": true,
   "tags": [
-    "domain/效率工具",
+    "docs/文档",
+    "obsidian/黑曜石",
     "source:steipete/agent-scripts"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/steipete/agent-scripts",
-    "subpath": null,
+    "subpath": "skills/obsidian",
     "branch": null
   }
 }

@@ -5,13 +5,13 @@
   "path_key": "obsidian-bases",
   "enabled": true,
   "tags": [
-    "domain/效率工具",
-    "source:kepano/obsidian-skills"
+    "data/数据",
+    "obsidian/黑曜石"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/kepano/obsidian-skills",
-    "subpath": null,
+    "subpath": "skills\\obsidian-bases",
     "branch": null
   }
 }

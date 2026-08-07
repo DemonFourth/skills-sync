@@ -5,13 +5,15 @@
   "path_key": "using-git-worktrees",
   "enabled": true,
   "tags": [
-    "domain/元技能",
+    "automation/自动化",
+    "coding-agent/编码代理",
+    "git/版本控制",
     "source:obra/superpowers"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/obra/superpowers",
-    "subpath": null,
+    "subpath": "skills\\using-git-worktrees",
     "branch": null
   }
 }

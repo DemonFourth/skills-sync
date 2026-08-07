@@ -5,13 +5,14 @@
   "path_key": "release-tweets",
   "enabled": true,
   "tags": [
-    "domain/内容写作",
-    "source:steipete/agent-scripts"
+    "automation/自动化",
+    "source:steipete/agent-scripts",
+    "writing/写作"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/steipete/agent-scripts",
-    "subpath": null,
+    "subpath": "skills/release-tweets",
     "branch": null
   }
 }

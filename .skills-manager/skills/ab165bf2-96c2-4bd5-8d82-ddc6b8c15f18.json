@@ -5,9 +5,9 @@
   "path_key": "last30days-cn",
   "enabled": true,
   "tags": [
-    "domain/研究与搜索",
     "needs-api-key/需API密钥",
-    "source:Jesseovo/last30days-skill-cn"
+    "python-runtime/Python运行时",
+    "search/搜索"
   ],
   "source": {
     "type": "git",

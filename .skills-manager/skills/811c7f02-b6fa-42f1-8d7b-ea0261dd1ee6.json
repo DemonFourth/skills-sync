@@ -5,13 +5,15 @@
   "path_key": "markdown-converter",
   "enabled": true,
   "tags": [
-    "domain/内容写作",
+    "coding-agent/编码代理",
+    "docs/文档",
+    "markdown/标记语言",
     "source:steipete/agent-scripts"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/steipete/agent-scripts",
-    "subpath": null,
+    "subpath": "skills/markdown-converter",
     "branch": null
   }
 }

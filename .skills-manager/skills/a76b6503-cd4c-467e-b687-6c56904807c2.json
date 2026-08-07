@@ -5,14 +5,18 @@
   "path_key": "browser-testing-with-devtools",
   "enabled": true,
   "tags": [
-    "domain/编码开发",
+    "api/接口",
+    "coding-agent/编码代理",
+    "dev-standards/开发规范",
     "needs-api-key/需API密钥",
-    "source:addyosmani/agent-skills"
+    "npm-runtime/npm运行时",
+    "source:addyosmani/agent-skills",
+    "testing/测试"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/addyosmani/agent-skills",
-    "subpath": "skills",
+    "subpath": "skills\\browser-testing-with-devtools",
     "branch": null
   }
 }

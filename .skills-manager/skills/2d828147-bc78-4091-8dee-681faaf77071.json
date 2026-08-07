@@ -5,13 +5,15 @@
   "path_key": "deprecation-and-migration",
   "enabled": true,
   "tags": [
-    "domain/编码开发",
+    "coding-agent/编码代理",
+    "dev-standards/开发规范",
+    "refactoring/重构",
     "source:addyosmani/agent-skills"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/addyosmani/agent-skills",
-    "subpath": "skills",
+    "subpath": "skills\\deprecation-and-migration",
     "branch": null
   }
 }

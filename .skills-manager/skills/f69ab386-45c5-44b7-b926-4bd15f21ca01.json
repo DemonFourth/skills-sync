@@ -5,13 +5,13 @@
   "path_key": "obsidian-cli",
   "enabled": true,
   "tags": [
-    "domain/效率工具",
-    "source:kepano/obsidian-skills"
+    "automation/自动化",
+    "obsidian/黑曜石"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/kepano/obsidian-skills",
-    "subpath": null,
+    "subpath": "skills\\obsidian-cli",
     "branch": null
   }
 }

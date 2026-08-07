@@ -5,13 +5,16 @@
   "path_key": "git-workflow-and-versioning",
   "enabled": true,
   "tags": [
-    "domain/编码开发",
+    "automation/自动化",
+    "coding-agent/编码代理",
+    "dev-standards/开发规范",
+    "git/版本控制",
     "source:addyosmani/agent-skills"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/addyosmani/agent-skills",
-    "subpath": "skills",
+    "subpath": "skills\\git-workflow-and-versioning",
     "branch": null
   }
 }

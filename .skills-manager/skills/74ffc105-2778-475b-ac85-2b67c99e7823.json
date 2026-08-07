@@ -5,13 +5,16 @@
   "path_key": "prototype",
   "enabled": true,
   "tags": [
-    "domain/前端界面",
-    "source:mattpocock/skills"
+    "development/开发",
+    "frontend/前端",
+    "source:mattpocock/skills",
+    "ui/界面",
+    "workflow/工作流"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/mattpocock/skills/tree/main/skills/engineering/prototype",
-    "subpath": "skills",
-    "branch": null
+    "subpath": "skills/engineering/prototype",
+    "branch": "main"
   }
 }

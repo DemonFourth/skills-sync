@@ -5,13 +5,16 @@
   "path_key": "industrial-brutalist-ui",
   "enabled": true,
   "tags": [
-    "domain/前端界面",
+    "coding-agent/编码代理",
+    "design/设计",
+    "development/开发",
+    "python-runtime/Python运行时",
     "source:Leonxlnx/taste-skill"
   ],
   "source": {
     "type": "git",
     "ref": "https://github.com/Leonxlnx/taste-skill",
-    "subpath": null,
+    "subpath": "skills\\brutalist-skill",
     "branch": null
   }
 }
