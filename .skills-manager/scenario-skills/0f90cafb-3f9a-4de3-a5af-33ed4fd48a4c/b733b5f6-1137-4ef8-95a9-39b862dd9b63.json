@@ -1,1 +1,13 @@
-{  "schema_version": 1,  "scenario_id": "0f90cafb-3f9a-4de3-a5af-33ed4fd48a4c",  "skill_id": "b733b5f6-1137-4ef8-95a9-39b862dd9b63",  "sort_order": 4,  "tools": {    "claude_code": true,    "codex": true,    "gemini_cli": true,    "opencode": true,    "pi": true  }}
+{
+  "schema_version": 1,
+  "scenario_id": "0f90cafb-3f9a-4de3-a5af-33ed4fd48a4c",
+  "skill_id": "b733b5f6-1137-4ef8-95a9-39b862dd9b63",
+  "sort_order": 4,
+  "tools": {
+    "claude_code": true,
+    "codex": true,
+    "gemini_cli": true,
+    "opencode": true,
+    "pi": true
+  }
+}
