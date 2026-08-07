@@ -5,11 +5,8 @@
   "path_key": "swiftui-liquid-glass",
   "enabled": true,
   "tags": [
-    "coding-agent/编码代理",
-    "design/设计",
-    "frontend/前端",
-    "source:steipete/agent-scripts",
-    "ui/界面"
+    "domain/前端界面",
+    "source:steipete/agent-scripts"
   ],
   "source": {
     "type": "git",

@@ -5,10 +5,8 @@
   "path_key": "skill-generalizer",
   "enabled": true,
   "tags": [
-    "coding-agent/编码代理",
-    "skill/技能",
-    "source:hqhq1025/skill-optimizer",
-    "writing/写作"
+    "domain/元技能",
+    "source:hqhq1025/skill-optimizer"
   ],
   "source": {
     "type": "git",

@@ -5,11 +5,8 @@
   "path_key": "domain-modeling",
   "enabled": true,
   "tags": [
-    "backend/后端",
-    "development/开发",
-    "docs/文档",
-    "source:mattpocock/skills",
-    "workflow/工作流"
+    "domain/编码开发",
+    "source:mattpocock/skills"
   ],
   "source": {
     "type": "git",

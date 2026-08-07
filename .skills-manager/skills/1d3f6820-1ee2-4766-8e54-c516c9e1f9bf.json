@@ -5,8 +5,7 @@
   "path_key": "ask-matt",
   "enabled": true,
   "tags": [
-    "cli/命令行",
-    "coding-agent/编码代理",
+    "domain/元技能",
     "source:mattpocock/skills"
   ],
   "source": {

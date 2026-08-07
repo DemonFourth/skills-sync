@@ -5,8 +5,7 @@
   "path_key": "codex-debugging",
   "enabled": true,
   "tags": [
-    "coding-agent/编码代理",
-    "development/开发",
+    "domain/编码开发",
     "source:steipete/agent-scripts"
   ],
   "source": {

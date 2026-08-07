@@ -5,8 +5,7 @@
   "path_key": "subagent-driven-development",
   "enabled": true,
   "tags": [
-    "coding-agent/编码代理",
-    "llm/大模型",
+    "domain/元技能",
     "needs-api-key/需API密钥",
     "source:obra/superpowers"
   ],

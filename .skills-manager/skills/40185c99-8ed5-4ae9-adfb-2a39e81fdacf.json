@@ -5,7 +5,7 @@
   "path_key": "notcrawl",
   "enabled": true,
   "tags": [
-    "automation/自动化",
+    "domain/效率工具",
     "needs-api-key/需API密钥",
     "source:steipete/agent-scripts"
   ],

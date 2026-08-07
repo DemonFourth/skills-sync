@@ -5,8 +5,7 @@
   "path_key": "shader-dev",
   "enabled": true,
   "tags": [
-    "image/图像",
-    "minimax/MiniMax",
+    "domain/编码开发",
     "source:MiniMax-AI/skills"
   ],
   "source": {

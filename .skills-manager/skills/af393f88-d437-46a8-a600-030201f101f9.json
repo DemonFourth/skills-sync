@@ -5,12 +5,7 @@
   "path_key": "ci-cd-and-automation",
   "enabled": true,
   "tags": [
-    "automation/自动化",
-    "coding-agent/编码代理",
-    "dev-standards/开发规范",
-    "devops/运维",
-    "npm-runtime/npm运行时",
-    "python-runtime/Python运行时",
+    "domain/运维工具",
     "source:addyosmani/agent-skills"
   ],
   "source": {

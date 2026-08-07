@@ -5,14 +5,8 @@
   "path_key": "webapp-testing",
   "enabled": true,
   "tags": [
-    "automation/自动化",
-    "coding-agent/编码代理",
-    "development/开发",
-    "frontend/前端",
-    "npm-runtime/npm运行时",
-    "python-runtime/Python运行时",
-    "source:anthropics/skills",
-    "testing/测试"
+    "domain/编码开发",
+    "source:anthropics/skills"
   ],
   "source": {
     "type": "git",

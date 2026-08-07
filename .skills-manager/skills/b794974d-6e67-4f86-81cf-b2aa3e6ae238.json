@@ -5,11 +5,8 @@
   "path_key": "imagegen-frontend-mobile",
   "enabled": true,
   "tags": [
-    "design/设计",
-    "image/图像",
-    "mobile/移动端",
-    "source:Leonxlnx/taste-skill",
-    "ui/界面"
+    "domain/设计视觉",
+    "source:Leonxlnx/taste-skill"
   ],
   "source": {
     "type": "git",

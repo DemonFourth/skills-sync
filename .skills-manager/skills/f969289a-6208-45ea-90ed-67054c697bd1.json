@@ -5,9 +5,7 @@
   "path_key": "browser-use",
   "enabled": true,
   "tags": [
-    "automation/自动化",
-    "browser/浏览器",
-    "coding-agent/编码代理",
+    "domain/智能体运维",
     "needs-api-key/需API密钥",
     "source:steipete/agent-scripts"
   ],

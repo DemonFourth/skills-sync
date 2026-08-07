@@ -5,11 +5,8 @@
   "path_key": "context-engineering",
   "enabled": true,
   "tags": [
-    "coding-agent/编码代理",
-    "dev-standards/开发规范",
-    "llm/大模型",
+    "domain/元技能",
     "needs-api-key/需API密钥",
-    "npm-runtime/npm运行时",
     "source:addyosmani/agent-skills"
   ],
   "source": {

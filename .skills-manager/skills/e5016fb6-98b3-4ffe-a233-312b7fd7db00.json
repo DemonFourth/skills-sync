@@ -5,9 +5,7 @@
   "path_key": "create-cli",
   "enabled": true,
   "tags": [
-    "cli/命令行",
-    "coding-agent/编码代理",
-    "development/开发",
+    "domain/编码开发",
     "source:steipete/agent-scripts"
   ],
   "source": {

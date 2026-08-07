@@ -5,11 +5,8 @@
   "path_key": "sn-image-base",
   "enabled": true,
   "tags": [
-    "api/接口",
-    "image/图像",
-    "llm/大模型",
+    "domain/设计视觉",
     "needs-api-key/需API密钥",
-    "python-runtime/Python运行时",
     "source:OpenSenseNova/skills"
   ],
   "source": {

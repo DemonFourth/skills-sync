@@ -5,8 +5,8 @@
   "path_key": "obsidian-bases",
   "enabled": true,
   "tags": [
-    "data/数据",
-    "obsidian/黑曜石"
+    "domain/效率工具",
+    "source:kepano/obsidian-skills"
   ],
   "source": {
     "type": "git",

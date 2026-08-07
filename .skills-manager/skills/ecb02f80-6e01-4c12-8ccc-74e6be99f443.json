@@ -5,7 +5,7 @@
   "path_key": "canvas-design",
   "enabled": true,
   "tags": [
-    "design/设计",
+    "domain/设计视觉",
     "needs-api-key/需API密钥",
     "source:anthropics/skills"
   ],

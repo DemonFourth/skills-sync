@@ -5,12 +5,8 @@
   "path_key": "buddy-sings",
   "enabled": true,
   "tags": [
-    "audio/音频",
-    "minimax/MiniMax",
-    "multimedia/多媒体",
-    "music/音乐",
+    "domain/多媒体",
     "needs-api-key/需API密钥",
-    "npm-runtime/npm运行时",
     "source:MiniMax-AI/skills"
   ],
   "source": {

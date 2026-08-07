@@ -5,10 +5,8 @@
   "path_key": "sn-search-image",
   "enabled": true,
   "tags": [
-    "api/接口",
+    "domain/研究与搜索",
     "needs-api-key/需API密钥",
-    "python-runtime/Python运行时",
-    "search/搜索",
     "source:OpenSenseNova/skills"
   ],
   "source": {

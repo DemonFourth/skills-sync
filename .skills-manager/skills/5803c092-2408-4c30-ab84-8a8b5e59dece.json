@@ -5,10 +5,8 @@
   "path_key": "frontend-design",
   "enabled": true,
   "tags": [
-    "design/设计",
-    "frontend/前端",
-    "source:anthropics/skills",
-    "ui/界面"
+    "domain/前端界面",
+    "source:anthropics/skills"
   ],
   "source": {
     "type": "git",

@@ -5,8 +5,7 @@
   "path_key": "alphaear-logic-visualizer",
   "enabled": true,
   "tags": [
-    "diagram/图表",
-    "python-runtime/Python运行时",
+    "domain/数据分析",
     "source:RKiding/finance-skills"
   ],
   "source": {

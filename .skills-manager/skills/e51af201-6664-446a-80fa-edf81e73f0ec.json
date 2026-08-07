@@ -5,11 +5,9 @@
   "path_key": "doubt-driven-development",
   "enabled": true,
   "tags": [
-    "coding-agent/编码代理",
-    "dev-standards/开发规范",
+    "domain/元技能",
     "needs-api-key/需API密钥",
-    "source:addyosmani/agent-skills",
-    "testing/测试"
+    "source:addyosmani/agent-skills"
   ],
   "source": {
     "type": "git",

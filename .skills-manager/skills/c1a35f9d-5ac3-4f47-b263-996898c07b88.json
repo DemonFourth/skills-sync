@@ -5,10 +5,7 @@
   "path_key": "skill-miner",
   "enabled": true,
   "tags": [
-    "coding-agent/编码代理",
-    "data-analysis/数据分析",
-    "research/研究",
-    "skill/技能",
+    "domain/元技能",
     "source:hqhq1025/skill-optimizer"
   ],
   "source": {

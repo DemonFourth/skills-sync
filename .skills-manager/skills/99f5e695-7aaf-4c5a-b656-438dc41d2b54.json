@@ -5,8 +5,7 @@
   "path_key": "skill-cleaner",
   "enabled": true,
   "tags": [
-    "automation/自动化",
-    "coding-agent/编码代理",
+    "domain/元技能",
     "source:steipete/agent-scripts"
   ],
   "source": {

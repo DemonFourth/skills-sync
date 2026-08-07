@@ -5,8 +5,7 @@
   "path_key": "sn-ppt-creative",
   "enabled": true,
   "tags": [
-    "ppt/幻灯片",
-    "python-runtime/Python运行时",
+    "domain/内容写作",
     "source:OpenSenseNova/skills"
   ],
   "source": {

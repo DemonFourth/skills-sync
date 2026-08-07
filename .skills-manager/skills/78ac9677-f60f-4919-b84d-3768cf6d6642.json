@@ -5,12 +5,9 @@
   "path_key": "minimax-pdf",
   "enabled": true,
   "tags": [
-    "docs/文档",
-    "minimax/MiniMax",
+    "domain/内容写作",
     "needs-api-key/需API密钥",
-    "python-runtime/Python运行时",
-    "source:MiniMax-AI/skills",
-    "writing/写作"
+    "source:MiniMax-AI/skills"
   ],
   "source": {
     "type": "git",

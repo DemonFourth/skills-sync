@@ -5,10 +5,8 @@
   "path_key": "pdf",
   "enabled": true,
   "tags": [
-    "docs/文档",
-    "python-runtime/Python运行时",
-    "source:anthropics/skills",
-    "writing/写作"
+    "domain/内容写作",
+    "source:anthropics/skills"
   ],
   "source": {
     "type": "git",

@@ -5,13 +5,8 @@
   "path_key": "source-driven-development",
   "enabled": true,
   "tags": [
-    "coding-agent/编码代理",
-    "dev-standards/开发规范",
-    "npm-runtime/npm运行时",
-    "python-runtime/Python运行时",
-    "source:addyosmani/agent-skills",
-    "testing/测试",
-    "writing/写作"
+    "domain/元技能",
+    "source:addyosmani/agent-skills"
   ],
   "source": {
     "type": "git",

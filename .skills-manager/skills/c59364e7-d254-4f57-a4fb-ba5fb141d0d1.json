@@ -5,9 +5,7 @@
   "path_key": "full-output-enforcement",
   "enabled": true,
   "tags": [
-    "coding-agent/编码代理",
-    "design/设计",
-    "llm/大模型",
+    "domain/编码开发",
     "source:Leonxlnx/taste-skill"
   ],
   "source": {

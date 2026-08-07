@@ -5,7 +5,8 @@
   "path_key": "obsidian-markdown",
   "enabled": true,
   "tags": [
-    "obsidian/黑曜石"
+    "domain/效率工具",
+    "source:kepano/obsidian-skills"
   ],
   "source": {
     "type": "git",

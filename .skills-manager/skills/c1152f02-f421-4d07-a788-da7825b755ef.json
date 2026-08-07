@@ -5,12 +5,7 @@
   "path_key": "mcp-builder",
   "enabled": true,
   "tags": [
-    "api/接口",
-    "backend/后端",
-    "coding-agent/编码代理",
-    "development/开发",
-    "npm-runtime/npm运行时",
-    "python-runtime/Python运行时",
+    "domain/编码开发",
     "source:anthropics/skills"
   ],
   "source": {

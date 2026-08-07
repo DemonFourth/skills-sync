@@ -5,7 +5,7 @@
   "path_key": "openai-image-gen",
   "enabled": true,
   "tags": [
-    "image/图像",
+    "domain/设计视觉",
     "needs-api-key/需API密钥",
     "source:steipete/agent-scripts"
   ],

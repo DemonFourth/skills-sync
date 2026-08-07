@@ -5,11 +5,8 @@
   "path_key": "vision-analysis",
   "enabled": true,
   "tags": [
-    "api/接口",
-    "image/图像",
-    "minimax/MiniMax",
+    "domain/设计视觉",
     "needs-api-key/需API密钥",
-    "npm-runtime/npm运行时",
     "source:MiniMax-AI/skills"
   ],
   "source": {
