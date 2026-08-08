@@ -11,7 +11,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/addyosmani/agent-skills",
-    "subpath": "skills\\documentation-and-adrs",
+    "subpath": null,
     "branch": null
   }
 }

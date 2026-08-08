@@ -11,7 +11,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/RKiding/Awesome-finance-skills",
-    "subpath": "skills\\alphaear-deepear-lite",
+    "subpath": null,
     "branch": null
   }
 }

@@ -11,7 +11,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/MiniMax-AI/skills/",
-    "subpath": "skills\\pptx-generator",
+    "subpath": null,
     "branch": null
   }
 }

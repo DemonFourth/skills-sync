@@ -11,7 +11,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/kepano/obsidian-skills",
-    "subpath": "skills\\json-canvas",
+    "subpath": null,
     "branch": null
   }
 }

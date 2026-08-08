@@ -12,7 +12,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/steipete/agent-scripts",
-    "subpath": "skills/peekaboo",
+    "subpath": null,
     "branch": null
   }
 }

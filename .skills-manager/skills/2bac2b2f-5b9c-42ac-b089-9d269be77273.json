@@ -12,7 +12,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/addyosmani/agent-skills",
-    "subpath": "skills\\security-and-hardening",
+    "subpath": null,
     "branch": null
   }
 }

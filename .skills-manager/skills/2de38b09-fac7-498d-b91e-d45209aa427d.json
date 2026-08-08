@@ -11,7 +11,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/ConardLi/garden-skills",
-    "subpath": "skills\\kb-retriever",
+    "subpath": null,
     "branch": null
   }
 }

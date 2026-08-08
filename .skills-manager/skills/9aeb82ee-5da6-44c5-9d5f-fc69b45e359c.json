@@ -11,7 +11,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/h4ckf0r0day/obscura",
-    "subpath": "skills\\obscura",
+    "subpath": null,
     "branch": null
   }
 }

@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "skill_id": "c8ce94c6-c9c0-4dbe-807f-81650898217c",
+  "path": "lean-ctx",
+  "path_key": "lean-ctx",
+  "enabled": true,
+  "tags": [
+    "domain/元技能",
+    "needs-api-key/需API密钥",
+    "source:yvgude/lean-ctx"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/yvgude/lean-ctx",
+    "subpath": null,
+    "branch": null
+  }
+}

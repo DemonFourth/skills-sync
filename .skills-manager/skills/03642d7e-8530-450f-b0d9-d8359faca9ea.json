@@ -12,7 +12,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/MiniMax-AI/skills/",
-    "subpath": "skills\\flutter-dev",
+    "subpath": null,
     "branch": null
   }
 }

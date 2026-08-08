@@ -12,7 +12,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/addyosmani/agent-skills",
-    "subpath": "skills\\doubt-driven-development",
+    "subpath": null,
     "branch": null
   }
 }

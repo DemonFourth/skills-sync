@@ -11,7 +11,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/hqhq1025/skill-optimizer",
-    "subpath": "skills/skill-personalizer",
+    "subpath": null,
     "branch": null
   }
 }

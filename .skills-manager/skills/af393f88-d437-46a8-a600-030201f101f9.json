@@ -11,7 +11,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/addyosmani/agent-skills",
-    "subpath": "skills\\ci-cd-and-automation",
+    "subpath": null,
     "branch": null
   }
 }

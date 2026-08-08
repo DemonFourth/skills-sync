@@ -11,7 +11,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/Leonxlnx/taste-skill",
-    "subpath": "skills\\imagegen-frontend-mobile",
+    "subpath": null,
     "branch": null
   }
 }

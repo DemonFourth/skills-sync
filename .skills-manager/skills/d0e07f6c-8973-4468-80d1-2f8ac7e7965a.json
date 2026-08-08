@@ -12,7 +12,7 @@
   "source": {
     "type": "skillssh",
     "ref": "vercel-labs/skills/find-skills",
-    "subpath": "skills\\find-skills",
+    "subpath": null,
     "branch": null
   }
 }
