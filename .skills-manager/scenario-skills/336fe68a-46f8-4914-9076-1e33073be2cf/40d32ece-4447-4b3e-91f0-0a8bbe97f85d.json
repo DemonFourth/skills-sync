@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "scenario_id": "336fe68a-46f8-4914-9076-1e33073be2cf",
+  "skill_id": "40d32ece-4447-4b3e-91f0-0a8bbe97f85d",
+  "sort_order": 7,
+  "tools": {
+    "claude_code": true,
+    "codex": true,
+    "gemini_cli": true,
+    "opencode": true,
+    "pi": true
+  }
+}
