@@ -12,7 +12,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/addyosmani/agent-skills",
-    "subpath": null,
+    "subpath": "skills",
     "branch": null
   }
 }
