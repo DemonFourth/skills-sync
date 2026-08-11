@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "scenario_id": "ab1b3fff-854d-41f6-86c6-355bf6821698",
+  "name": "Superpowers 开发全流程",
+  "description": "obra/superpowers 完整开发工作流：头脑风暴→计划→执行→验证→收尾",
+  "icon": "workflow",
+  "sort_order": 100
+}

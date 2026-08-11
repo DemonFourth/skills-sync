@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "scenario_id": "c2d71c84-e631-48b3-be2f-cfff920e978d",
+  "name": "开发方法论工具",
+  "description": "独立方法论/单点工具：路由、上下文、点子打磨、审查、规范",
+  "icon": "lightbulb",
+  "sort_order": 100
+}
