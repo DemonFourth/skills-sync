@@ -4,5 +4,5 @@
   "name": "办公文档三件套",
   "description": "Word/PDF/Excel/PPT 创建·编辑·分析 + Markdown 转换 + 主题美化",
   "icon": "file-text",
-  "sort_order": 100
+  "sort_order": 8
 }

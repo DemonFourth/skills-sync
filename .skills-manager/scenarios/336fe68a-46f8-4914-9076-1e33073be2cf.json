@@ -4,5 +4,5 @@
   "name": "元技能管理 Skill",
   "description": "技能的创建·优化·通用化·个性化·清理，以及技能写作与达尔文优化",
   "icon": "sparkles",
-  "sort_order": 100
+  "sort_order": 2
 }
