@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "2a51da51-f12e-47dc-bd03-5318e9ded607",
+  "path": "mermaid-visualizer",
+  "path_key": "mermaid-visualizer",
+  "enabled": true,
+  "tags": [
+    "domain/效率工具",
+    "source:axtonliu/axton-obsidian-visual-skills"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/axtonliu/axton-obsidian-visual-skills",
+    "subpath": null,
+    "branch": null
+  }
+}

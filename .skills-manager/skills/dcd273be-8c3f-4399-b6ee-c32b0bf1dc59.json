@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "dcd273be-8c3f-4399-b6ee-c32b0bf1dc59",
+  "path": "excalidraw-diagram",
+  "path_key": "excalidraw-diagram",
+  "enabled": true,
+  "tags": [
+    "domain/效率工具",
+    "source:axtonliu/axton-obsidian-visual-skills"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/axtonliu/axton-obsidian-visual-skills",
+    "subpath": null,
+    "branch": null
+  }
+}
