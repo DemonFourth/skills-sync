@@ -11,7 +11,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/mattpocock/skills/tree/main/skills/engineering/resolving-merge-conflicts",
-    "subpath": null,
+    "subpath": "skills",
     "branch": null
   }
 }
