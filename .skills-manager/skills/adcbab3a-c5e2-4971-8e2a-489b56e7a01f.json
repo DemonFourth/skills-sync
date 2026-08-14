@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "adcbab3a-c5e2-4971-8e2a-489b56e7a01f",
+  "path": "smart-illustrator",
+  "path_key": "smart-illustrator",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/axtonliu/smart-illustrator",
+    "subpath": null,
+    "branch": null
+  }
+}
