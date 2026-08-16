@@ -1,16 +1,14 @@
 {
-    "schema_version":  1,
-    "skill_id":  "614b0c52-2693-4ec8-8aa6-dd04c431b776",
-    "path":  "mermaid-visualizer",
-    "path_key":  "mermaid-visualizer",
-    "enabled":  true,
-    "tags":  [
-
-             ],
-    "source":  {
-                   "type":  "local",
-                   "ref":  null,
-                   "subpath":  null,
-                   "branch":  null
-               }
+  "schema_version": 1,
+  "skill_id": "614b0c52-2693-4ec8-8aa6-dd04c431b776",
+  "path": "mermaid-visualizer",
+  "path_key": "mermaid-visualizer",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "local",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
 }
