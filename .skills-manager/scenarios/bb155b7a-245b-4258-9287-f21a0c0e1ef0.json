@@ -1,8 +1,0 @@
-{
-  "schema_version": 1,
-  "scenario_id": "bb155b7a-245b-4258-9287-f21a0c0e1ef0",
-  "name": "金融股票分析",
-  "description": "A股数据 → 行情/资讯/情绪/预测 → 逻辑图/研报/PPT 全链路",
-  "icon": "trending-up",
-  "sort_order": 5
-}
