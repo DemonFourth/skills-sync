@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "scenario_id": "45b5ced3-05c8-4d06-ae30-28cade7271ec",
-  "name": "Obsidian 知识库",
+  "name": "知识库管理技能",
   "description": null,
   "icon": "book-open",
-  "sort_order": 1
+  "sort_order": 999
 }

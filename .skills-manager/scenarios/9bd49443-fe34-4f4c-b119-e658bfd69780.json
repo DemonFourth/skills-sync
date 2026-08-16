@@ -4,5 +4,5 @@
   "name": "深度研究",
   "description": "深度研究流水线：规划 → 多渠道检索 → 合成 → 报告呈现",
   "icon": "search",
-  "sort_order": 10
+  "sort_order": 100
 }
