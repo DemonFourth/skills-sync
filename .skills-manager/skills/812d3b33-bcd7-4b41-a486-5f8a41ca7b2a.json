@@ -12,7 +12,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/eze-is/web-access",
-    "subpath": null,
-    "branch": null
+    "subpath": "",
+    "branch": "main"
   }
 }

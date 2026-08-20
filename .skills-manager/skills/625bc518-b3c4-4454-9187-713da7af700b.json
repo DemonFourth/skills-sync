@@ -11,7 +11,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/obra/superpowers",
-    "subpath": null,
+    "subpath": "skills/finishing-a-development-branch",
     "branch": null
   }
 }

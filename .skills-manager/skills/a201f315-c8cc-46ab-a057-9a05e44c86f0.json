@@ -11,7 +11,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/multica-ai/andrej-karpathy-skills",
-    "subpath": null,
+    "subpath": "skills/karpathy-guidelines",
     "branch": null
   }
 }
