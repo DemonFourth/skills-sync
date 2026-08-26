@@ -1,263 +1,194 @@
 ---
 name: maintainer-orchestrator
-description: "Delegated maintainer ops: decision-ready PRs, worker monitoring, queue cleanup, releases."
+description: "Coordinate multiple maintainer issues, PRs, or repositories with bounded workers, serialized public actions, and clear owner decisions. Do not use for one issue or PR."
 ---
 
 # Maintainer Orchestrator
 
-Coordinate repository work through completion. This is a control-plane skill: inspect, delegate, monitor, ask decisions, and report. Put substantial repository investigation, implementation, review, live proof, landing, and release execution in repository worker threads.
+Coordinate a real maintainer queue across multiple independent issues, pull requests, or repositories. This is a control-plane skill, not the default way to handle ordinary repository work.
 
-## Repository Scope
+## Activation Gate — Hard Rule
 
-- Own repositories where Peter is the majority commit author, regardless of GitHub owner.
-- Exclude all repositories under the `openclaw` and `clawhub` organizations unless the owner explicitly overrides this exclusion for a named item.
-- Exclude archived repositories from routine discovery, queue scans, dependency audits, monitoring, release gating, and reporting. Re-enter only when the owner explicitly names the repository and requests new work.
-- When the owner says a repository is retired, archived, or must not be mentioned again, record it as suppressed. Make one best-effort archive mutation when requested, then keep it silent even when permissions prevent the remote archive.
-- Determine uncertain ownership from repository contribution history, not repository name alone.
-- Keep a current repository ledger so completed lanes are replaced by real queue or release work.
+Classify the request before creating workers, heartbeats, ledgers, or queue scans.
 
-## Operating Model
+### Direct single-item work
 
-1. Use `github-project-triage` to map each repository's open issues, open PRs, CI, latest release, package metadata, and unreleased changelog.
-2. Classify every queue item:
-   - `Autonomous`: clear fit, reproducible, bounded implementation, and usable verification path.
-   - `Needs owner`: product choice, security/privacy decision, unavailable credentials/access, unavailable live proof, or destructive/irreversible choice.
-   - `Ignored by owner`: an explicitly named item the owner says must not affect current work or release gating.
-3. When delegation is explicitly authorized, this root orchestrator session delegates independent repositories to separate Codex threads. Whenever assigning or materially changing work, rename the worker thread to `<Project>: <short current task>`. Keep work for one repository in its existing thread. Do not set or request a custom model; omit model selection and inherit the platform default.
-4. Keep this coordinator thread lightweight. Do not perform extensive repository work here. Delegate it to a repository thread, then monitor by reading current state.
-5. Monitor workers every five minutes when the owner requests continuous orchestration. Let active workers execute without steering; intervene only for a confirmed blocker, exhausted work, or gross course deviation.
-6. Continue until each autonomous item is merged/closed with proof, each decision item has a mergeable PR ready for owner land/delete choice, an empty effective queue is released, or an otherwise idle repository has current dependencies.
+A request is **single-item** when it names or implies one issue, one PR, one bug, one feature, one release, or one coherent implementation—even when that work spans several files, phases, tests, CI, or closely coupled repositories.
 
-Do not treat ordinary draft, stale, difficult, or platform-specific items as ignored. Only an explicit owner instruction can create an ignored-item exception. Keep ignored items open and visible; do not close, edit, or merge them unless separately requested.
+For single-item work:
 
-## Control-Plane Ownership
+- Do **not** create a project worker merely because the task is nontrivial.
+- Do **not** create a heartbeat, portfolio ledger, queue refill, dependency sweep, release proposal, or broad repository scan.
+- Continue in the current session using the repository's normal skills and workflow (`codex-first`, maintainer/review/testing/release skills, and repo instructions as applicable).
+- Ordinary focused subagents or Codex delegation remain governed by those normal skills; this orchestrator adds no extra worker requirement.
+- If this skill was invoked accidentally for a single item, state that orchestration mode is unnecessary and continue directly. Never interrupt useful in-flight work solely to satisfy this skill.
 
-- Only this root orchestrator session may create, reuse, fork, assign, rename, archive, or steer worker threads.
-- Repository workers perform only their assigned repository work and report results to this orchestrator. They must not create subworkers, delegate work, or manage other chats.
-- Put the no-subdelegation rule in every worker prompt.
-- Do not delegate portfolio triage, thread creation, or worker management to another worker.
-- Legacy nested coordinators: stop further delegation immediately, preserve unique context while their existing workers finish, then retire them after reading current state.
+Examples that stay direct:
 
-## Decision-Ready Queue Rule
+- fix and land one issue;
+- repair one contributor PR;
+- trace one failure across an application and its dependency;
+- make one release;
+- implement one coherent refactor across two repositories.
 
-Do not ask the owner to decide from an unprepared issue or rough contributor branch.
+### Bounded orchestration
 
-- Existing PR: inspect, reproduce, rewrite/fix as needed, add tests/docs/changelog, run live proof and autoreview, push the final candidate, and get required CI green. Ask only when the PR is mergeable or the remaining blocker cannot be solved autonomously.
-- Issue without PR: investigate root cause and product constraints, implement the best bounded candidate on a branch, create a PR, and drive it to the same mergeable proof state.
-- Product decision: choose a reversible default when technically safe and expose the decision clearly in the PR. Prepare alternatives in the PR description when useful.
-- Access or live-proof blocker: finish code, tests, docs, review, and CI first. Ask only for the exact remaining credential, account action, hardware interaction, waiver, or land/delete decision.
-- Rejection candidate: produce concrete research and proof. When a code candidate would clarify the tradeoff, prepare the PR anyway; otherwise update the issue with the evidence needed for an owner close/keep decision.
+Use orchestration mode only when at least one is true:
 
-The normal owner interaction should be one of: land the prepared PR, delete/close it, provide one exact access step, or choose between clearly documented alternatives.
+- the user asks to handle multiple independent issues or PRs;
+- the user asks to coordinate multiple repositories or parallel workstreams;
+- the user asks for a queue, sweep, batch, portfolio, maintainer night, or ongoing triage;
+- independent items materially benefit from concurrent ownership and coordination.
 
-## Owner Decision Briefs
+A numbered task list is not automatically an orchestration queue: coupled steps toward one outcome remain single-item work.
 
-Never ask for `land/delete`, approval, access, waiver, or a product choice with only a URL or status label.
+### Persistent portfolio watch
 
-Immediately before asking, refresh the item and worker state. Do not repeat a question the owner already answered, and do not present an item as decision-ready when it has become conflicted, stale, red, or otherwise moved behind an autonomous repair gate.
+Heartbeats, recurring monitoring, automatic queue refill, broad owner scans, dependency backfill, and the persistent orchestrator log are enabled only when the user explicitly asks for ongoing/autonomous maintenance, monitoring, a portfolio sweep, or a maintained queue. They are never created merely because this skill was invoked.
 
-Every owner decision request must include:
+## Scope Contract
 
-- full canonical clickable URL and title;
-- plain-language explanation of what changes and who benefits;
-- why the decision is needed now;
-- completed proof: reproduction, live test, tests, autoreview, CI, and mergeability as applicable;
-- material tradeoffs, residual risks, scope concerns, or missing evidence;
-- the orchestrator's recommendation and concise rationale;
-- the exact choices available and what each choice does.
+At activation, write down the explicit queue:
 
-When several decisions are grouped, give each item its own brief. Keep the recommendation opinionated; do not offload technical analysis to the owner. If autonomous work remains, do that work first and report the item as active rather than asking for a premature decision.
+- named repositories;
+- named issues/PRs, or the discovery boundary the user requested;
+- whether work may be discovered beyond that set;
+- whether monitoring is one-shot or persistent;
+- which public actions are authorized.
 
-## Monitoring Protocol
+Do not expand a named batch into unrelated repositories, dependency updates, releases, or backlog cleanup unless the user requested ongoing queue maintenance or explicitly adds them.
 
-Assume another person or agent may have steered every worker since the last poll.
+For broad portfolio discovery only:
 
-Before sending any worker message:
+- scan `steipete` and `openclaw`, plus repositories where Peter is the majority non-merge author;
+- exclude archived repositories and the repositories listed in `references/non-majority-repositories.md` unless explicitly named;
+- exclude `openclaw/openclaw` and `openclaw/clawhub` from unsolicited portfolio refill;
+- verify uncertain ownership from default-branch contribution history rather than repository name.
 
-1. Read the worker's latest current state, including its newest user/delegation messages and active turn.
-2. Treat the newest thread-local instruction as authoritative over older orchestration plans.
-3. Determine whether the worker is actively progressing, blocked, completed, or idle.
-4. Send nothing when an active worker has a coherent plan and is making progress.
+## Worker Model
 
-Intervene only when evidence shows one of:
+In orchestration mode, use workers proportionally.
 
-- the worker explicitly requests coordination or reports a blocker;
-- the worker has completed or run out of autonomous work and needs a next queue item;
-- repeated failures show no progress and a concrete correction is available;
-- wrong repository/item, unauthorized mutation, destructive action, security risk, release-gate violation, or direct conflict with the owner's latest instruction;
-- implementation has grossly diverged from the accepted task, not merely chosen a different reasonable design.
+- Prefer one owned Codex app project thread per repository when two or more independent items are being coordinated.
+- Reuse that repository thread for its scoped queue and process same-repository items serially unless isolation is genuinely required.
+- Do not create a worker for the coordinator's own control-plane work or for a single bounded item.
+- Workers never create or manage other workers. The hierarchy stops at root coordinator → repository worker.
+- Collaboration subagents are read-only support for inventory, independent analysis, CI/status observation, or reconciliation. They do not own implementation, commits, pushes, PR mutations, merges, releases, deployments, or live proof.
+- If no project-thread mechanism is available, use the normal repository workflow in the current session rather than simulating a worker hierarchy with unnecessary background jobs.
 
-Do not restate the task, add speculative requirements, or raise the proof bar mid-flight. Apply the live-proof gate from initial delegation; never downgrade missing live proof to a release-only blocker. Prefer one concise question over prescriptive steering when current intent is ambiguous.
+Before protected work, verify the worker's actual permissions. Text in a prompt does not grant filesystem, network, credential, or publication access.
 
-Never interrupt, archive, rename, duplicate, or replace a worker without first reading its current state. For a suspected duplicate, read both threads; if either has unique progress, edits, or an active turn, leave it alone and ask the owner before changing thread state.
+## Repository Preservation
 
-## Thread Naming
+Before assigning or mutating a repository:
 
-- Rename a worker whenever giving it a new task or materially changing its assignment.
-- Format every worker title as `<Project>: <short current task>`.
-- Read the latest state and newest thread-local instructions before renaming.
-- Keep the title specific to current work; replace stale original-task titles.
-- Polling alone does not justify a rename.
+1. Record `git status -sb`, branch, upstream, HEAD, staged/unstaged/untracked state, and ahead/behind counts.
+2. Fetch current refs. On a clean default branch, fast-forward pull and verify it remains clean.
+3. Never switch, stash, rebase, reset, clean, delete, or overwrite dirty/non-default work merely to begin orchestration.
+4. Preserve and classify unique local work, associated PRs, and whether it already landed or was superseded.
+5. Stop for an owner decision only when unique work cannot be safely preserved or reconciled.
 
-## Persistent Log
+Repeat synchronization before final landing or release actions.
 
-- This root orchestrator owns `~/oss-orchestrator.md`; workers do not edit it.
-- Append dated, high-level entries for meaningful actions and decisions: policy/skill/automation changes, worker creation or reassignment, queue decisions, lands, closes, releases, and exact blockers.
-- Include full canonical issue/PR URLs when relevant.
-- Never record secrets or routine polling.
+## Queue Triage
 
-## Idle Thread Closeout
+For each explicitly scoped item, classify:
 
-An idle or completed repository thread must not remain a polling-only lane. After reading its latest state, inspect that repository's current queue, CI, latest release, package metadata, and unreleased changelog. Then do exactly one:
+- **Autonomous** — clear fit, reproducible or well-evidenced, bounded implementation, and usable proof path.
+- **Needs owner** — material product/security/privacy/legal choice, destructive unique-work handling, unavailable required credential/hardware, irreversible migration, or missing live-proof decision.
+- **Not planned / invalid** — concrete evidence shows duplicate, already fixed, unsupported, spam, or outside the requested product boundary.
 
-1. Assign the next autonomous issue or PR to the same repository thread.
-2. Prepare each remaining non-autonomous item to the decision-ready boundary, then ask the owner a concise concrete question: land/delete, choose a documented alternative, provide exact access, or grant a live-proof waiver.
-3. When the effective issue and PR queues are empty, execute the authorized patch or minor release after all release gates pass.
-4. If no queue or authorized release work remains, audit and update dependencies to current stable releases. Delegate this as normal repository work: inspect upstream changes and package health, honor repository-specific stabilization policies, avoid prerelease-only upgrades unless already adopted, preserve the repository's package manager, add compatibility fixes/tests when needed, run exact built/live proof, autoreview, the Public Model Identifier Gate, and required CI, then prepare or land the update within granted permissions.
+Treat contributor PRs as proposals, not accepted designs. Reconstruct the symptom and root cause, inspect current behavior and related history, and rewrite when a cleaner bounded fix exists. Preserve contributor credit.
 
-Do not keep completed threads merely to satisfy a lane count. A monitored repository should have active autonomous work, a pending owner question, an active release, or a documented reason no release is warranted.
+Do not ask the owner to choose while safe technical work remains. Prepare the item through implementation, tests, review, and CI first whenever possible.
 
-Dependency freshness is a backstop, not higher priority than real queue or release work.
+## Execution and Public Gate
 
-## Authorization
+Private investigation, implementation, local tests, and review may proceed independently across workers.
 
-Treat triage, monitoring, implementation, public mutation, and release as separate permissions.
+Serialize only outward-facing actions when concurrent mutation would cause ambiguity or conflict:
 
-- Queue analysis or monitoring does not authorize edits.
-- Delegation or parallel-worker creation requires explicit owner authorization.
-- Implementation permission authorizes local changes and verification only unless the owner also authorizes push/PR updates.
-- Push permission does not imply merge or close permission.
-- CI rerun and CI-fix permission must be explicit; a push alone does not authorize additional repair commits or workflow mutations.
-- Merge/close permission must be explicit for the affected work.
-- Release, version bump, tag, registry publish, and GitHub Release require a current explicit release request.
-- Release permission must explicitly include required branch/tag pushes or be paired with push permission.
+- pushes to the same repository or branch family;
+- PR creation/update, workflow approval/rerun, final synchronization, merge, release, or publication;
+- shared landing locks or limited external environments.
 
-Record the granted permissions in each worker prompt. Without the required permission, stop at the last authorized boundary and report the exact next action.
+Do not pause coherent work already in flight because another lane later reaches the public gate. Let it reach a safe boundary, then admit no new conflicting public action until the overlap clears.
 
-## Credential Access
+The user invocation authorizes only the explicitly scoped maintainer work and requested public sequence. It does not authorize releases, version bumps, tags, package publication, destructive unique-work handling, or unrelated external-system mutations unless separately requested.
 
-Assume most maintainer credentials are stored in 1Password. Before reporting a credential blocker:
+## Monitoring
 
-1. Check only the exact expected environment variable; use it only when already exported.
-2. Read the service-specific auth skill, then use `$one-password` and targeted `op` access.
-3. Prefer the scoped service-account path; use the required persistent tmux session and exact known item/vault/field.
-4. Never broadly enumerate secrets or print values. Use `op run` or `op inject` when supported.
-5. Ask the owner only after the targeted 1Password path is absent, inaccessible, or requires interactive unlock/approval.
+Assign one owner for each external wait.
 
-Keep credential discovery and use inside the worker that needs the secret. Report only presence, access path, and the exact missing approval or item; never send credentials between threads.
+- The repository worker owns its exact CI/deploy watcher.
+- Use the repository-native watcher scoped to one run ID or head SHA with bounded backoff.
+- The root relies on worker state and harness completion notifications; it does not duplicate polling while a coherent watcher is active.
+- Fetch failed logs once and reuse them.
+- Intervene only for a reported blocker, repeated no-progress failure, wrong scope/repository, destructive or unauthorized action, security risk, or gross design divergence.
+- Do not restate the task or raise the proof bar mid-flight.
 
-## Worker Contract
+Create a recurring heartbeat only for explicit persistent portfolio/watch requests. One-shot batches rely on normal task notifications and do not need scheduled automation.
 
-Every delegated implementation thread, within its explicit authorization, must:
+## Landing Standard
 
-- read the full issue/PR discussion, repo instructions, docs, and relevant code;
-- when an issue has no PR, create one after implementing the best bounded candidate;
-- reproduce or establish root cause before accepting an existing patch;
-- rewrite when a cleaner bounded design is available;
-- add regression coverage when appropriate;
-- run focused and full tests, then live/end-to-end proof against the real affected boundary before landing;
-- run `autoreview` until no accepted/actionable findings remain;
-- when push is authorized, push the authorized changes;
-- when CI rerun/fix is authorized, rerun required checks and repair failures until green;
-- when CI rerun/fix is not authorized and checks fail, stop with the exact failure and requested permission;
-- when merge/close is authorized, merge or close the queue item with an exact proof comment;
-- after authorized landing, return to updated, clean `main`.
+Before landing an item, require the repository's own gates plus:
 
-Prefer repairing the contributor PR. Preserve contributor credit and follow the workspace PR rules.
-When landing is not yet authorized, stop only after the branch is pushed, the PR is mergeable, required CI is green, live proof is recorded, and the exact owner decision is stated.
+- reproduced symptom or established root cause;
+- best-fix/owner-boundary judgment;
+- focused regression coverage;
+- sufficient broader checks for the changed surface;
+- built/live/E2E proof when the repository or external boundary requires it;
+- fresh autoreview with no accepted/actionable findings;
+- exact-head CI green;
+- resolved review threads and known proof gaps stated plainly.
 
-## Live Proof Gate
+Use the repository-native landing workflow. After merge, verify reachability from the target branch, synchronize the visible checkout, stop leases/watchers, and leave it clean.
 
-Live proof is a pre-land requirement, not optional polish.
+Do not automatically continue into dependency maintenance, another issue, or a release after the scoped queue is complete. Refill only when the user explicitly requested an ongoing queue.
 
-- Test the exact final candidate commit through the changed user path using the real built/installed artifact and real service, account, device, OS, or external provider as applicable.
-- For external integrations, authenticated live calls are required. Docs, mocks, fixtures, protocol captures, route-existence checks, and CI supplement live proof; they do not replace it.
-- Redact secrets and private user data while retaining concrete evidence such as command, behavior, response class, artifact hash, or observed state transition.
-- If credentials, account state, hardware, platform access, or a safe live target are unavailable, finish all autonomous code, tests, review, and CI work, then stop before merge/close. Ask for the exact access, an explicit item-specific waiver, or a reject/close decision.
-- Never infer a live-proof waiver from merge permission, release permission, prior contributor evidence, or confidence in mocks.
-- Re-run live proof after any fix that changes the relevant runtime path.
-- Pure docs, metadata, CI, or test-only changes with no runtime boundary may use the closest built-artifact or workflow proof; state why no external live boundary applies.
+## OpenClaw Queue Mode
 
-Record live evidence or the owner's explicit waiver in the landing proof comment.
+Apply this section only when the user explicitly asks to orchestrate multiple `openclaw/openclaw` items. A single OpenClaw issue or PR remains direct work under the repository's normal maintainer workflow.
 
-## Public Model Identifier Gate
+- Read current `VISION.md`, root/scoped `AGENTS.md`, and the relevant OpenClaw maintainer/testing/review skills.
+- Keep triage and product judgment in the root coordinator.
+- Use one OpenClaw repository worker for the selected serial queue; do not create one worker per PR.
+- Prefer externally reported, Vision-aligned stability, safe-default, setup, auth, install, delivery, and bounded performance/test-infrastructure work.
+- Verify contributor permissions live before selecting general queue candidates.
+- Use only `scripts/pr` review, artifact, prepare, sync, and merge commands for landing.
+- OpenClaw changelog remains release-generated; normal issue/PR work does not edit `CHANGELOG.md`.
+- Require the repository's symptom proof, hosted CI/Testbox, autoreview, and exact-head landing evidence.
 
-Before any push, public PR update, merge, or release involving model-bearing code or artifacts:
+## Owner Decisions
 
-- Audit the exact candidate diff, tests, fixtures, snapshots, generated metadata, workflows, CI/test logs, packaged artifacts, and public PR/issue proof for model identifiers.
-- Public artifacts may retain only identifiers currently documented or offered in an official public provider source. Record the source URL in the worker's audit report.
-- Never expose internal, employee-only, preview-only, alias-only, inferred, synthetic provider-shaped, or otherwise undisclosed identifiers. Genericize questionable test and fixture values because assertion failures can print them in CI logs.
-- Do not repeat a questionable identifier in worker messages, audit reports, public comments, or the orchestrator log. Describe it generically.
-- Binary/archive scans must classify candidate strings as verified public identifiers, unrelated false positives, or blocking unknowns without echoing blocking unknowns.
-- Return an explicit `PASS` or `BLOCKED` report covering every audited surface. Any new candidate diff, generated artifact, log/proof text, or model-bearing change invalidates the pass and requires re-audit.
+Ask one prepared decision at a time. Each decision brief includes:
 
-No push, public mutation, merge, or release may proceed while this gate is blocked.
+- full canonical URL and title;
+- plain-language behavior and affected users;
+- why a decision is required now;
+- completed proof and current CI/mergeability;
+- material tradeoffs, residual risk, and missing evidence;
+- the coordinator's recommendation;
+- exact choices and consequences.
 
-## Release Gate
+Do not present a bare URL or vague `land/delete` choice. Refresh item and worker state immediately before asking.
 
-Compute the effective queue immediately before release:
+## Releases
 
-```text
-effective issues = open issues - explicitly ignored issues
-effective PRs    = open PRs - explicitly ignored PRs
-```
+A queue invocation does not imply release authority.
 
-Release only when all are true:
-
-- the owner has explicitly requested this release or authorized release execution for the repository;
-- effective issue count is zero;
-- effective PR count is zero;
-- every ignored item is explicitly named in the current owner instructions;
-- required CI is green for the exact commit and branch/tag candidate being released;
-- all user-facing runtime changes in the release have required live proof, unless the owner explicitly waives that proof for the release;
-- release checkout is clean, on the expected branch, and fast-forward current;
-- unreleased changes justify a release and the target version follows SemVer/project convention.
-
-Recheck the GitHub queue and CI immediately before tagging or publishing. Abort if either gate changes.
-
-Never silently exclude an item. In release reporting, list ignored items and the owner instruction that exempted them.
-
-## Release Execution
-
-Use the repository's release docs and matching skill:
-
-- npm packages: use `npm`;
-- macOS apps: use `release-mac-app`;
-- other projects: use established repo scripts/workflows.
-
-Before release:
-
-- reconcile changelog history with existing tags/releases;
-- default to patch for compatible fixes, maintenance, refactors, docs, CI, and small behavior improvements;
-- select minor only for substantial additive functionality, a meaningful new feature set, or a new backward-compatible public API;
-- never use minor merely because several fixes accumulated; major requires explicit approval;
-- run full release checks and review release-only edits.
-
-After publishing, verify the actual release:
-
-- Git tag and GitHub Release exist;
-- release notes contain the complete changelog section;
-- expected artifacts/install path work;
-- npm packages show version, dist-tag, tarball, integrity, and publish time;
-- release body links registry/artifact/integrity and CI proof when applicable.
-
-Then open the next patch `Unreleased` section. Commit and push the closeout only when those mutations are authorized; otherwise leave the verified local closeout ready and report the exact permission needed. After an authorized push, pull `--ff-only` and finish on clean `main`.
+Only enter release planning/execution when the user explicitly asks for a release or the active repository-specific workflow already grants it. Follow the repository's release skill and immutable-candidate gates. Never turn ordinary queue completion into an unsolicited release project.
 
 ## Reporting
 
-Keep one compact cross-repo ledger:
+For a bounded batch, report only the scoped work:
 
-- `Active`: repo, item URL, worker, current phase.
-- `Intervened`: exact risk and instruction sent.
-- `Needs owner`: exact decision/access required; no vague "needs review".
-- `Ignored`: exact item and owner-granted exception.
-- `Released`: version, tag/registry verification, closeout commit.
-- `Ready next`: effective queue empty, CI green, recommended patch/minor version and rationale.
+- **Active** — repository, full item URL, owner/worker, current phase.
+- **Intervened** — exact risk and correction.
+- **Needs owner** — one prepared decision or access blocker.
+- **Landed/closed** — behavior, proof, merge/close URL, files and LOC, risk.
+- **Remaining** — only items from the requested queue.
 
-Omit archived and owner-suppressed repositories entirely. Do not list them as ignored, blocked, stale, or available work.
+For persistent portfolio mode, a compact ledger and `~/oss-orchestrator.md` are allowed. Do not create or maintain that log for one-shot batches.
 
-Whenever mentioning an issue or PR in any owner report, decision question, worker message, or status update, print its full canonical clickable URL. Never use only a repository-local number such as `#123`; include `https://github.com/OWNER/REPO/issues/123` or `https://github.com/OWNER/REPO/pull/123`.
-
-For `Needs owner`, use the Owner Decision Brief format. Never emit a bare URL plus `land/delete`.
-
-Report meaningful changes, not routine polling. Maintain a heartbeat automation when the user asks to keep monitoring.
+Always use full GitHub URLs. Report meaningful transitions, not routine polling.
