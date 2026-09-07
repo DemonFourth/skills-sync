@@ -5,9 +5,7 @@
   "path_key": "using-superpowers",
   "enabled": true,
   "tags": [
-    "domain/元技能",
-    "needs-api-key/需API密钥",
-    "source:obra/superpowers"
+    "domain/元技能"
   ],
   "source": {
     "type": "git",

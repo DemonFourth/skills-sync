@@ -5,8 +5,7 @@
   "path_key": "full-output-enforcement",
   "enabled": true,
   "tags": [
-    "domain/编码开发",
-    "source:Leonxlnx/taste-skill"
+    "domain/编码开发"
   ],
   "source": {
     "type": "git",

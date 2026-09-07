@@ -5,8 +5,7 @@
   "path_key": "alphaear-reporter",
   "enabled": true,
   "tags": [
-    "domain/内容写作",
-    "source:RKiding/finance-skills"
+    "domain/内容写作"
   ],
   "source": {
     "type": "git",

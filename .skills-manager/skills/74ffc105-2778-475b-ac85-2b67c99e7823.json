@@ -5,8 +5,7 @@
   "path_key": "prototype",
   "enabled": true,
   "tags": [
-    "domain/前端界面",
-    "source:mattpocock/skills"
+    "domain/前端界面"
   ],
   "source": {
     "type": "git",

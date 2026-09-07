@@ -5,8 +5,7 @@
   "path_key": "release-mac-app",
   "enabled": true,
   "tags": [
-    "domain/运维工具",
-    "source:steipete/agent-scripts"
+    "domain/运维工具"
   ],
   "source": {
     "type": "git",

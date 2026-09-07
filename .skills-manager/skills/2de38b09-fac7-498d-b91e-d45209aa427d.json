@@ -5,8 +5,7 @@
   "path_key": "kb-retriever",
   "enabled": true,
   "tags": [
-    "domain/研究与搜索",
-    "source:ConardLi/garden-skills"
+    "domain/研究与搜索"
   ],
   "source": {
     "type": "git",

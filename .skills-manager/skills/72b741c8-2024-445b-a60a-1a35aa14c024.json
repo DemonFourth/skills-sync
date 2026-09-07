@@ -5,8 +5,7 @@
   "path_key": "spec-driven-development",
   "enabled": true,
   "tags": [
-    "domain/元技能",
-    "source:addyosmani/agent-skills"
+    "domain/元技能"
   ],
   "source": {
     "type": "git",

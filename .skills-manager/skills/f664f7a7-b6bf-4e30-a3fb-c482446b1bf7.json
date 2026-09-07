@@ -5,8 +5,7 @@
   "path_key": "slack-gif-creator",
   "enabled": true,
   "tags": [
-    "domain/多媒体",
-    "source:anthropics/skills"
+    "domain/多媒体"
   ],
   "source": {
     "type": "git",

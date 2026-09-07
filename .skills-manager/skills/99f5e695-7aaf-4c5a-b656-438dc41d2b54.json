@@ -5,8 +5,7 @@
   "path_key": "skill-cleaner",
   "enabled": true,
   "tags": [
-    "domain/元技能",
-    "source:steipete/agent-scripts"
+    "domain/元技能"
   ],
   "source": {
     "type": "git",

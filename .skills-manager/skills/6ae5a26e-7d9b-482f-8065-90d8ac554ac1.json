@@ -5,8 +5,7 @@
   "path_key": "alphaear-search",
   "enabled": true,
   "tags": [
-    "domain/研究与搜索",
-    "source:RKiding/finance-skills"
+    "domain/研究与搜索"
   ],
   "source": {
     "type": "git",

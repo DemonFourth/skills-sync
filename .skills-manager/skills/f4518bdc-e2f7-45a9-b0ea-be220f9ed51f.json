@@ -5,8 +5,7 @@
   "path_key": "wizard",
   "enabled": true,
   "tags": [
-    "domain/元技能",
-    "source:mattpocock/skills"
+    "domain/元技能"
   ],
   "source": {
     "type": "git",

@@ -5,8 +5,7 @@
   "path_key": "beautiful-article",
   "enabled": true,
   "tags": [
-    "domain/内容写作",
-    "source:ConardLi/garden-skills"
+    "domain/内容写作"
   ],
   "source": {
     "type": "git",

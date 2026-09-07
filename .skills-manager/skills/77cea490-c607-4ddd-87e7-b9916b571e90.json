@@ -5,9 +5,7 @@
   "path_key": "gif-sticker-maker",
   "enabled": true,
   "tags": [
-    "domain/多媒体",
-    "needs-api-key/需API密钥",
-    "source:MiniMax-AI/skills"
+    "domain/多媒体"
   ],
   "source": {
     "type": "git",

@@ -5,8 +5,7 @@
   "path_key": "brandkit",
   "enabled": true,
   "tags": [
-    "domain/设计视觉",
-    "source:Leonxlnx/taste-skill"
+    "domain/设计视觉"
   ],
   "source": {
     "type": "git",

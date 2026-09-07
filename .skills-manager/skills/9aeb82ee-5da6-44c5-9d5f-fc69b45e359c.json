@@ -5,8 +5,7 @@
   "path_key": "obscura",
   "enabled": true,
   "tags": [
-    "domain/智能体运维",
-    "source:h4ckf0r0day/obscura"
+    "domain/智能体运维"
   ],
   "source": {
     "type": "git",

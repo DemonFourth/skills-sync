@@ -5,8 +5,7 @@
   "path_key": "release-tweets",
   "enabled": true,
   "tags": [
-    "domain/内容写作",
-    "source:steipete/agent-scripts"
+    "domain/内容写作"
   ],
   "source": {
     "type": "git",

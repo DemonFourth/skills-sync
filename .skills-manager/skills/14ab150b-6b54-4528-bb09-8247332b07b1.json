@@ -5,8 +5,7 @@
   "path_key": "grill-with-docs",
   "enabled": true,
   "tags": [
-    "domain/元技能",
-    "source:mattpocock/skills"
+    "domain/元技能"
   ],
   "source": {
     "type": "git",

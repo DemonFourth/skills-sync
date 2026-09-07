@@ -5,8 +5,7 @@
   "path_key": "research",
   "enabled": true,
   "tags": [
-    "domain/研究与搜索",
-    "source:mattpocock/skills"
+    "domain/研究与搜索"
   ],
   "source": {
     "type": "git",

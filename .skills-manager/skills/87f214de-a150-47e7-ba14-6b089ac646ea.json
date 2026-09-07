@@ -5,8 +5,7 @@
   "path_key": "requesting-code-review",
   "enabled": true,
   "tags": [
-    "domain/元技能",
-    "source:obra/superpowers"
+    "domain/元技能"
   ],
   "source": {
     "type": "git",

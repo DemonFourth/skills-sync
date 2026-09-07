@@ -5,8 +5,7 @@
   "path_key": "web-design-engineer",
   "enabled": true,
   "tags": [
-    "domain/前端界面",
-    "source:ConardLi/garden-skills"
+    "domain/前端界面"
   ],
   "source": {
     "type": "git",

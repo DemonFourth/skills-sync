@@ -5,9 +5,7 @@
   "path_key": "sn-search-code",
   "enabled": true,
   "tags": [
-    "domain/研究与搜索",
-    "needs-api-key/需API密钥",
-    "source:OpenSenseNova/skills"
+    "domain/研究与搜索"
   ],
   "source": {
     "type": "git",

@@ -5,9 +5,7 @@
   "path_key": "video-transcript-downloader",
   "enabled": true,
   "tags": [
-    "domain/多媒体",
-    "needs-api-key/需API密钥",
-    "source:steipete/agent-scripts"
+    "domain/多媒体"
   ],
   "source": {
     "type": "git",

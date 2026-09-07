@@ -5,8 +5,7 @@
   "path_key": "clickclack",
   "enabled": true,
   "tags": [
-    "domain/智能体运维",
-    "source:steipete/agent-scripts"
+    "domain/智能体运维"
   ],
   "source": {
     "type": "git",

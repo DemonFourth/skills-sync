@@ -5,9 +5,7 @@
   "path_key": "web-access",
   "enabled": true,
   "tags": [
-    "domain/智能体运维",
-    "needs-api-key/需API密钥",
-    "source:eze-is/web-access"
+    "domain/智能体运维"
   ],
   "source": {
     "type": "git",

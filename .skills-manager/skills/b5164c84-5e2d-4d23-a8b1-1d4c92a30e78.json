@@ -5,8 +5,7 @@
   "path_key": "sn-report-format-discovery",
   "enabled": true,
   "tags": [
-    "domain/研究与搜索",
-    "source:OpenSenseNova/skills"
+    "domain/研究与搜索"
   ],
   "source": {
     "type": "git",

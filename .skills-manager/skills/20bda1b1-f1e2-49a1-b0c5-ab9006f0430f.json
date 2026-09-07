@@ -5,9 +5,7 @@
   "path_key": "web-artifacts-builder",
   "enabled": true,
   "tags": [
-    "domain/前端界面",
-    "needs-api-key/需API密钥",
-    "source:anthropics/skills"
+    "domain/前端界面"
   ],
   "source": {
     "type": "git",

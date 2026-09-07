@@ -5,8 +5,7 @@
   "path_key": "verification-before-completion",
   "enabled": true,
   "tags": [
-    "domain/元技能",
-    "source:obra/superpowers"
+    "domain/元技能"
   ],
   "source": {
     "type": "git",

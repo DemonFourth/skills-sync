@@ -5,8 +5,7 @@
   "path_key": "react-native-dev",
   "enabled": true,
   "tags": [
-    "domain/编码开发",
-    "source:MiniMax-AI/skills"
+    "domain/编码开发"
   ],
   "source": {
     "type": "git",

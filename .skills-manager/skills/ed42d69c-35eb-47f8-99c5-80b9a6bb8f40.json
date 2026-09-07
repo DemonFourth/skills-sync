@@ -5,8 +5,7 @@
   "path_key": "observability-and-instrumentation",
   "enabled": true,
   "tags": [
-    "domain/编码开发",
-    "source:addyosmani/agent-skills"
+    "domain/编码开发"
   ],
   "source": {
     "type": "git",

@@ -5,8 +5,7 @@
   "path_key": "vm-lab",
   "enabled": true,
   "tags": [
-    "domain/运维工具",
-    "source:steipete/agent-scripts"
+    "domain/运维工具"
   ],
   "source": {
     "type": "git",

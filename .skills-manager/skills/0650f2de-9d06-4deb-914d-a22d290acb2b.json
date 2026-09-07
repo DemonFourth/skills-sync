@@ -5,9 +5,7 @@
   "path_key": "internal-comms",
   "enabled": true,
   "tags": [
-    "domain/内容写作",
-    "needs-api-key/需API密钥",
-    "source:anthropics/skills"
+    "domain/内容写作"
   ],
   "source": {
     "type": "git",

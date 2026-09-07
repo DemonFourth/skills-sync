@@ -5,8 +5,7 @@
   "path_key": "pptx-generator",
   "enabled": true,
   "tags": [
-    "domain/内容写作",
-    "source:MiniMax-AI/skills"
+    "domain/内容写作"
   ],
   "source": {
     "type": "git",

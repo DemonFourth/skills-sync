@@ -5,8 +5,7 @@
   "path_key": "skill-miner",
   "enabled": true,
   "tags": [
-    "domain/元技能",
-    "source:hqhq1025/skill-optimizer"
+    "domain/元技能"
   ],
   "source": {
     "type": "git",

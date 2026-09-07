@@ -5,9 +5,7 @@
   "path_key": "ios-application-dev",
   "enabled": true,
   "tags": [
-    "domain/编码开发",
-    "needs-api-key/需API密钥",
-    "source:MiniMax-AI/skills"
+    "domain/编码开发"
   ],
   "source": {
     "type": "git",

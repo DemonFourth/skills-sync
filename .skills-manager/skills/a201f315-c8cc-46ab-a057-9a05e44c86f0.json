@@ -5,8 +5,7 @@
   "path_key": "karpathy-guidelines",
   "enabled": true,
   "tags": [
-    "domain/编码开发",
-    "source:multica-ai/andrej-karpathy-skills"
+    "domain/编码开发"
   ],
   "source": {
     "type": "git",

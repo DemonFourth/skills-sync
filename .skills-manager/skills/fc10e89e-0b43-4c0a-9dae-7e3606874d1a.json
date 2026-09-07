@@ -5,9 +5,7 @@
   "path_key": "using-agent-skills",
   "enabled": true,
   "tags": [
-    "domain/元技能",
-    "needs-api-key/需API密钥",
-    "source:addyosmani/agent-skills"
+    "domain/元技能"
   ],
   "source": {
     "type": "git",

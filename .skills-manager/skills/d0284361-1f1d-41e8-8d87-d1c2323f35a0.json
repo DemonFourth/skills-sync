@@ -5,8 +5,7 @@
   "path_key": "sn-ppt-standard",
   "enabled": true,
   "tags": [
-    "domain/内容写作",
-    "source:OpenSenseNova/skills"
+    "domain/内容写作"
   ],
   "source": {
     "type": "git",

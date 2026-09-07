@@ -5,8 +5,7 @@
   "path_key": "theme-factory",
   "enabled": true,
   "tags": [
-    "domain/设计视觉",
-    "source:anthropics/skills"
+    "domain/设计视觉"
   ],
   "source": {
     "type": "git",

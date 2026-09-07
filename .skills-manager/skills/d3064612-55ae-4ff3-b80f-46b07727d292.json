@@ -5,8 +5,7 @@
   "path_key": "teach",
   "enabled": true,
   "tags": [
-    "domain/内容写作",
-    "source:mattpocock/skills"
+    "domain/内容写作"
   ],
   "source": {
     "type": "git",

@@ -5,8 +5,7 @@
   "path_key": "writing-for-agents",
   "enabled": true,
   "tags": [
-    "domain/内容写作",
-    "source:mattpocock/skills"
+    "domain/内容写作"
   ],
   "source": {
     "type": "git",

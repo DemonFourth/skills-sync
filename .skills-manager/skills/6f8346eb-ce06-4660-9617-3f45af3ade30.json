@@ -5,8 +5,7 @@
   "path_key": "sn-da-non-spreadsheet-analysis",
   "enabled": true,
   "tags": [
-    "domain/数据分析",
-    "source:OpenSenseNova/skills"
+    "domain/数据分析"
   ],
   "source": {
     "type": "git",

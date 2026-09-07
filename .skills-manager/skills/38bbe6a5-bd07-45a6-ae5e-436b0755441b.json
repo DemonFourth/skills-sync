@@ -5,8 +5,7 @@
   "path_key": "sonos",
   "enabled": true,
   "tags": [
-    "domain/多媒体",
-    "source:steipete/agent-scripts"
+    "domain/多媒体"
   ],
   "source": {
     "type": "git",

@@ -5,9 +5,7 @@
   "path_key": "security-and-hardening",
   "enabled": true,
   "tags": [
-    "domain/编码开发",
-    "needs-api-key/需API密钥",
-    "source:addyosmani/agent-skills"
+    "domain/编码开发"
   ],
   "source": {
     "type": "git",

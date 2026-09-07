@@ -5,8 +5,7 @@
   "path_key": "xlsx",
   "enabled": true,
   "tags": [
-    "domain/数据分析",
-    "source:anthropics/skills"
+    "domain/数据分析"
   ],
   "source": {
     "type": "git",

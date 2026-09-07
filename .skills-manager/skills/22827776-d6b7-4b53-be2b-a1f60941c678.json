@@ -5,9 +5,7 @@
   "path_key": "sn-ppt-entry",
   "enabled": true,
   "tags": [
-    "domain/内容写作",
-    "needs-api-key/需API密钥",
-    "source:OpenSenseNova/skills"
+    "domain/内容写作"
   ],
   "source": {
     "type": "git",

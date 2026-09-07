@@ -5,8 +5,7 @@
   "path_key": "redesign-existing-projects",
   "enabled": true,
   "tags": [
-    "domain/前端界面",
-    "source:Leonxlnx/taste-skill"
+    "domain/前端界面"
   ],
   "source": {
     "type": "git",
