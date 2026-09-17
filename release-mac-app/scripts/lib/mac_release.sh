@@ -423,7 +423,7 @@ if [[ -n "$MAC_RELEASE_OP_SERVICE_ACCOUNT_TOKEN_FILE" ]]; then
   export OP_SERVICE_ACCOUNT_TOKEN
 fi
 RUNNER
-    printf 'bash %q\n' "$script"
+    printf '/bin/bash %q\n' "$script"
   } >"$runner"
   chmod 700 "$runner"
 
@@ -433,7 +433,7 @@ RUNNER
   # Start directly: an interactive shell can discard input sent before its prompt is ready.
   op_window=$(tmux -S "$socket" new-window -d -t "$session" -n mac-release -P -F '#{window_id}' \
     /bin/bash --noprofile --norc -p -c \
-    "env -u BASH_ENV bash $(mac_release_tmux_quote "$runner"); printf '%s\n' \$? > $(mac_release_tmux_quote "$status_file")")
+    "env -u BASH_ENV /bin/bash $(mac_release_tmux_quote "$runner"); printf '%s\n' \$? > $(mac_release_tmux_quote "$status_file")")
 
   local deadline=$((SECONDS + ${MAC_RELEASE_OP_WAIT_SECONDS:-300}))
   until [[ -f "$status_file" ]]; do
@@ -1129,7 +1129,8 @@ check_assets() {
       MARKETING_VERSION="$asset_version"
       pattern=$(mac_release_expand "$pattern")
       MARKETING_VERSION="$old_marketing_version"
-      if ! printf "%s\n" "$assets" | grep -Eq "$pattern"; then
+      # Drain the list: grep -q can SIGPIPE printf and fail a match under pipefail.
+      if ! printf "%s\n" "$assets" | grep -E "$pattern" >/dev/null; then
         echo "ERROR: extra asset missing on release $tag: $pattern" >&2
         missing=1
       fi
@@ -1565,6 +1566,7 @@ mac_release_prepare_codesign_keychain() {
   probe_path="$probe_dir/probe"
   cp /usr/bin/true "$probe_path"
   canary_rc=0
+  HOME="$(mac_release_login_home)" \
   mac_release_run_with_timeout "${MAC_RELEASE_CODESIGN_CANARY_TIMEOUT:-30}" \
     codesign --force --timestamp=none --keychain "$keychain" --sign "$identity" "$probe_path" ||
     canary_rc=$?
@@ -1583,7 +1585,8 @@ mac_release_prepare_codesign_keychain() {
     mac_release_die "Developer ID signing canary failed Apple trust validation"
   fi
   signature_info=$(codesign -dvvv "$probe_path" 2>&1)
-  if ! printf '%s\n' "$signature_info" | grep -q '^Authority=Developer ID Application:'; then
+  # Drain the report so an early match cannot turn printf's SIGPIPE into failure.
+  if ! printf '%s\n' "$signature_info" | grep '^Authority=Developer ID Application:' >/dev/null; then
     rm -rf "$probe_dir"
     mac_release_restore_codesign_keychains
     mac_release_die "Signing canary is not signed by a Developer ID Application identity"

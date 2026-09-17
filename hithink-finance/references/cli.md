@@ -13,9 +13,9 @@ CLI 是人类终端、Agent 执行与自动化的推荐路径，统一远端数�
    hithink-finance capabilities --format json
    ```
 
-   `skills status` 的 `canonical` 只定位已安装包内的官方来源，不能证明当前 Agent 已发现 10 个 CLI 配套 Skill。先按 [安装、配置与生命周期](cli/setup.md) 核验当前 Agent 的 Skills 目录；通过后再读取 [CLI 内置 Skills 路由](cli/builtin-skills.md)，按用户意图打开对应 Skill。内置 Skill 与当前 CLI 版本同步，具有更准确的命令、参数、输出和本地数据指引。
+   `skills status` 同时报告包内官方来源、保存策略、共享内容和逐目标文件验证。`ready` 不代表客户端已加载，必要时新建会话；通过后再读取 [CLI 内置 Skills 路由](cli/builtin-skills.md)，按用户意图打开对应 Skill。内置 Skill 与当前 CLI 版本同步，具有更准确的命令、参数、输出和本地数据指引。
 
-4. 当前 Agent 缺少任一配套 Skill 时，先按 setup 契约运行 `hithink-finance skills sync` 并复查同一目录。同步无法覆盖该 Agent 时，Agent 必须从 `canonical` 主动复制缺失的完整官方 Skill 目录到当前 Agent 的 Skills 目录；只补缺失目录，不覆盖无关 Skills。仅在 Skills 路径未知或不可写时报告阻塞，不要把 `capabilities`、`schema <command-id>` 或 `<command> --help` 当成已安装 Skill 的替代证明。
+4. 当前 Agent 缺少任一配套 Skill 时，先按 setup 契约运行 `hithink-finance skills sync --agent <当前 Agent> --format json`，再用 `status` 复查。该命令追加目标；用户后来安装 Claude Code 等新客户端时同样追加，不移除已有目标。路径未知时读取 `skills sync --help` 或做必要确认，不要扩大到全部客户端，也不要把 `capabilities`、`schema <command-id>` 或 `<command> --help` 当成 Skill 已加载的替代证明。
 
 ## 长时间本地初始化
 
@@ -33,6 +33,8 @@ CLI 是人类终端、Agent 执行与自动化的推荐路径，统一远端数�
 - `valuation`：A 股最新估值快照。
 - `index`：指数/板块目录、成分和行情。
 - `special`：涨停、异动、热榜与龙虎榜。
+- `futures`：期货品种、合约、持仓、仓单、基差、交易日程和行情。
+- `options`：期权品种、合约和行情。
 - `data` / `db`：本地数据初始化、同步、校验、修复、查询与导出。
 - `auth` / `skills` / `doctor` / `update` / `uninstall`：安装后配置和生命周期。
 
