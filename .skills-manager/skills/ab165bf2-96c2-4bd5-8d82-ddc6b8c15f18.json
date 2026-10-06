@@ -10,7 +10,7 @@
   "source": {
     "type": "git",
     "ref": "https://github.com/Jesseovo/last30days-skill-cn",
-    "subpath": "",
+    "subpath": null,
     "branch": "main"
   }
 }
