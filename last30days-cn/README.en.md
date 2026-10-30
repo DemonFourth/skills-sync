@@ -1,316 +1,108 @@
 <p align="center">
-  <img src="assets/banner.png" alt="last30days-cn — Chinese Platform Deep Research Engine" width="900">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/readme-cover-dark.svg" />
+    <img src="assets/readme-cover-light.svg" width="880" alt="last30days-cn · A little curiosity, backed by sources. A quiet pixel desk and a curious cat." />
+  </picture>
 </p>
 
 <p align="center">
-  <a href="README.md">简体中文</a> ·
-  <b>English</b>
+  <strong>What has the Chinese internet been talking about?</strong><br />
+  <sub>Last-30-days research for your AI agent. A small daily hot board for you.</sub>
 </p>
 
-# 📰 last30days-cn — Chinese Platform Deep Research Engine
+<p align="center">
+  <a href="https://jesseovo.github.io/last30days-skill-cn/">Open the daily hot board ↗</a> &ensp;·&ensp; <a href="#start">Hand it to your agent</a>
+</p>
 
-> 🚀 30 days of research, 30 seconds of work. 8 platforms. Zero stale info.
-
-**last30days-cn** is an AI Agent skill that automatically searches the 8 major Chinese internet platforms for the last 30 days of content and generates well-cited research reports.
-
-🔗 This project is a deeply localized fork of [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill), fully adapted for Chinese users and Chinese internet platforms.
-
-🕷️ v2.0 integrates the [MediaCrawler](https://github.com/NanmiCoder/MediaCrawler) crawler-engine approach to greatly reduce API-key dependency. v2.1 fixed Baidu/Xiaohongshu anti-bot issues (XHR interception over DOM parsing, Bing search fallback) and removed the ineffective ScrapeCreators Xiaohongshu integration.
-
-Current version: `v3.2.0`
-
-👤 **Author:** Jesse ([@Jesseovo](https://github.com/Jesseovo))
+<p align="center">
+  <a href="README.md">简体中文</a> · <b>English</b> · <a href="docs/usage.en.md">Usage guide</a> · <a href="release-notes.md">Release notes</a>
+</p>
 
 ---
 
-## ✨ What's new in v3.2.0
+<a id="start"></a>
 
-- Fixed the new Xiaohongshu search flow: `search/recommend` suggestions (`sug_items`) are no longer mistaken for note results, and the crawler can submit the search box when the page does not auto-run the query.
-- Xiaohongshu response parsing now recognizes note-card payloads instead of depending on one endpoint path.
-- Added an old-machine browser mode: use `LAST30DAYS_BROWSER_PATH` for a system-supported Chromium/Chrome, or set `LAST30DAYS_DISABLE_BROWSER=1` to force public API/search fallbacks.
-- `--diagnose` reports the browser mode and configured external browser path.
-- Version is now `v3.2.0`; the installable payload remains checked against the root sources.
+## Hand it to your agent
 
-## ✨ What's new in v3.0.0
+Copy this sentence into the AI agent you already use:
 
-- Matches upstream v3's Agent Skills package layout: `skills/last30days` is now an independently installable runtime payload.
-- The Chinese CLI uses a single entry point, `last30days.py`, with the same structure in both the repo root and the skill payload.
-- Added `--emit html` and `--emit html-path` to generate an offline-openable `report.html`.
-- The HTML report adopts the Swiss/IKB visual language from [op7418/guizang-ppt-skill](https://github.com/op7418/guizang-ppt-skill) — good for browsing, archiving, and printing.
-- Xiaohongshu and Zhihu search now report empty-result fallbacks, listing which paths were tried and likely causes on failure.
-- Douyin and Toutiao now fall back to a public search engine when their native APIs are rate-limited, so they no longer silently return 0 results (see issue #8).
-- Fixed `npx` install failure on macOS/Linux caused by a corrupted symlink at `skills/last30days/SKILL.md` (see issue #10).
-- Synced several platform-agnostic capabilities from upstream [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill): `--as-of` historical lookback, cross-source cluster merging, `LAST30DAYS_DEFAULT_SEARCH`/`EXCLUDE_SOURCES` config knobs, honest `--diagnose` (live probes), and HTML report XSS hardening.
-- The repo-root `scripts/` is kept for local development and legacy paths; Agent Skills installs use the self-contained payload under `skills/last30days/scripts`.
+```text
+Install and configure https://github.com/Jesseovo/last30days-skill-cn, check which sources are available, and use it to show me today's cross-platform hot board.
+```
 
-### ✅ Release checks
+Works with agents that can run shell commands, including Claude Code, Codex, Cursor and Gemini CLI. Let the agent handle installation, environment checks and the first run. It will ask you to complete any required platform login.
 
-Done before this release:
+## Bring a question. Leave with a trail.
 
-- The published remote tag is unified as `v3.2.0`, with no extra v3-derived tags.
-- Both the repo root and the skill payload use the single `last30days.py` entry point — no extra entry files.
-- Full test suite passes: `python -m pytest tests -q`, `214 passed`.
-- Both entry points verified: `py scripts/last30days.py --diagnose` and `py skills/last30days/scripts/last30days.py --diagnose` both print platform availability diagnostics.
+Research a product, follow a developing story, or see what's trending today. last30days-cn searches recent discussions, ranks them by relevance, recency and engagement, and groups the same event across platforms while keeping the original sources.
+
+**One topic, a grounded report.** Eight Chinese platforms by default: Weibo, Xiaohongshu (RED), Bilibili, Zhihu, Douyin, WeChat public accounts, Baidu and Toutiao. Add Hacker News, GitHub and Reddit, or connect an installed upstream skill for more overseas sources.
+
+**One page, a view of today.** The [daily hot board](https://jesseovo.github.io/last30days-skill-cn/) brings together Chinese hot lists, tech news and Hacker News. Search a keyword, spot shared topics, or read through one source.
+
+**Sources stay attached.** Get compact agent evidence, Markdown, JSON and offline HTML. Reports state which sources returned results, how they were retrieved, and where coverage is missing.
+
+## A small window into today
+
+[**Open the daily hot board ↗**](https://jesseovo.github.io/last30days-skill-cn/) · Automatically collected at **08:00 / 12:00 / 20:00 Beijing time**.
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/readme-discovery-dark.svg" />
+    <img src="assets/readme-discovery-light.svg" width="720" alt="A pixel cat's curiosity station: following little clues through the conversations of the day." />
+  </picture>
+</p>
+
+Weibo, Baidu, Douyin, Toutiao, Bilibili and Zhihu bring the day's conversations. IT Home, Huxiu, SSPAI, iFanr, Solidot and Hacker News open another window. Add your own RSS feeds and make it a little more yours.
+
+Scan the top items on desktop, or settle into one source on mobile. Keyword search, dark mode and shared topics across platforms are all close at hand.
+
+Want your own board? Ask your agent to follow the [deployment notes](docs/usage.en.md#daily-hot-board-site) and enable scheduled publishing in your repository.
+
+## Follow the thread a little further
+
+The hot board is a snapshot of current rankings. Topic research looks back over a chosen date window.
+
+> What is trending in AI today? Pick three stories worth a closer look.
+>
+> Research the last seven days of discussion about AI coding assistants in China. Compare views across platforms and cite the sources.
+>
+> Add voices from Hacker News, GitHub and Reddit, and generate an offline report.
+
+Login requirements and upstream availability affect coverage. Reports distinguish logged-in results, hot-list matches and public-search fallbacks. Public-search results have no reliable engagement counts or exact dates and do not represent a complete platform sample.
+
+## Little stars, a growing story
+
+Every Star is a small meeting of curious minds. Thanks for keeping this little tool close.
+
+<p align="center">
+  <a href="https://github.com/Jesseovo/last30days-skill-cn/stargazers"><img src="https://img.shields.io/github/stars/Jesseovo/last30days-skill-cn?style=flat&amp;label=Stars&amp;labelColor=eee8dc&amp;color=9a7651" alt="GitHub Stars" /></a>&ensp;<a href="https://github.com/Jesseovo/last30days-skill-cn/forks"><img src="https://img.shields.io/github/forks/Jesseovo/last30days-skill-cn?style=flat&amp;label=Forks&amp;labelColor=eee8dc&amp;color=9a7651" alt="GitHub Forks" /></a>
+</p>
+
+<p align="center">
+  <a href="https://star-history.com/#Jesseovo/last30days-skill-cn&amp;Date">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Jesseovo/last30days-skill-cn&amp;type=Date&amp;theme=dark" />
+      <img src="https://api.star-history.com/svg?repos=Jesseovo/last30days-skill-cn&amp;type=Date" width="680" alt="GitHub Star history for last30days-cn. Click to explore the interactive chart." />
+    </picture>
+  </a>
+</p>
+
+## Keep exploring
+
+[Usage guide](docs/usage.en.md) — Logins, optional dependencies, data paths, configuration and CLI reference.<br />
+[Technical specification](SPEC.md) — Retrieval, cleanup, scoring, clustering and output contracts.<br />
+[Contributing](AGENTS.md) · [Security](SECURITY.md) · [Release notes](release-notes.md)
+
+## Credits and license
+
+Based on Matt Van Horn's [last30days-skill](https://github.com/mvanhorn/last30days-skill), with Chinese localization by [Jesse](https://github.com/Jesseovo). Thanks to [MediaCrawler](https://github.com/NanmiCoder/MediaCrawler) for the reusable-login approach, [xiaohongshu-mcp](https://github.com/xpzouying/xiaohongshu-mcp) for its optional service, and [guizang-ppt-skill](https://github.com/op7418/guizang-ppt-skill) for the research report's visual inspiration.
+
+[MIT License](LICENSE) · [Usage terms](docs/usage.en.md#usage-terms)
 
 ---
 
-## ⚠️ Disclaimer
-
-> **Please read carefully. By using this project you agree to all of the terms below.**
-
-1. **This project is for learning and research only.** All crawler features are intended solely for technical study and exchange; **commercial use is strictly prohibited.**
-2. Users must comply with all applicable laws and regulations (data security, personal-information protection, anti-unfair-competition, etc.).
-3. Users must respect each platform's **Terms of Service (ToS)** and **robots.txt**.
-4. **Do NOT** use this project for: large-scale / high-frequency scraping; collecting, storing, or disseminating others' personal data; disrupting platform operations; reselling data or any commercial gain; or providing automated data-collection services to third parties.
-5. The developer assumes **no liability** for any legal consequences arising from use of this project. Users bear **all** legal risk themselves.
-6. For any infringement concerns, contact the author and it will be addressed promptly.
-
-### Technical notes
-
-- The crawler features rely on Playwright browser automation to mimic normal browsing; they do **not** reverse-engineer encryption or break security mechanisms.
-- Platform interfaces can change at any time; this project does not guarantee that every feature always works.
-- Keep request frequency reasonable (e.g. ≥ 5s between searches) to avoid being blocked.
-
-> 💡 **Illegal scraping cases are common — use this lawfully and compliantly.**
-> Reference: [Chinese crawler legal cases](https://github.com/HiddenStrawberry/Crawler_Illegal_Cases_In_China)
-
----
-
-## 📋 Platform support
-
-| Platform | Module | Data sources | Configuration |
-|:---:|:---:|:---:|:---:|
-| 🔴 Weibo | `weibo.py` | API / 🕷️ crawler / public API | ✅ No config in crawler mode |
-| 📕 Xiaohongshu | `xiaohongshu.py` | API / 🕷️ crawler / public API / search fallback | ✅ No config in crawler mode |
-| 📺 Bilibili | `bilibili.py` | Public API / 🕷️ crawler backup | ✅ No config |
-| 💬 Zhihu | `zhihu.py` | Public search / 🕷️ crawler backup / search fallback | ✅ No config |
-| 🎵 Douyin | `douyin.py` | API / 🕷️ crawler / public API / search fallback | ✅ No config in crawler mode |
-| 💚 WeChat | `wechat.py` | API / Sogou search | `WECHAT_API_KEY` (optional) |
-| 🔵 Baidu | `baidu.py` | Public search / API | ✅ No config for basic search |
-| 📰 Toutiao | `toutiao.py` | Public API / search fallback | ✅ No config |
-
-> 🕷️ = requires Playwright (`pip install playwright && playwright install chromium`)
-
----
-
-## 🤖 Install
-
-| Surface | Install |
-|:---|:---|
-| **Agent Skills (recommended)** | `npx skills add Jesseovo/last30days-skill-cn -g` |
-| **Claude Code** | `npx skills add Jesseovo/last30days-skill-cn -g` |
-| **Cursor** | Clone the repo and add `SKILL.md` as a project skill |
-| **OpenClaw / ClawHub** | `git clone https://github.com/Jesseovo/last30days-skill-cn.git ~/.agents/skills/last30days-cn` |
-| **Gemini CLI** | Clone and load as a Gemini extension |
-| **Any agent** | Any AI agent with **Bash / Read / Write** tools |
-
-### Agent Skills (recommended)
-
-```bash
-npx skills add Jesseovo/last30days-skill-cn -g
-```
-
-### Manual (developer)
-
-```bash
-git clone https://github.com/Jesseovo/last30days-skill-cn.git ~/.claude/skills/last30days-cn
-```
-
----
-
-## ⚙️ Configuration
-
-### Step 1 — Optional enhancements
-
-```bash
-python -m pip install jieba
-```
-
-> `jieba` is optional. Without it, the skill automatically falls back to CJK bigram tokenization.
-
-### Step 2 — Install the crawler engine (optional, recommended; enables 7/8 platforms without API keys)
-
-```bash
-python -m pip install playwright
-python -m playwright install chromium
-```
-
-> With Playwright installed, Weibo, Xiaohongshu, Douyin, Bilibili (backup), and Zhihu (backup) all work without API keys.
-
-### Older macOS / older computers
-
-If the Playwright-managed Chromium build no longer starts on an older system such as macOS Catalina, point Playwright at a browser that still supports that system:
-
-```bash
-export LAST30DAYS_BROWSER_PATH="/Applications/Chromium.app/Contents/MacOS/Chromium"
-python scripts/last30days.py --diagnose
-```
-
-Alternatively use an installed Chrome channel with `LAST30DAYS_BROWSER_CHANNEL=chrome`, or force browserless public fallbacks with `LAST30DAYS_DISABLE_BROWSER=1`. The configured browser must already be compatible with the operating system; this project does not download or upgrade it.
-
-### Step 3 — Create a config file (optional)
-
-For more stable API-mode data, or to use WeChat public-account search:
-
-```bash
-mkdir -p ~/.config/last30days-cn
-touch ~/.config/last30days-cn/.env
-chmod 600 ~/.config/last30days-cn/.env
-```
-
-**Windows (PowerShell):** create the config directory with `New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.config\last30days-cn"`, then create the file with `New-Item -ItemType File -Path "$env:USERPROFILE\.config\last30days-cn\.env" -Force` (or edit `%USERPROFILE%\.config\last30days-cn\.env`). To restrict `.env` to the current user (similar intent to `chmod 600`; the ACL model differs), run `icacls "$env:USERPROFILE\.config\last30days-cn\.env" /inheritance:r /grant:r "$($env:USERNAME):(R,W)"`.
-
-Edit `~/.config/last30days-cn/.env` and fill in API keys as needed (all optional):
-
-```ini
-# All API keys are OPTIONAL. With Playwright installed, most platforms
-# already work via crawler mode; API keys just give more stable data.
-
-WEIBO_ACCESS_TOKEN=      # Weibo Open Platform (optional; crawler covers it)
-SCRAPECREATORS_API_KEY=  # Xiaohongshu (optional; crawler covers it)
-ZHIHU_COOKIE=            # Zhihu cookie (optional; improves search quality)
-TIKHUB_API_KEY=          # Douyin (optional; crawler covers it)
-WECHAT_API_KEY=          # WeChat public accounts (no crawler alternative; required for WeChat)
-BAIDU_API_KEY=           # Baidu Search API (optional; public search already works)
-BAIDU_SECRET_KEY=
-```
-
-### Step 4 — Verify
-
-```bash
-python scripts/last30days.py --diagnose
-```
-
-Prints each platform's availability plus crawler-engine status:
-
-```json
-{
-  "weibo": true,
-  "xiaohongshu": false,
-  "bilibili": true,
-  "zhihu": true,
-  "douyin": true,
-  "wechat": false,
-  "baidu_api": false,
-  "toutiao": true,
-  "crawler_engine": {
-    "playwright_available": true,
-    "cached_logins": [],
-    "note": "With Playwright installed, Weibo/Xiaohongshu/Douyin/Bilibili/Zhihu work without API keys"
-  },
-  "note_douyin_toutiao": "Douyin/Toutiao native APIs require signature params and are often rate-limited; on failure they fall back to a public search engine, which only yields public links (no real engagement data or precise dates)."
-}
-```
-
----
-
-## 🚀 Usage
-
-### Basic
-
-```bash
-python scripts/last30days.py "AI coding assistant" --emit compact
-python scripts/last30days.py "AI coding assistant" --emit html-path
-```
-
-### CLI flags
-
-| Flag | Description | Example |
-|:---:|:---:|:---:|
-| `--emit` | Output mode | `compact` / `json` / `md` / `context` / `path` / `html` / `html-path` |
-| `--quick` | Quick search | Fewer sources, faster |
-| `--deep` | Deep search | More sources, more thorough |
-| `--days N` | Look-back days | `--days 7` (last week) |
-| `--as-of` | Historical end date | `--as-of 2026-05-01` (look back N days from that date) |
-| `--search` | Specific sources | `--search weibo,bilibili,zhihu` |
-| `--diagnose` | Diagnose config | Show per-platform availability |
-| `--timeout SECS` | Global timeout | Override the default global timeout |
-| `--save-dir DIR` | Auto-save raw output | Write raw output to the given dir |
-| `--debug` | Debug mode | Verbose logging |
-
-> 🔧 **Env vars**: when `--search` is omitted, it falls back to `LAST30DAYS_DEFAULT_SEARCH` (a comma-separated default source set); `EXCLUDE_SOURCES` removes sources from the active set.
-
-### Examples
-
-```bash
-# 🔍 Search an AI topic
-python scripts/last30days.py "latest AI tools" --emit compact
-
-# ⚡ Quick search, Bilibili + Zhihu only
-python scripts/last30days.py "Python tutorial" --quick --search bilibili,zhihu
-
-# 📊 Deep search and save results
-python scripts/last30days.py "EV cars" --deep --save-dir ~/Documents/research
-
-# 📋 JSON output (for programmatic use)
-python scripts/last30days.py "ChatGPT alternatives" --emit json
-
-# 🗓️ Last 7 days only
-python scripts/last30days.py "trending topics" --days 7
-
-# 🧾 Generate an offline-openable HTML report
-python scripts/last30days.py "embodied AI" --deep --emit html-path
-```
-
----
-
-## 🔧 Data-fetching strategy (tiered fallback)
-
-```
-Tier 1: API mode (if an API key is configured)
-    ↓ failed or not configured
-Tier 2: Crawler mode (MediaCrawler, requires Playwright)
-    ↓ failed or not installed
-Tier 3: Public API (direct HTTP, no config needed)
-    ↓ still no results (Douyin / Toutiao / Xiaohongshu / Zhihu)
-Fallback: Public search engine (Bing `site:` search, yields public links)
-```
-
-> ⚠️ Douyin/Toutiao native web APIs now require signature params (`a_bogus` / `_signature`) and are often rate-limited. On failure they fall back to a public search engine, which **only yields public links — no real engagement data or precise dates.**
-
----
-
-## 🏗️ Project layout
-
-```
-last30days-skill-cn/
-├── SKILL.md              # Agent skill definition
-├── README.md             # Docs (Chinese)
-├── README.en.md          # Docs (English, this file)
-├── LICENSE               # MIT license
-├── requirements.txt      # Python deps
-├── assets/               # README images
-├── scripts/              # Dev copy: last30days.py + lib/ (per-platform modules)
-├── skills/last30days/    # Self-contained Agent Skills payload (SKILL.md + scripts/)
-├── fixtures/             # Sample data
-├── tests/                # Test cases
-└── hooks/                # Agent hooks
-```
-
----
-
-## 📊 Scoring
-
-Each result gets a 0–100 composite score:
-
-| Dimension | Weight | Notes |
-|:---:|:---:|:---|
-| 🎯 Relevance | 45% | Text match against the query |
-| 🕐 Recency | 25% | Freshness of the publish time |
-| 🔥 Engagement | 30% | Per-platform interaction metrics |
-
----
-
-## 🙏 Acknowledgements
-
-- [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) — the original English project
-- [NanmiCoder/MediaCrawler](https://github.com/NanmiCoder/MediaCrawler) — crawler-engine inspiration
-
----
-
-## 📜 License
-
-Released under the [MIT License](LICENSE).
-
-- 🔗 Original: [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) by Matt Van Horn
-- 🇨🇳 Chinese fork: Jesse ([@Jesseovo](https://github.com/Jesseovo))
+<p align="center">
+  <sub>Made with curiosity, by <a href="https://github.com/Jesseovo">Jesse</a>.</sub><br />
+  <sub>If it helped you discover something new, a Star is always welcome.</sub>
+</p>
