@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "17fdfe6c-579e-4a5d-adaa-d8ad13d07437",
+  "path": "json-canvas",
+  "path_key": "json-canvas",
+  "enabled": true,
+  "tags": [
+    "Canvas",
+    "Obsidian"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/obsidianmd/obsidian-skills",
+    "subpath": "plugins\\obsidian\\skills\\json-canvas",
+    "branch": null
+  }
+}

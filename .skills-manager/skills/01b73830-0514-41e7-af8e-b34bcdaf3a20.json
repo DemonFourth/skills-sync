@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "skill_id": "01b73830-0514-41e7-af8e-b34bcdaf3a20",
+  "path": "dashboard-design",
+  "path_key": "dashboard-design",
+  "enabled": true,
+  "tags": [
+    "domain/前端界面",
+    "domain/编码开发",
+    "domain/设计视觉"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/abdiraimov-otabek/dashboard-design-skill",
+    "subpath": "skills\\dashboard-design",
+    "branch": null
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "skill_id": "f193d040-ef47-4d51-8cbe-380f36c57e1b",
+  "path": "obsidian-cli",
+  "path_key": "obsidian-cli",
+  "enabled": true,
+  "tags": [
+    "Obsidian"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/obsidianmd/obsidian-skills",
+    "subpath": "plugins\\obsidian\\skills\\obsidian-cli",
+    "branch": null
+  }
+}

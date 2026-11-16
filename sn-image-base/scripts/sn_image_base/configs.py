@@ -44,7 +44,8 @@ prepare_env()
 class Field:
     """Metadata marker that pairs a field with one or more env var names.
 
-    Env vars are tried in order; the first env var that is set is returned.
+    Env vars are tried in order; the first env var that is set to a non-empty
+    value is returned.
     """
 
     __slots__ = ("env_names", "required", "secret")
@@ -62,13 +63,18 @@ class Field:
                 If not int or float, returns the raw string.
 
         Returns:
-            The converted value, or None if none of the env vars exist.
+            The converted value, or None if none of the env vars are set to a
+            non-empty value.
         """
         if not self.env_names:
             return None
         for n in self.env_names:
             if n in os.environ:
                 raw = os.environ[n]
+                if not raw:
+                    # A set-but-empty env var is ignored (e.g. a verbatim copy
+                    # of ``.env.example``), and the next name is tried instead.
+                    continue
                 if target_type is int:
                     return int(raw)
                 if target_type is float:
@@ -98,7 +104,8 @@ class Configs:
         str, Field("SN_IMAGE_GEN_BASE_URL", "SN_BASE_URL", required=True)
     ] = "https://token.sensenova.cn/v1"
     SN_IMAGE_GEN_MODEL_TYPE: Annotated[
-        Literal["sensenova", "nano-banana", "openai-image"], Field("SN_IMAGE_GEN_MODEL_TYPE")
+        Literal["sensenova", "nano-banana", "openai-image", "atlas-cloud"],
+        Field("SN_IMAGE_GEN_MODEL_TYPE"),
     ] = "sensenova"
     SN_IMAGE_GEN_MODEL: Annotated[str, Field("SN_IMAGE_GEN_MODEL")] = "sensenova-u1.5-lite"
 

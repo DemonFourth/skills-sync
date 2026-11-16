@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "skill_id": "27d06a6e-c12d-4461-bf1b-aba820c6cf3d",
+  "path": "obsidian-bases",
+  "path_key": "obsidian-bases",
+  "enabled": true,
+  "tags": [
+    "Obsidian"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/obsidianmd/obsidian-skills",
+    "subpath": "plugins\\obsidian\\skills\\obsidian-bases",
+    "branch": null
+  }
+}

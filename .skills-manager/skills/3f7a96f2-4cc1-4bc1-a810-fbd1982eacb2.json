@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "skill_id": "3f7a96f2-4cc1-4bc1-a810-fbd1982eacb2",
+  "path": "obsidian-markdown",
+  "path_key": "obsidian-markdown",
+  "enabled": true,
+  "tags": [
+    "Obsidian"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/obsidianmd/obsidian-skills",
+    "subpath": "plugins\\obsidian\\skills\\obsidian-markdown",
+    "branch": null
+  }
+}

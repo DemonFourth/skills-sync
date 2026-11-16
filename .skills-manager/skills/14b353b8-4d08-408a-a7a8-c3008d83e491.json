@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "14b353b8-4d08-408a-a7a8-c3008d83e491",
+  "path": "obsidian-excalidraw-cli",
+  "path_key": "obsidian-excalidraw-cli",
+  "enabled": true,
+  "tags": [
+    "Excalidraw",
+    "Obsidian"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/zsviczian/obsidian-excalidraw-cli",
+    "subpath": null,
+    "branch": null
+  }
+}

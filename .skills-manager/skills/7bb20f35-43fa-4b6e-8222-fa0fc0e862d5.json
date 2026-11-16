@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "7bb20f35-43fa-4b6e-8222-fa0fc0e862d5",
+  "path": "knap",
+  "path_key": "knap",
+  "enabled": true,
+  "tags": [
+    "Markdown",
+    "Obsidian"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/obsidianmd/obsidian-skills",
+    "subpath": "plugins\\obsidian\\skills\\knap",
+    "branch": null
+  }
+}
