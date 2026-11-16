@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "scenario_id": "36bcd6d4-8db5-4a02-b322-9a4558bfd77f",
+  "name": "开发-前端",
+  "description": "审美方向 + 可达性工程 + 数据看板 + 浏览器验证",
+  "icon": "layout",
+  "sort_order": 20
+}

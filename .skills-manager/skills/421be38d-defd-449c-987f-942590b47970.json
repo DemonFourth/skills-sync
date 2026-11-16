@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "skill_id": "421be38d-defd-449c-987f-942590b47970",
+  "path": "retro",
+  "path_key": "retro",
+  "enabled": true,
+  "tags": [
+    "domain/元技能",
+    "source:mattpocock/skills"
+  ],
+  "source": {
+    "type": "git",
+    "ref": "https://github.com/mattpocock/skills/tree/main/skills/engineering/retro",
+    "subpath": "skills/engineering/retro",
+    "branch": null
+  }
+}

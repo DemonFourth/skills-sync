@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "scenario_id": "0a41c9da-fdc1-4d36-ae9a-57ecac737e46",
+  "name": "技能与工具",
+  "description": "技能编写/适配/管理 + 联网取数 + LLM API 手册",
+  "icon": "wrench",
+  "sort_order": 60
+}

@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "scenario_id": "03388cd8-eeb6-4c33-9e56-b030b4139a37",
+  "name": "内容创作",
+  "description": "研究取证 → 长文/视频 → 配图 → 办公文档导出",
+  "icon": "megaphone",
+  "sort_order": 40
+}

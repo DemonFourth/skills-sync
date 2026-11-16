@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "scenario_id": "71dfcd0f-fc53-48fc-a346-50b9faf2af52",
+  "name": "知识库",
+  "description": "Obsidian 读写、专属语法、数据库视图、画布与手绘图",
+  "icon": "notebook",
+  "sort_order": 50
+}

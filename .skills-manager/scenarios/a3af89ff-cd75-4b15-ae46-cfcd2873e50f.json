@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "scenario_id": "a3af89ff-cd75-4b15-ae46-cfcd2873e50f",
+  "name": "金融分析",
+  "description": "A股/港股/美股数据 → 新闻 → 研报，附带表格与主题",
+  "icon": "trending-up",
+  "sort_order": 30
+}

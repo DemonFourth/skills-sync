@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "scenario_id": "53998e81-8c7d-42eb-815f-e6194d702e8a",
+  "name": "开发-流程",
+  "description": "需求澄清 → 计划 → 执行 → 评审 → 收尾，唯一流程主干（superpowers + 思考工具）",
+  "icon": "git-branch",
+  "sort_order": 10
+}
