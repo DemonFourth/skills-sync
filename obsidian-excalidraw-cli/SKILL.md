@@ -1,6 +1,6 @@
 ---
 name: obsidian-excalidraw-cli
-description: Discover, create, inspect, edit, and export editable Obsidian Excalidraw drawings through the running app's native CLI. Use for local vault drawing tasks, revision-safe changes, and visual verification.
+description: Discover, create, inspect, edit, and export editable Obsidian Excalidraw drawings through the running app's native CLI, including MindMap Builder installation/automation and custom scripts developed from ea-script-template. Use for local vault drawing tasks, revision-safe changes, and visual verification.
 ---
 
 # Obsidian Excalidraw through the native CLI
@@ -39,16 +39,22 @@ For a first authorized test, inspect the offline plan from `examples/first-drawi
 
 - New drawing: use `create` at an unused exact `.excalidraw.md` path. It never overwrites. Do not delete/recreate to bypass that protection.
 - Existing drawing: explicitly `open` when a live view is needed, read the complete live snapshot, and `apply` a narrow change using its `expectedRevision` and actual IDs. Reuse the returned `viewId` as the request's `view` for duplicate-view safety. Opening can run configured drawing scripts.
+- User-selected targets: read [selection handoff](docs/targeted-edits.md). Use the copied packet or installed `selection` command, include bound-label IDs, and keep edits scoped to the packet. Never guess replacement targets after a stale revision.
+- Filled contours and drawing embeds: inspect the installed schemas and [authoring guidance](docs/authoring.md#filled-line-contours). `polygon` is line-only; `image` can embed recognized Excalidraw files when supported. Custom free-draw styling and line/free-draw conversion are explicit [scripting options](docs/authoring.md#custom-free-draw-strokes-and-conversion), with excalidraw.com compatibility limits.
 - Inspect only: use `list` or `read source=disk` without opening or saving. A summary or first page is not a complete inventory.
 - Preview: export to an explicit `.svg`/`.png` path; replacing an existing output requires separate explicit permission. Live export does not save a drawing. Prefer disk export when verifying persisted content. For image-heavy drawings, read [image previews](docs/image-previews.md): inventory images → bounded structural/mixed overview → selected original detail. Full original fidelity remains the default; request any reduction explicitly.
 - Advanced work: inspect the installed EA/Lib references first. Use `script` only for reviewed local code the user authorizes, with `trusted=true`. Pass JSON arguments as `utils.input`; never interpolate untrusted text into source.
+- Custom Excalidraw scripts: read [custom script development](docs/custom-scripts.md). Create a user-owned repository from [ea-script-template](https://github.com/zsviczian/ea-script-template) and implement/build the script there; use [Zsolt's ea-scripts](https://github.com/zsviczian/ea-scripts) for maintained examples. Deploy the generated `.md` artifact to the configured Scripts folder.
 - Editable SVGs and icons: read [SVG import](docs/svg-import.md) for the workbench-only `importSVG` contract, explicit grouping/insertion, and fidelity limits. Use the installed converter through a trusted script; discover its API before use.
 - Lucide icons: read [native icon insertion](docs/lucide-icons.md). Discover installed names with `icons`; use `create.icons` or `apply` with `op: "lucide"`. Ordinary insertion needs no trusted script. Read every returned `groupMap` member ID; icon aliases are not single elements or binding targets.
+- Editable mind maps: read [MindMap Builder](docs/mindmap-builder.md) for its API, installation when missing into the configured Scripts folder's `Downloaded` subfolder, and startup through its registered script command. Use this workflow for native nodes, branches, folding, and layout. Start the persistent Builder through `command`, then use reviewed one-shot `:script` wrappers for API calls.
 - Mermaid diagrams: read [native diagrams versus SVG images](docs/mermaid.md) before promising editable nodes or labels. Other diagram kinds may render as an SVG image; SVG-to-native conversion is a separate, lossy geometry operation.
 
 ## Preserve meaning and editability
 
 Inventory the complete source scene: text, relationships, symbols, palette, regions, and dimensions. For reference recreation, compare the source image rather than inventing hidden details. Follow `nextOffset` until exhausted, with the same revision; restart on a changed snapshot.
+
+For freehand drawings and traced outlines, keep each continuous contour in one line element and simplify its control points. Before publication, audit all open outline endpoints for concatenation, including bends, cusps, small gaps and overlapping ends; repeat the audit on the remaining paths using [continuous contours](docs/authoring.md#continuous-contours).
 
 Use returned `data.idMap` IDs, not skeleton-local labels, for later edits. A generated bound label has its own text-element ID. Keep small requests in structured JSON; put larger ones in a visible vault-relative JSON file. Never edit compressed drawing Markdown directly. Retain the exact request payload and unique request ID before publication.
 
